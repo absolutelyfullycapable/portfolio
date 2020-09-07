@@ -20,14 +20,14 @@ body { margin:0; padding:0; background-color:#0027c9; color:#fff; font-family:'R
     /** main **/
     .container .main { height:calc(100% - 162px); border-left:1px solid #fff; border-right:1px solid #fff; margin:0 4%; display:flex; justify-content:center; align-items:center; position:relative; }
         .container .main svg { position:fixed; }
-            .container .main svg:first-of-type { display:none; }
-            .container .main svg:nth-of-type(2) { width:30px; top:8%; left:10%; }
-            .container .main svg:nth-of-type(3) { width:20px; top:17%; left:18%; }
-            .container .main svg:nth-of-type(4) { width:55px; top:29%; left:51%; z-index:1; }
-            .container .main svg:nth-of-type(5) { width:16px; top:47%; right:28%; }
-            .container .main svg:nth-of-type(6) { width:26px; top:65%; right:30%; }
-            .container .main svg:nth-of-type(7) { width:27px; bottom:9%; right:17%; }
-            .container .main svg:last-of-type { display:none; }
+            .container .main svg:first-of-type { display:none; animation: move1 20s infinite linear; }
+            .container .main svg:nth-of-type(2) { width:30px; top:8%; left:10%; animation: move2 20s infinite linear; }
+            .container .main svg:nth-of-type(3) { width:20px; top:17%; left:18%; animation: move3 20s infinite linear; }
+            .container .main svg:nth-of-type(4) { width:55px; top:29%; left:51%; z-index:1; animation: move4 20s infinite linear; }
+            .container .main svg:nth-of-type(5) { width:16px; top:47%; right:28%; animation: move5 20s infinite linear; }
+            .container .main svg:nth-of-type(6) { width:26px; top:65%; right:30%; animation: move6 20s infinite linear; }
+            .container .main svg:nth-of-type(7) { width:27px; bottom:9%; right:17%; animation: move7 20s infinite linear; }
+            .container .main svg:last-of-type { display:none; animation: move8 20s infinite linear; }
         .container .main p:first-of-type { width:100%; font-size:75px; font-family:'DrukWideCyWebBold',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; text-align:center; }
         .container .main p:last-of-type { display:none; font-family:'DrukWideCyWebBold',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; text-align:center; }
 
@@ -36,6 +36,78 @@ body { margin:0; padding:0; background-color:#0027c9; color:#fff; font-family:'R
         .container footer p span { color:#ffd112; font-weight:bold; }
         .container footer .hidden { display:none; }
 
+@keyframes move1 {
+    from {
+        transform: rotate(90deg) translate(25px, 0.1px) rotate(-90deg);
+    }
+    to {
+        transform: rotate(450deg) translate(25px, 0.1px) rotate(-450deg);
+    }
+}
+
+@keyframes move2 {
+    from {
+        transform: rotate(180deg) translate(25px, 0.1px) rotate(-180deg);
+    }
+    to {
+        transform: rotate(540deg) translate(25px, 0.1px) rotate(-540deg);
+    }
+}
+
+@keyframes move3 {
+    from {
+        transform: rotate(270deg) translate(25px, 0.1px) rotate(-270deg);
+    }
+    to {
+        transform: rotate(630deg) translate(25px, 0.1px) rotate(-630deg);
+    }
+}
+
+@keyframes move4 {
+    from {
+        transform: rotate(360deg) translate(25px, 0.1px) rotate(-360deg);
+    }
+    to {
+        transform: rotate(720deg) translate(25px, 0.1px) rotate(-720deg);
+    }
+}
+
+@keyframes move5 {
+    from {
+        transform: rotate(450deg) translate(25px, 0.1px) rotate(-450deg);
+    }
+    to {
+        transform: rotate(810deg) translate(25px, 0.1px) rotate(-810deg);
+    }
+}
+
+@keyframes move6 {
+    from {
+        transform: rotate(540deg) translate(25px, 0.1px) rotate(-540deg);
+    }
+    to {
+        transform: rotate(900deg) translate(25px, 0.1px) rotate(-900deg);
+    }
+}
+
+@keyframes move7 {
+    from {
+        transform: rotate(630deg) translate(25px, 0.1px) rotate(-630deg);
+    }
+    to {
+        transform: rotate(990deg) translate(25px, 0.1px) rotate(-990deg);
+    }
+}
+
+@keyframes move8 {
+    from {
+        transform: rotate(720deg) translate(25px, 0.1px) rotate(-720deg);
+    }
+    to {
+        transform: rotate(1080deg) translate(25px, 0.1px) rotate(-1080deg);
+    }
+}
+          
 /*** 태블릿 ***/
 @media (min-width:767px) {
     .container header { padding:27px 5%; background:url(../images/line1.png) no-repeat 60% 50%; background-size:55% 3px; }
