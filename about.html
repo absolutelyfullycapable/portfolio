@@ -100,7 +100,7 @@
                 </div>
 
                 <div class="ability">
-                    <h1>제 <span class="slide" style="color:#fff; font-weight:500; padding:0 1.5% 0 1%;">능력</span>이<br>궁금하세요?</h1>
+                    <h1>제 <span class="slide" style="font-weight:500; padding:0 1.5% 0 1%;">능력</span>이<br>궁금하세요?</h1>
                     <p>함께할 때 가진 역량을 100% 발휘하는<br>제가 잘할 수 있는 일들입니다.</p>
                     <p class="hidden">함께할 때 가진 역량을 100% 발휘하는 제가 잘할 수 있는 일들입니다.</p>
                     <ul>
@@ -146,7 +146,7 @@
                 </div>
 
                 <div class="contact">
-                    <h1>저는<br><span class="slide" style="color:#fff; font-weight:500; padding:0 1.5% 0 1%;">어디에나</span> 있습니다.</h1>
+                    <h1>저는<br><span class="slide" style="font-weight:500; padding:0 1.5% 0 1%;">어디에나</span> 있습니다.</h1>
                     <p>
                         저와 나누고 싶은 이야기가 있다면<br>
                         주저 말고 언제든지 문 두드려 주세요!
@@ -182,53 +182,6 @@
             </footer>
         </div>
     </body>
-
-    <script>
-        $(".hoverA").hover(function() {
-                $(".hoverA").css("cursor", "pointer");
-                $(".hoverA").css("transform", "translateY(-10px)");
-                $(".hoverA1").css("visibility", "visible");
-            }, function() {
-                $(".hoverA").css("transform", "translateY(0px)");
-                $(".hoverA1").css("visibility", "hidden");
-        });
-
-        $(".hoverB").hover(function() {
-                $(".hoverB").css("cursor", "pointer");
-                $(".hoverB").css("transform", "translateY(-10px)");
-                $(".hoverB1").css("visibility", "visible");
-            }, function() {
-                $(".hoverB").css("transform", "translateY(0px)");
-                $(".hoverB1").css("visibility", "hidden");
-        });
-
-        $(".hoverC").hover(function() {
-                $(".hoverC").css("transform", "translateY(-10px)");
-                $(".hoverC1").css("visibility", "visible");
-            }, function() {
-                $(".hoverC").css("transform", "translateY(0px)");
-                $(".hoverC1").css("visibility", "hidden");
-        });
-
-        (function (document) {
-                const markers = [...document.querySelectorAll('.slide')];
-                
-                const observer = new IntersectionObserver(entries => {
-                    entries.forEach((entry) => {
-                    if (entry.intersectionRatio > 0) {
-                            entry.target.style.animationPlayState = 'running';
-                            observer.unobserve(entry.target);
-                        }
-            });
-            }, {
-                threshold: 0.8
-            });
-            
-            markers.forEach(mark => {
-                observer.observe(mark);
-            });
-            })(document);
-
-        $(".slide").css("color", "#fff");
-    </script>
+    
+    <script src="js/about.js"></script>
 </html>
