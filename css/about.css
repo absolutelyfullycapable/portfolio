@@ -52,6 +52,7 @@ ul, li { list-style:none; margin:0; padding:0; }
 
             .container .main .ability ul li:nth-child(2) { margin:107px 0; text-align:right; }
             .container .main .ability ul li img { display:block; margin:50px auto 40px; }
+            .container .main .ability ul li:first-child img, .container .main .ability ul li:nth-child(2) img { width:330px; }
         
         .container .main .contact { padding:0 5px; }
             .container .main .contact h1 .slide { --color1:#0027c9; --color2:#0027c9; --bg-height:100%; all: unset; background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color1)), to(var(--color2))); background-image: linear-gradient(var(--color1), var(--color2)); background-repeat: no-repeat; background-size: 0 var(--bg-height); -webkit-animation: highlight 800ms 1 ease-out; animation: highlight 800ms 1 ease-out; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-play-state: paused; animation-play-state: paused; }
