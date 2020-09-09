@@ -1,6 +1,3 @@
-$(".toggleMenu").on("click", function() {
-    $("nav").css("visibility", "visible");
-});
 var wrapperMenu = document.querySelector('.wrapper-menu');
 
 wrapperMenu.addEventListener('click', function(){
