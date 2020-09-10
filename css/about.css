@@ -58,7 +58,8 @@ ul, li { list-style:none; margin:0; padding:0; }
         .container .main .ability { margin:180px 0; }
             .container .main .ability h1, .container .main .ability > p { text-align:right; padding:0 5px; }
             .container .main .ability h1 .slide { color:#fff; --color1:#0027c9; --color2:#0027c9; --bg-height:100%; all: unset; background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color1)), to(var(--color2))); background-image: linear-gradient(var(--color1), var(--color2)); background-repeat: no-repeat; background-size: 0 var(--bg-height); -webkit-animation: highlight 800ms 1 ease-out; animation: highlight 800ms 1 ease-out; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-play-state: paused; animation-play-state: paused; }
-            .container .main .ability > p { font-weight:15px; margin-bottom:130px; }
+            .container .main .ability > p { font-weight:15px; margin-bottom:130px; line-height:1.6; }
+            .container .main .ability ul li p { line-height:1.6; }
             .container .main .ability .hidden { display:none; }
 
             .container .main .ability h2 { font-size:20px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:600; color:#0027c9; }
@@ -68,7 +69,7 @@ ul, li { list-style:none; margin:0; padding:0; }
         
         .container .main .contact { padding:0 5px; }
             .container .main .contact h1 .slide { color:#fff; --color1:#0027c9; --color2:#0027c9; --bg-height:100%; all: unset; background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color1)), to(var(--color2))); background-image: linear-gradient(var(--color1), var(--color2)); background-repeat: no-repeat; background-size: 0 var(--bg-height); -webkit-animation: highlight 800ms 1 ease-out; animation: highlight 800ms 1 ease-out; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-play-state: paused; animation-play-state: paused; }
-            .container .main .contact p { margin:45px 0 75px; }
+            .container .main .contact p { margin:45px 0 75px; line-height:1.6; }
             .container .main .contact .hidden1, .container .main .contact .hidden2 { display:none; }
 
             .container .main .contact ul li, .container .main .contact ul li a { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:300; }
