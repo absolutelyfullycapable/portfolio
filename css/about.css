@@ -9,16 +9,29 @@ ul, li { list-style:none; margin:0; padding:0; }
 
     /** header **/
     .container header { position:fixed; z-index:9999; width:100%; height:81px; padding:27px 4%; box-sizing:border-box; display:flex; justify-content:space-between; align-items:center; background:url(../images/line2.png) no-repeat 55% 50%; background-color:#fff; background-size:52% 3px; }
+        .container header.none { background:none; }
         .container header h1 { width:60px; height:30px; margin:0; background:url(../images/logoM2.png) no-repeat 50% 50%; background-size:cover; }
+        .container header h1.none { background:none; }
         .container header h1 a { display:block; width:100%; height:100%; }
         .contact header .hidden { display:none; }
 
-    .container nav { width:100%; height:100%; background-color:#fff; position:fixed; display:flex; justify-content:center; align-items:center; z-index:999; display:none; }
+    .container nav { width:100%; height:100%; background-color:#fff; position:absolute; display:flex; justify-content:center; align-items:center; z-index:999; visibility:hidden; }
+    .container .menu.visible { visibility:visible; }
         .container nav ul { width:100%; margin:0; padding:0; list-style:none; }
         .container nav ul li { width:100%; margin-bottom:20px;  }
         .container nav ul li a { display:block; width:280px; margin:0 auto; font-family:'RhodeMediumExtended',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; text-align:left; text-indent:35px; text-decoration:none; color:#0027c9; text-transform:capitalize; font-size:30px; background:url(../images/menuIcon.png) no-repeat; background-size:16px; }
-    .container header .toggleMenu { width:39px; height:39px; background:url(../images/menuBtn2.png) no-repeat 50% 50%; background-size:cover; z-index:9999; }
-        .container header .toggleMenu a { display:block; width:100%; height:100%; }
+        
+        .container header .menu-wrapper { width:39px; height: 39px; background-color:#0027c9; border-radius:50%; cursor: pointer; display:flex; justify-content:center; align-items:center; }
+        .container header .menu-wrapper.visible { z-index:9999; }
+
+        .container header .menu-wrapper .hamburger-menu, .container header .menu-wrapper .hamburger-menu:after, .container header .menu-wrapper .hamburger-menu:before { width:22px; height:1px; border-radius:50px; margin:auto; }
+
+        .container header .menu-wrapper .hamburger-menu { position:relative; background:white; transition: all 0ms 300ms; }
+        .container header .menu-wrapper .hamburger-menu.animate { background: rgba(255, 255, 255, 0); }
+        .container header .menu-wrapper .hamburger-menu:before { content: ""; position: absolute; left: 0; bottom:6px; background: white; transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+        .container header .menu-wrapper .hamburger-menu:after { content: ""; position: absolute; left: 0; top:6px; background: white; transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+        .container header .menu-wrapper .hamburger-menu.animate:after { background-color:white; top: 0; transform: rotate(45deg); transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+        .container header .menu-wrapper .hamburger-menu.animate:before { background-color:white; bottom: 0; transform: rotate(-45deg); transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
 
     /** main **/
     .container .main { border:1px solid #0027c9; border-top:none; margin:78px 4% 0; padding:0 4% 65px; }
@@ -274,8 +287,8 @@ ul, li { list-style:none; margin:0; padding:0; }
     .container header { padding:27px 4%; background:url(../images/line2.png) no-repeat 40% 50%; background-color:#fff; background-size:52% 3px; }
         .container header h1 { width:160px; height:23px; background:url(../images/logoPC2.png) no-repeat 50% 50%; }
         .container header h1 a { display:block; width:100%; height:100%; }
-        .container header .toggleMenu { display:none; }
-        .container header .hidden { display:flex; width:330px; height:18px; padding:30px 4%;  background-color:transparent; position:absolute; right:4%; display:flex; justify-content:center; align-items:center; z-index:999; }
+        .container header .menu-wrapper { display:none; }
+        .container header .hidden { visibility:visible; width:330px; height:18px; padding:30px 4%;  background-color:transparent; position:absolute; right:4%; display:flex; justify-content:center; align-items:center; z-index:999; }
             .container header .hidden ul { width:100%; margin:0; padding:0; display:flex; }
                 .container header .hidden ul li { width:165px; margin-bottom:0; }
                 .container header .hidden ul li:last-of-type { margin-left:60px; }
