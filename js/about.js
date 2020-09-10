@@ -1,6 +1,12 @@
-// 모바일 버튼 클릭 애니메이션
-$(".toggleMenu").on("click", function() {
-    $(".container > nav").css("visibility", "visible");
+// 모바일, 태블릿 햄버거 메뉴 버튼 클릭 애니메이션
+$('.menu-wrapper').on('click', function() {
+    $('.hamburger-menu').toggleClass('animate');
+    $('.menu').toggleClass('visible');
+    $('.menu-wrapper').toggleClass('visible');
+    
+    // 모바일 메뉴 버튼 클릭 시 헤더 내용 숨기기
+    $('.container header').toggleClass('none');
+    $('.container header h1').toggleClass('none');
 });
 
 // 스크롤 애니메이션
@@ -25,30 +31,25 @@ markers.forEach(mark => {
 
 // 호버 애니메이션
 $(".hoverA").hover(function() {
-    $(".hoverA").css("cursor", "pointer");
-    $(".hoverA").css("transform", "translateY(-10px)");
-    $(".hoverA").css("transition", "0.4s");
+    $(this).css({"cursor":"pointer", "transform":"translateY(-10px)", "transition":"0.4s"});
     $(".hoverA1").css("visibility", "visible");
 }, function() {
-    $(".hoverA").css("transform", "translateY(0px)");
+    $(this).css("transform", "translateY(0px)");
     $(".hoverA1").css("visibility", "hidden");
 });
 
 $(".hoverB").hover(function() {
-    $(".hoverB").css("cursor", "pointer");
-    $(".hoverB").css("transform", "translateY(-10px)");
-    $(".hoverB").css("transition", "0.4s");
+    $(this).css({"cursor":"pointer", "transform":"translateY(-10px)", "transition":"0.4s"});
     $(".hoverB1").css("visibility", "visible");
 }, function() {
-    $(".hoverB").css("transform", "translateY(0px)");
+    $(this).css("transform", "translateY(0px)");
     $(".hoverB1").css("visibility", "hidden");
 });
 
 $(".hoverC").hover(function() {
-    $(".hoverC").css("transform", "translateY(-10px)");
-    $(".hoverC").css("transition", "0.4s");
+    $(this).css({"transform":"translateY(-10px)", "transition":"0.4s"});
     $(".hoverC1").css("visibility", "visible");
 }, function() {
-    $(".hoverC").css("transform", "translateY(0px)");
+    $(this).css("transform", "translateY(0px)");
     $(".hoverC1").css("visibility", "hidden");
 });
