@@ -5,8 +5,6 @@ I am a person who can be any**ONE** that I want.<br>되고자 하는 어떤 모�
 - 이곳은 **개인 포트폴리오 저장소**입니다.
 - 제 소개와 함께 지금까지 애정을 담아 만든 작업물을 볼 수 있습니다
 
-<br>
-
 ### contact
 
 - lovinsurfaces@gmail.com
