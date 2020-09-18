@@ -1,3 +1,5 @@
+![index](images/ogimg.png)
+
 ## Absolutely Fully Capable
 I am a person who can be any**ONE** that I want.<br>되고자 하는 어떤 모습이든 될 수 있는 제가 궁금하지 않으세요?
 
