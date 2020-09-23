@@ -9,7 +9,7 @@ I am a person who can be any**ONE** that I want.<br>되고자 하는 어떤 모�
 
 ### lastest update
 
-- 20.09.24: reorganize JS/jQuery/HTML
+- 20.09.24: reorganize JS/jQuery/HTML, change favicon
 
 ### contact
 
