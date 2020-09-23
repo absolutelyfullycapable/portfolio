@@ -11,5 +11,9 @@ I am a person who can be any**ONE** that I want.<br>되고자 하는 어떤 모�
 
 - lovinsurfaces@gmail.com
 
+### lastest update
+
+- 20.09.23: reorganize JS/jQuery
+
 <br>
 copyright (c) 2020 Ji Hye LEE
