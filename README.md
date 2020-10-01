@@ -8,10 +8,6 @@ I am a person who can be any**ONE** that I want.<br>되고자 하는 어떤 모�
 - 제 소개와 함께 지금까지 애정을 담아 만든 작업물을 볼 수 있습니다.
 - PC 크롬 브라우저(1920 x 1080), 태블릿 iPad(768 x 1024), 모바일 iPhone X(375 x 812)에 최적화되어 있습니다.
 
-### lastest update
-
-- 20.09.24: reorganize JS/jQuery/HTML, change favicon
-
 ### contact
 
 - lovinsurfaces@gmail.com
