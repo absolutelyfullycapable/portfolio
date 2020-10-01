@@ -41,17 +41,18 @@ ul, li { list-style:none; margin:0; padding:0; }
 
     /** Mobile main contents **/
     .container .main { border:1px solid #0027c9; border-top:none; margin:78px 4% 0; padding:0 4% 65px; }
-        .container .main h1, .container .main .intro .title div { font-weight:300; font-size:2.5em; letter-spacing:-3px; line-height:1.4; }
-        .container .main h1 div .container .main .intro .title div { padding:0 5px; }
+    .container .main h2, .container .main .intro .title div { padding:0 5px; font-weight:300; font-size:2.5em; letter-spacing:-3px; line-height:1.4; }
         
+        /* profile images */
         .container .main .intro .title .profile { position:relative; }
             .container .main .intro .title .profile img { position:absolute; top:-220px; right:-20px; width:240px; }
             .container .main .intro .title .profile img:nth-of-type(2), .container .main .intro .title .profile img:last-of-type { display:none; }
 
         .container .main .intro .title > div:first-of-type { margin-top:225px; }
         
+        /* loop keyword (container scroller) */
         .container .main .intro .title #container-scroller { width:143px; height:56px; background-color:#0027c9; overflow:hidden; }
-            .container .main .intro .title #container-scroller .container-scroller_item { width:100%; height:56px; color:#fff; padding:0 5px; font-weight:500; -webkit-animation:scroll-M 9s cubic-bezier(0.645, 0.045, 0.355, 1) infinite; animation:scroll-M 9s cubic-bezier(0.645, 0.045, 0.355, 1) infinite; }
+            .container .main .intro .title #container-scroller .container-scroller_item { width:100%; height:56px; color:#fff; padding:0 5px; font-weight:500; font-size:40px; -webkit-animation:scroll-M 9s cubic-bezier(0.645, 0.045, 0.355, 1) infinite; animation:scroll-M 9s cubic-bezier(0.645, 0.045, 0.355, 1) infinite; }
 
         .container .main .intro .title > div:last-of-type { display:block; }
 
@@ -61,20 +62,22 @@ ul, li { list-style:none; margin:0; padding:0; }
 
             .container .main .intro .description .hidden1, .container .main .intro .description .hidden2 { display:none; }
 
+        /* ability */
         .container .main .ability { margin:180px 0; }
-            .container .main .ability h1, .container .main .ability > p { text-align:right; padding:0 5px; }
-            .container .main .ability h1 .slide { color:#fff; --color1:#0027c9; --color2:#0027c9; --bg-height:100%; background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color1)), to(var(--color2))); background-image: linear-gradient(var(--color1), var(--color2)); background-repeat: no-repeat; background-size: 0 var(--bg-height); -webkit-animation: highlight 800ms 1 ease-out; animation: highlight 800ms 1 ease-out; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-play-state: paused; animation-play-state: paused; }
+            .container .main .ability h2, .container .main .ability > p { text-align:right; padding:0 5px; }
+            .container .main .ability h2 .slide { color:#fff; --color1:#0027c9; --color2:#0027c9; --bg-height:100%; background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color1)), to(var(--color2))); background-image: linear-gradient(var(--color1), var(--color2)); background-repeat: no-repeat; background-size: 0 var(--bg-height); -webkit-animation: highlight 800ms 1 ease-out; animation: highlight 800ms 1 ease-out; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-play-state: paused; animation-play-state: paused; }
             .container .main .ability > p { font-size:0.938em; margin-bottom:130px; line-height:1.6; }
             .container .main .ability ul li p { line-height:1.6; }
             .container .main .ability .hidden { display:none; }
 
-            .container .main .ability h2 { font-size:1.25em; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:600; color:#0027c9; }
+            .container .main .ability h3 { font-size:1.25em; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:600; color:#0027c9; }
 
             .container .main .ability ul li:nth-child(2) { margin:107px 0; text-align:right; }
             .container .main .ability ul li img { display:block; margin:50px auto 40px; }
         
+        /* contact */
         .container .main .contact { padding:0 5px; }
-            .container .main .contact h1 .slide { color:#fff; --color1:#0027c9; --color2:#0027c9; --bg-height:100%; background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color1)), to(var(--color2))); background-image: linear-gradient(var(--color1), var(--color2)); background-repeat: no-repeat; background-size: 0 var(--bg-height); -webkit-animation: highlight 800ms 1 ease-out; animation: highlight 800ms 1 ease-out; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-play-state: paused; animation-play-state: paused; }
+            .container .main .contact h2 .slide { color:#fff; --color1:#0027c9; --color2:#0027c9; --bg-height:100%; background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color1)), to(var(--color2))); background-image: linear-gradient(var(--color1), var(--color2)); background-repeat: no-repeat; background-size: 0 var(--bg-height); -webkit-animation: highlight 800ms 1 ease-out; animation: highlight 800ms 1 ease-out; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-play-state: paused; animation-play-state: paused; }
             .container .main .contact p { margin:45px 0 75px; line-height:1.6; }
             .container .main .contact .hidden1, .container .main .contact .hidden2 { display:none; }
 
@@ -309,7 +312,7 @@ ul, li { list-style:none; margin:0; padding:0; }
 
     /** PC main contents **/
     .container .main { padding:0 190px 300px; }
-        .container .main h1, .container .main .intro .title div { font-size:4.948vw; letter-spacing:-10px; }
+        .container .main h2, .container .main .intro .title div { font-size:4.948vw; letter-spacing:-10px; }
 
         /* intro */
         .container .main .intro { padding-top:60px; }
@@ -319,7 +322,7 @@ ul, li { list-style:none; margin:0; padding:0; }
             .container .main .intro .title .profile img:last-of-type { top:400px; right:250px; }
 
             .container .main .intro .title #container-scroller { width:17.5vw; height:14vh; overflow:hidden; }
-                .container .main .intro .title #container-scroller .container-scroller_item { width:100%; height:100%; -webkit-animation:scroll-PC 9s cubic-bezier(0.645, 0.045, 0.355, 1) infinite; animation:scroll-PC 9s cubic-bezier(0.645, 0.045, 0.355, 1) infinite; }
+                .container .main .intro .title #container-scroller .container-scroller_item { font-size:4.948vw; width:100%; height:100%; -webkit-animation:scroll-PC 9s cubic-bezier(0.645, 0.045, 0.355, 1) infinite; animation:scroll-PC 9s cubic-bezier(0.645, 0.045, 0.355, 1) infinite; }
 
             .container .main .intro .description p:first-child { display:none; }
             .container .main .intro .description .hidden1 { display:block; margin:80px 0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:600; font-size:1.302vw; }
@@ -329,29 +332,29 @@ ul, li { list-style:none; margin:0; padding:0; }
 
         /* ability */
         .container .main .ability { margin:280px 0 300px; }
-            .container .main .ability h1 span { padding:0 10px 0 5px; }
+            .container .main .ability h2 span { padding:0 10px 0 5px; }
             .container .main .ability > p { margin-bottom:230px; }
             .container .main .ability > p:first-of-type { display:none; }
             .container .main .ability .hidden { display:block; font-size:1.375em; margin-top:60px; line-height:1.6; }
 
-            .container .main .ability ul li h2 { font-size:1.875em; font-weight:600; }
+            .container .main .ability ul li h3 { font-size:1.875em; font-weight:600; }
             .container .main .ability ul li p:first-of-type { display:none; }
             .container .main .ability ul li img { display:none; }
 
             .container .main .ability ul li:nth-child(1) { width:100%; height:155px; background:url(../images/toolsPC.png) no-repeat 0 100% / contain; position:relative; margin-bottom:150px; }
-                .container .main .ability ul li:nth-child(1) h2 { position:absolute; top:0; right:118px; }
+                .container .main .ability ul li:nth-child(1) h3 { position:absolute; top:0; right:118px; }
                 .container .main .ability ul li:nth-child(1) .hidden { position:absolute; bottom:-40px; right:-40px; }
 
             .container .main .ability ul li:nth-child(2) { width:100%; height:155px; background:url(../images/programsPC.png) no-repeat 100% 300% / contain; margin:180px 0; position:relative; }
-                .container .main .ability ul li:nth-child(2) h2 { position:absolute; top:0; left:44px; }
+                .container .main .ability ul li:nth-child(2) h3 { position:absolute; top:0; left:44px; }
                 .container .main .ability ul li:nth-child(2) .hidden { position:absolute; bottom:-40px; left:-45px; }
             
             .container .main .ability ul li:nth-child(3) { width:100%; height:206px; background:url(../images/coworkPC.png) no-repeat 9% 100% / 210px; position:relative; margin-top:150px; }
-                .container .main .ability ul li:nth-child(3) h2 { position:absolute; top:0; right:20px; }
+                .container .main .ability ul li:nth-child(3) h3 { position:absolute; top:0; right:20px; }
                 .container .main .ability ul li:nth-child(3) .hidden { position:absolute; bottom:-40px; right:-52px; }
 
         /* contact */
-        .container .main .contact h1 span { padding:0 15px 0 5px; }
+        .container .main .contact h2 span { padding:0 15px 0 5px; }
         .container .main .contact p, .container .main .contact ul { display:none; }
             .container .main .contact li:first-child { background:none; }
             .container .main .contact li:nth-child(2) { background:none; }
