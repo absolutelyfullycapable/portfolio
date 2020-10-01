@@ -1,9 +1,9 @@
 $(function() {
     // 모바일, 태블릿 햄버거 메뉴 버튼 클릭 애니메이션
     $('.menu-wrapper').on('click', function() {
+        $(this).toggleClass('visible');
         $('.hamburger-menu').toggleClass('animate');
-        $('.menu').toggleClass('visible');
-        $('.menu-wrapper').toggleClass('visible');
+        $('.menu').toggleClass('active');
         
         // 모바일 메뉴 버튼 클릭 시 헤더 내용 숨기기
         $('.container header').toggleClass('none');

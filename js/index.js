@@ -4,10 +4,10 @@ $(function() {
         e.preventDefault();
     }); 
 
-    // 모바일, 태블릿 햄버거 메뉴 버튼 클릭 애니메이션
+    // 모바일, 태블릿 햄버거 메뉴 버튼 클릭 시 내비게이션 보이는 애니메이션
     $('.menu-wrapper').on('click', function() {
+        $(this).toggleClass('visible');
         $('.hamburger-menu').toggleClass('animate');
-        $('.menu').toggleClass('visible');
-        $('.menu-wrapper').toggleClass('visible');
+        $('.menu').toggleClass('active');
     });
 });
