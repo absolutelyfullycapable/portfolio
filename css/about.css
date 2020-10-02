@@ -66,8 +66,8 @@ ul, li { list-style:none; margin:0; padding:0; }
         .container .main .ability { margin:180px 0; }
             .container .main .ability h2, .container .main .ability > p { text-align:right; padding:0 5px; }
             .container .main .ability h2 .slide { color:#fff; --color1:#0027c9; --color2:#0027c9; --bg-height:100%; background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color1)), to(var(--color2))); background-image: linear-gradient(var(--color1), var(--color2)); background-repeat: no-repeat; background-size: 0 var(--bg-height); -webkit-animation: highlight 800ms 1 ease-out; animation: highlight 800ms 1 ease-out; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-play-state: paused; animation-play-state: paused; }
-            .container .main .ability > p { font-size:0.938em; margin-bottom:130px; line-height:1.6; }
-            .container .main .ability ul li p { line-height:1.6; }
+            .container .main .ability > p { font-size:1.063em; margin-bottom:130px; line-height:1.6; }
+            .container .main .ability ul li p { line-height:1.6; font-size:1.05em; }
             .container .main .ability .hidden { display:none; }
 
             .container .main .ability h3 { font-size:1.25em; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:600; color:#0027c9; }
@@ -78,11 +78,11 @@ ul, li { list-style:none; margin:0; padding:0; }
         /* contact */
         .container .main .contact { padding:0 5px; }
             .container .main .contact h2 .slide { color:#fff; --color1:#0027c9; --color2:#0027c9; --bg-height:100%; background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color1)), to(var(--color2))); background-image: linear-gradient(var(--color1), var(--color2)); background-repeat: no-repeat; background-size: 0 var(--bg-height); -webkit-animation: highlight 800ms 1 ease-out; animation: highlight 800ms 1 ease-out; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-play-state: paused; animation-play-state: paused; }
-            .container .main .contact p { margin:45px 0 75px; line-height:1.6; }
+            .container .main .contact p { font-size:1.063em; margin:45px 0 75px; line-height:1.6; }
             .container .main .contact .hidden1, .container .main .contact .hidden2 { display:none; }
 
             .container .main .contact ul li, .container .main .contact ul li a { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:300; }
-            .container .main .contact ul li { height:35px; display:flex; align-items:center; text-indent:45px; }
+            .container .main .contact ul li { height:35px; display:flex; align-items:center; text-indent:45px; font-size:1.063em; }
                 .container .main .contact li:first-child { background:url(../images/tel.png) no-repeat 0 50%; background-size:contain; }
                 .container .main .contact li:nth-child(2) { background:url(../images/mail.png) no-repeat 0 50%; background-size:contain; margin:27px 0; }
                 .container .main .contact li:last-child { background:url(../images/blog.png) no-repeat 0 50%; background-size:contain; }
