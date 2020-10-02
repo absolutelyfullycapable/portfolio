@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+html, body { height:100%; }
+body { margin:0; padding:0; font-family:'Noto Sans KR',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:300; letter-spacing:-1px; }
+ul, li { list-style:none; margin:0; padding:0; }
+
+/*** Mobile ***/
+.container { width:100%; height:100%; display:flex; flex-direction:column; justify-content:space-between; position:relative; }
+
+    /** Mobile header **/
+    .container header { position:fixed; z-index:9999; width:100%; height:81px; padding:27px 4%; box-sizing:border-box; display:flex; justify-content:space-between; align-items:center; background:url(../images/line2.png) no-repeat 55% 50%; background-color:#fff; background-size:52% 3px; }
+        .container header.none { background:none; }
+
+        /* logo */
+        .container header h1 { width:60px; height:30px; margin:0; background:url(../images/logoM2.png) no-repeat 50% 50%; background-size:cover; }
+        .container header h1.none { background:none; }
+        .container header h1 a { display:block; width:100%; height:100%; }
+        
+        /* mobile navigation icon */
+        .container header .menu-wrapper { width:39px; height: 39px; background-color:#0027c9; border-radius:50%; cursor: pointer; display:flex; justify-content:center; align-items:center; }
+        .container header .menu-wrapper.visible { z-index:9999; }
+
+        .container header .menu-wrapper .hamburger-menu, .container header .menu-wrapper .hamburger-menu:after, .container header .menu-wrapper .hamburger-menu:before { width:22px; height:1px; border-radius:50px; margin:auto; }
+
+        .container header .menu-wrapper .hamburger-menu { position:relative; background:white; transition: all 0ms 300ms; }
+        .container header .menu-wrapper .hamburger-menu.animate { background: rgba(255, 255, 255, 0); }
+        .container header .menu-wrapper .hamburger-menu:before { content: ""; position: absolute; left: 0; bottom:6px; background: white; transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+        .container header .menu-wrapper .hamburger-menu:after { content: ""; position: absolute; left: 0; top:6px; background: white; transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+        .container header .menu-wrapper .hamburger-menu.animate:after { background-color:white; top: 0; transform: rotate(45deg); transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+        .container header .menu-wrapper .hamburger-menu.animate:before { background-color:white; bottom: 0; transform: rotate(-45deg); transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+        /* PC navigation */
+		.container header .PC_nav { display:none; }
+
+    /** mobile navigation **/
+    .container .menu { width:100%; height:100%; background-color:rgba(255, 255, 255, 0.95); position:fixed; top:0; left:100%; z-index:999; display:flex; justify-content:center; align-items:center; transition:0.7s; }
+    .container .menu.active { left:0; }
+        .container .menu ul { width:100%; }
+            .container .menu ul li { width:100%; margin-bottom:20px;  }
+                .container .menu ul li a { display:block; width:280px; margin:0 auto; font-family:'RhodeMediumExtended',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; text-align:left; text-indent:35px; text-decoration:none; color:#0027c9; text-transform:capitalize; font-size:1.875em; background:url(../images/menuIcon.png) no-repeat; background-size:16px; }
+
+    /** Mobile main contents **/
+    .container .main { border:1px solid #0027c9; border-top:none; margin:78px 4% 0; padding:0 4% 65px; }
+
+        /* main title */
+        .container .main > h2 { font-weight:300; font-size:2.5em; letter-spacing:-3px; line-height:1.4; margin-bottom:20px; }
+        .container .main > h2 .slide { color:#fff; --color1:#0027c9; --color2:#0027c9; --bg-height:100%; background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color1)), to(var(--color2))); background-image:linear-gradient(var(--color1), var(--color2)); background-repeat:no-repeat; background-size:0 var(--bg-height); -webkit-animation:highlight 800ms 1 ease-out; animation:highlight 800ms 1 ease-out; -webkit-animation-fill-mode:forwards; animation-fill-mode:forwards; -webkit-animation-play-state:paused; animation-play-state:paused; }
+        .container .main > .hidden { display:none; }
+
+        .container .main > p { font-size:1.063em; line-height:1.6; margin:0; }
+        .container .main > p span { font-weight:400; color:#0027c9; border:1px solid #0027c9; padding:0 3px; transition:0.2s; cursor:pointer; }
+        .container .main > p span:hover, .container .main > p span:active { background-color:#0027c9; color:#fff; }
+
+        /* first project */
+        .container .main .first { margin:100px 0; }
+            .container .main .first ul { margin-bottom:20px; }
+                .container .main .first ul li:first-child { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:600; color:#0027c9; text-align:right; font-size:1.4em; }
+                .container .main .first ul li:last-child { text-align:right; }
+                    .container .main .first ul li:last-child a { font-family:'DrukWideCyWebBold',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; text-decoration:none; -webkit-text-stroke:1px #0027c9; color:#fff; font-size:1.7em; text-transform:capitalize; transition:0.2s; }
+                    .container .main .first ul li:last-child a:hover, .container .main .first ul li:last-child a:active { color:#0027c9; -webkit-text-stroke:0px; }
+
+            .container .main .first > a img { width:95%; float:right; }
+
+            .container .main .first > p { float:right; margin-top:20px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; color:#0027c9; text-align:right; font-weight:600; font-size:0.82em; }
+
+    /** Mobile footer **/
+    .container footer { width:100%; padding:39px 0; }
+        .container footer p { margin:0; text-align:center; font-family:'RhodeMediumExtended',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:0.563em; color:#0027c9; }
+        .container footer .hidden { display:none; }
+
+        @-webkit-keyframes highlight {
+            to {
+                background-size: 100% var(--bg-height);
+            }
+        }
+
+        @keyframes highlight {
+            to {
+                background-size: 100% var(--bg-height);
+            }
+        }
+
+
+
+ /*** Tablet ***/    
+@media (min-width:767px) {
+    /** Tablet header **/
+    .container header { padding:27px 5%; background:url(../images/line2.png) no-repeat 60% 50%; background-color:#fff; background-size:55% 3px; }
+
+        /* logo */
+        .container header h1 { width:120px; height:17px; background:url(../images/logoPC2.png) no-repeat 50% 50%; background-size:cover; }
+        .container header h1 a { display:block; width:100%; height:100%; }
+
+
+    /** main contents **/
+    /* main title */
+    .container .main > .hidden { display:block; }
+    .container .main > h2 { font-size:4.948vw; letter-spacing:-10px; }
+        .container .main > h2:first-of-type { display:none; }
+    .container .main > p { font-size:1.146vw; line-height:1.6; }
+        .container .main > p:first-of-type { display:none; }
+        .container .main > p:last-of-type { margin:60px 0 230px; }
+
+    /* first project */
+    .container .main .first ul li:first-child { font-size:3em; font-weight:500; }
+        .container .main .first ul li:last-child a { -webkit-text-stroke:1.5px #0027c9; color:#fff; font-size:4.5em; }
+    .container .main .first > p { font-size:1.146vw; font-weight:500; margin-top:50px; }
+
+
+    /** Tablet footer **/
+    .container footer p:first-of-type { display:none; }
+    .container footer .hidden { display:block; }
+}
+
+
+@media (min-width:1440px) {
+    /** PC header **/
+    .container header { padding:27px 4%; background:url(../images/line2.png) no-repeat 40% 50%; background-color:#fff; background-size:52% 3px; }
+
+        /* logo */
+        .container header h1 { width:160px; height:23px; background:url(../images/logoPC2.png) no-repeat 50% 50%; }
+        .container header h1 a { display:block; width:100%; height:100%; }
+
+        /* mobile navigation icon */
+        .container header .menu-wrapper { display:none; }
+
+        /* PC navigation */
+		.container header .PC_nav { width:22%; display:flex; justify-content:space-between; }
+            .container header .PC_nav li { width:45%; }
+                .container header .PC_nav li a { display:block; font-family:'RhodeMediumExtended',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; color:#0027c9; text-decoration:none; text-transform:capitalize; text-align:center; font-size:1.250em; padding:5px; box-shadow:inset 0 0 0 0 #0027c9; transition: all 0.6s ease-in-out 0s; }
+                .container header li:hover a { box-shadow: inset 0 -300px 0 0 #0027c9; color: #fff; }
+
+
+    /** main contents **/
+    .container .main { padding:0 190px 300px; }
+
+        /* first project */
+        .container .main .first ul { float:right; display:flex; justify-content:space-between; align-items:center; width:85%; margin-bottom:55px; }
+            .container .main .first ul li:last-child a { -webkit-text-stroke:1.5px #0027c9; color:#fff; }
+
+            .container .main .first > a img { width:85%; }
+
+            .container .main .first > p { clear:both; }
+
+
+    /** PC footer**/
+    .container footer { padding:51px 0; }
+        .container footer .hidden { font-size:0.938em; }
+}
+
+@media (min-width:1900px) {
+    .container .main .first ul { background:url(../images/line2.png) no-repeat 11% 50%; background-size:30%; }
+}
