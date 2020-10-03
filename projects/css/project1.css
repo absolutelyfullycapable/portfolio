@@ -123,14 +123,20 @@ ul, li { list-style:none; margin:0; padding:0; }
                     .container .fin a:last-of-type:hover, .container .fin a:last-of-type:active { background-color:#a0a0a0; color:#fff; }
                 
                 .container .fin .bg { margin:100px auto 0; width:300px; height:200px; background:url(../images/pj1_fin.png) no-repeat 50% 50%; background-size:200px; position:relative; }
-                    .container .fin .bg p { width:95px; height:35px; text-align:center; color:#fff; line-height:27px; animation:floating 3s cubic-bezier(0.250,0.460,0.450,0.940) infinite; }
-                        .container .fin .bg p:first-of-type { background:url(../images/pj1_bubble_r.svg) no-repeat; background-size:cover; position:absolute; top:0; right:0; }
-                        .container .fin .bg p:last-of-type { background:url(../images/pj1_bubble_l.svg) no-repeat; background-size:cover; position:absolute; bottom:0; left:15px; }
+                    .container .fin .bg p { width:95px; height:35px; text-align:center; color:#fff; line-height:27px; }
+                        .container .fin .bg p:first-of-type { background:url(../images/pj1_bubble_r.svg) no-repeat; background-size:cover; position:absolute; top:0; right:0; animation:floating1 3s cubic-bezier(0.250,0.460,0.450,0.940) infinite; }
+                        .container .fin .bg p:last-of-type { background:url(../images/pj1_bubble_l.svg) no-repeat; background-size:cover; position:absolute; bottom:0; left:15px; animation:floating2 2.5s cubic-bezier(0.250,0.460,0.450,0.940) infinite; }
 
-                @keyframes floating {
+                @keyframes floating1 {
                     from { transform: translate(0,  0px); }
                     65%  { transform: translate(0, 15px); }
                     to   { transform: translate(0,  0px); }    
+                }
+
+                @keyframes floating2 {
+                    from { transform: translate(0, 0px); }
+                    50% { transform: translate(0, 20px); }
+                    to { transform: translate(0, 0px); }  
                 }
 
     /** Mobile footer **/
