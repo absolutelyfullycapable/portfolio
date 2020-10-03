@@ -9,3 +9,5 @@
 @font-face { font-family:'AntroVectra'; src: url(../fonts/AntroVectra.woff2) format('woff2'), url(../fonts/AntroVectra.woff) format('woff'); font-style:normal; font-weight:normal; }
 
 @font-face { font-family:'TamoroScriptPersonalUseOnly'; src: url(../fonts/TamoroScriptPersonalUseOnly.woff2) format('woff2'), url(../fonts/TamoroScriptPersonalUseOnly.woff) format('woff'); font-style:normal; font-weight:normal; }
+
+@font-face { font-family:'ZapfHumanist'; src: url(../fonts/ZapfHumanist601BT-Roman.woff2) format('woff2'), url(../fonts/ZapfHumanist601BT-Roman.woff) format('woff'); font-style:normal; font-weight:normal; }
