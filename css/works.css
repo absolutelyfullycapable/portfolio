@@ -95,16 +95,16 @@ ul, li { list-style:none; margin:0; padding:0; }
     /** main contents **/
     /* main title */
     .container .main > .hidden { display:block; }
-    .container .main > h2 { font-size:4.948vw; letter-spacing:-10px; }
+    .container .main > h2 { font-size:4.948vw; letter-spacing:-5px;}
         .container .main > h2:first-of-type { display:none; }
     .container .main > p { font-size:1.146vw; line-height:1.6; }
         .container .main > p:first-of-type { display:none; }
-        .container .main > p:last-of-type { margin:60px 0 230px; }
+        .container .main > p:last-of-type { margin:30px 0 100px; }
 
     /* first project */
     .container .main .first ul li:first-child { font-size:3em; font-weight:500; }
         .container .main .first ul li:last-child a { -webkit-text-stroke:1.5px #0027c9; color:#fff; font-size:4.5em; }
-    .container .main .first > p { font-size:1.146vw; font-weight:500; margin-top:50px; }
+    .container .main .first > p { font-size:1.146vw; font-weight:600; }
 
 
     /** Tablet footer **/
