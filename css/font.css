@@ -5,3 +5,7 @@
 @font-face { font-family:'RhodeMediumExtended'; src: url(../fonts/Rhode-MediumExtended.woff2) format('woff2'), url(../fonts/Rhode-MediumExtended.woff) format('woff'); font-style:normal; font-weight:normal; }
 
 @font-face { font-family:'DrukWideCyWebBold'; src: url(../fonts/DrukWideCyWeb-Bold.woff2) format('woff2'), url(../fonts/DrukWideCyWeb-Bold.woff) format('woff'); font-style:normal; font-weight:normal; }
+
+@font-face { font-family:'AntroVectra'; src: url(../fonts/AntroVectra.woff2) format('woff2'), url(../fonts/AntroVectra.woff) format('woff'); font-style:normal; font-weight:normal; }
+
+@font-face { font-family:'TamoroScriptPersonalUseOnly'; src: url(../fonts/TamoroScriptPersonalUseOnly.woff2) format('woff2'), url(../fonts/TamoroScriptPersonalUseOnly.woff) format('woff'); font-style:normal; font-weight:normal; }
