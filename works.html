@@ -34,11 +34,13 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
         <link rel="stylesheet" href="common/normalize.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="css/works.css">
 
         <!-- JS/jQuery 연결 -->
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery-ui-dist@1.12.1/jquery-ui.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="js/works.js"></script>
     </head>
 
@@ -73,7 +75,7 @@
                 <p class="hidden">해당 작업은 <span>퍼블리싱 가이드</span>를 준수하여 제작되었습니다.</p>
 
                 <!-- first project -->
-                <div class="first">
+                <div class="first" data-aos="fade-up" data-aos-duration="1200">
                     <ul>
                         <li>01</li>
                         <li><a href="projects/project1.html">the ordinary</a></li>
@@ -85,7 +87,7 @@
                 </div>
 
                 <!-- second project -->
-                <div class="second">
+                <div class="second" data-aos="fade-up" data-aos-duration="1200">
                     <ul>
                         <li>02</li>
                         <li><a href="#">생활불편신고</a></li>
@@ -97,7 +99,7 @@
                 </div>
 
                 <!-- third project -->
-                <div class="third">
+                <div class="third" data-aos="fade-up" data-aos-duration="1200">
                     <ul>
                         <li>03</li>
                         <li><a href="#">Lorem</a></li>
@@ -115,5 +117,9 @@
                 <p class="hidden">copyright &#169; 2020 Ji Hye portfolio all rights reserved</p>
             </footer>
         </div> <!-- container -->
+
+        <script>
+            AOS.init();
+          </script>
     </body>
 </html>
