@@ -51,17 +51,33 @@ ul, li { list-style:none; margin:0; padding:0; }
         .container .main > p span { font-weight:400; color:#0027c9; border:1px solid #0027c9; padding:0 3px; transition:0.2s; cursor:pointer; }
         .container .main > p span:hover, .container .main > p span:active { background-color:#0027c9; color:#fff; }
 
-        /* first project */
-        .container .main .first { margin:100px 0; }
-            .container .main .first ul { margin-bottom:20px; }
-                .container .main .first ul li:first-child { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:600; color:#0027c9; text-align:right; font-size:1.4em; }
-                .container .main .first ul li:last-child { text-align:right; }
-                    .container .main .first ul li:last-child a { font-family:'DrukWideCyWebBold',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; text-decoration:none; -webkit-text-stroke:1px #0027c9; color:#fff; font-size:1.7em; text-transform:capitalize; transition:0.2s; }
-                    .container .main .first ul li:last-child a:hover, .container .main .first ul li:last-child a:active { color:#0027c9; -webkit-text-stroke:0px; }
+        /* projects */
+        .container .main > div ul { margin-bottom:20px; }
+            .container .main > div ul li:first-child { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:600; color:#0027c9; font-size:1.4em; }
+            .container .main > div ul li:last-child a { text-decoration:none; -webkit-text-stroke:1px #0027c9; color:#fff; transition:0.2s; }
+            .container .main > div ul li:last-child a:hover, .container .main > div ul li:last-child a:active { color:#0027c9; -webkit-text-stroke:0px; }
+
+            .container .main > div > p { margin-top:20px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; color:#0027c9; font-weight:600; font-size:0.82em; }
+
+        /* first, third project */
+        .container .main .first, .container .main .third { margin:100px 0; }
+        .container .main .first ul li:first-child, .container .main .third ul li:first-child { text-align:right; }
+        .container .main .first ul li:last-child, .container .main .third ul li:last-child { text-align:right; }
+            .container .main .first ul li:last-child a, .container .main .third ul li:last-child a { font-family:'DrukWideCyWebBold',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:1.7em; text-transform:capitalize; }
 
             .container .main .first > a img { width:95%; float:right; }
 
-            .container .main .first > p { float:right; margin-top:20px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; color:#0027c9; text-align:right; font-weight:600; font-size:0.82em; }
+            .container .main .first > p, .container .main .third > p { float:right; text-align:right; }
+
+        /* second project */
+        .container .main .second { clear:both; padding-top:100px; }
+            .container .main .second ul li:last-child a { font-family:'Noto Sans KR',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:1.7em; font-weight:900; }
+
+        .container .main .second > a img { width:85%; }
+
+        /* third project */
+        .container .main .third > a img { width:70%; float:right; }
+
 
     /** Mobile footer **/
     .container footer { width:100%; padding:39px 0; }
@@ -101,10 +117,11 @@ ul, li { list-style:none; margin:0; padding:0; }
         .container .main > p:first-of-type { display:none; }
         .container .main > p:last-of-type { margin:30px 0 100px; }
 
-    /* first project */
-    .container .main .first ul li:first-child { font-size:3em; font-weight:500; }
-        .container .main .first ul li:last-child a { -webkit-text-stroke:1.5px #0027c9; color:#fff; font-size:4.5em; }
-    .container .main .first > p { font-size:1.146vw; font-weight:600; }
+    /* projects */
+    .container .main > div ul li:first-child { font-size:3em; font-weight:500; }
+        .container .main .first ul li:last-child a, .container .main .second ul li:last-child a, .container .main .third ul li:last-child a { -webkit-text-stroke:1.5px #0027c9; color:#fff; font-size:4.5em; }
+    .container .main > div > p { font-size:1.146vw; font-weight:600; }
+        .container .main .third > p { clear:both; }
 
 
     /** Tablet footer **/
@@ -134,14 +151,24 @@ ul, li { list-style:none; margin:0; padding:0; }
     /** main contents **/
     .container .main { padding:0 190px 300px; }
 
+        /* projects */
+        .container .main > div ul { display:flex; justify-content:space-between; align-items:center; margin-bottom:55px; }
+
         /* first project */
-        .container .main .first { margin-top:220px; }
-            .container .main .first ul { float:right; display:flex; justify-content:space-between; align-items:center; width:85%; margin-bottom:55px; }
-                .container .main .first ul li:last-child a { -webkit-text-stroke:1.5px #0027c9; color:#fff; }
+        .container .main .first, .container .main .third { margin-top:220px; }
+            .container .main .first ul { float:right; width:85%; }
+                .container .main .first ul li:last-child a, .container .main .third ul li:last-child a { -webkit-text-stroke:1.5px #0027c9; color:#fff; }
 
                 .container .main .first > a img { width:85%; }
 
                 .container .main .first > p { clear:both; }
+
+        /* second project */
+        .container .main .second { padding-top:250px; }
+            .container .main .second ul, .container .main .second > a img { width:50%; }
+
+        /* third project */
+        .container .main .third ul, .container .main .third > a img { width:52%; float:right; }
 
 
     /** PC footer**/
@@ -151,4 +178,6 @@ ul, li { list-style:none; margin:0; padding:0; }
 
 @media (min-width:1900px) {
     .container .main .first ul { background:url(../images/line2.png) no-repeat 11% 50%; background-size:30%; }
+    .container .main .second ul { background:url(../images/line2.png) no-repeat 18% 50%; background-size:25%; }
+    .container .main .third ul { background:url(../images/line2.png) no-repeat 20% 50%; background-size:30%; }
 }
