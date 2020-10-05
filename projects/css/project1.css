@@ -33,7 +33,7 @@ ul, li { list-style:none; margin:0; padding:0; }
 		.container header .PC_nav { display:none; }
 
     /** mobile navigation **/
-    .container .menu { width:100%; height:100%; background-color:rgba(255, 255, 255, 0.95); position:fixed; top:0; left:100%; z-index:999; display:flex; justify-content:center; align-items:center; transition:0.7s; }
+    .container .menu { width:100%; height:100%; background-color:rgb(255, 255, 255); position:fixed; top:0; left:100%; z-index:999; display:flex; justify-content:center; align-items:center; transition:0.7s; }
     .container .menu.active { left:0; }
         .container .menu ul { width:100%; }
             .container .menu ul li { width:100%; margin-bottom:20px;  }
@@ -229,15 +229,25 @@ ul, li { list-style:none; margin:0; padding:0; }
 
         /* intro */
         .container .main .intro p:nth-of-type(2) { display:none; }
-        .container .main .intro p:last-of-type { display:block; margin-top:60px; font-size:1.2em; }
+        .container .main .intro p:last-of-type { display:block; margin-top:60px; font-size:1.25em; }
 
         /* contents */
         .container .contents { margin:80px auto 0; width:75%; font-size:1.1em; }
             .container .contents > div { margin-bottom:150px; }
-                .container .contents > div > div:first-of-type p { font-weight:600; }
-                .container .contents > div > div:first-of-type h3 { font-weight:500; }
+                .container .contents > div > div:first-of-type p { font-size:1.35em; font-weight:600; }
+                .container .contents > div > div:first-of-type h3 { font-size:1.35em; font-weight:500; }
 
-                .container .contents .period > p { font-size:1.1em; }
+        /* goal, publishing */
+        .container .contents .goal ul li, .container .contents .publishing ul li { font-size:1.15em; line-height:1.6; }
+
+        /* period, role */
+        .container .contents .period > p { font-size:1.2em; }
+
+        /* role */
+        .container .contents .role > p { font-size:1.15em; }
+
+        /* consept */
+        .container .contents .concept .hidden span { font-size:1.15em; }
 
         /* style */
         /* color */
@@ -246,14 +256,16 @@ ul, li { list-style:none; margin:0; padding:0; }
             .container .contents .style .description #color .color2, .container .contents .style .description #color .color3 { margin-left:30px; }
             
         /* font */
-        .container .contents .style .description > p span { display:inline; }
+        .container .contents .style .description > p { font-size:1.15em; line-height:1.4; }
+        .container .contents .style .description > p span { display:inline; font-size:0.9em; }
         .container .contents .style .description > ul { margin-top:40px; }
             .container .contents .style .description > ul li:nth-child(4) p:last-of-type { font-size:1.4em; }
 
         /* fin */
-        .container .fin .hidden { display:block; margin:0 0 15px 0; font-size:1.1em; }
-            .container .fin .hidden span { font-weight:400; }
-        .container .fin a:first-of-type { margin-top:80px; }
+        .container .fin { margin-top:180px; }
+            .container .fin .hidden { display:block; margin:0 0 15px 0; font-size:1.2em; }
+                .container .fin .hidden span { font-weight:400; }
+            .container .fin a:first-of-type { margin-top:80px; }
 
             /* bg */
             .container .fin .bg { margin:100px auto 40px; width:430px; height:300px; background-size:280px; }
