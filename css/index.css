@@ -244,8 +244,8 @@ ul { margin:0; padding:0; list-style:none; }
 		/* PC navigation */
 		.container header .PC_nav { width:22%; display:flex; justify-content:space-between; }
 			.container header .PC_nav li { width:45%; }
-				.container header .PC_nav li a { display:block; font-family:'RhodeMediumExtended',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; color:#0027c9; text-decoration:none; text-transform:capitalize; text-align:center; font-size:1.250em; padding:5px; transition:0.3s; }
-                .container header li:hover a { background-color:#0027c9; color:#fff; }
+				.container header .PC_nav li a { display:block; font-family:'RhodeMediumExtended',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; color:#fff; text-decoration:none; text-transform:capitalize; text-align:center; font-size:1.250em; padding:5px; transition:0.3s; }
+                .container header li:hover a { background-color:#fff; color:#0027c9; }
 
 
 		/* mobile navigation */
