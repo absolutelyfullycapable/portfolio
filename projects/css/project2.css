@@ -119,11 +119,8 @@ ul, li { list-style:none; margin:0; padding:0; }
         /** Mobile main contents **/
         .container .main { padding:0; }
 
-            /* projects menu */
-            .container .main .projects { display:none; }
-            
-            /* notice */
-            .container .main .notice { display:none; }
+            /* projects menu, notice */
+            .container .main .projects, .container .main .notice { display:none; }
 
             /* extra */
             .container .main .title, .container .main .intro, .container .main .goal, .container .main .target, .container .main .desk, .container .main .ux_flow, .container .main > a { display:block; }
