@@ -223,30 +223,36 @@ ul, li { list-style:none; margin:0; padding:0; }
 
             /* fin */
             .container .main .fin { padding:3% 0; background-color:#f9fafb; text-align:center; }
-                .container .main .fin > p { font-size:1.1em; }
 
-                .container .main .fin a { display:block; width:260px; height:50px; line-height:50px; margin:0 auto; text-decoration:none; font-size:1.1em; font-weight:500; transition:0.2s; }
-                .container .main .fin a:first-of-type { border:1px solid #00275d; color:#00275d; margin-top:25px; }
-                .container .main .fin a:first-of-type:hover, .container .main .fin a:first-of-type:active { background-color:#00275d; color:#fff; }
-                .container .main .fin a:last-of-type { border:1px solid #a0a0a0; color:#a0a0a0; margin:20px auto 3%; }
-                .container .main .fin a:last-of-type:hover, .container .main .fin a:last-of-type:active { background-color:#a0a0a0; color:#fff; }
+                /* review */
+                .container .main .review { margin:3% 0 10%; }
+                    .container .main .fin .review h4 { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:800; font-size:1.8em; margin:0; margin-bottom:20px; color:#00275d; }
+                    .container .main .fin .review p { font-size:1.1em; line-height:1.6; }
 
-                .container .main .fin .bg { margin:0 auto; width:400px; height:300px; background:url(../images/pj2_fin.png) no-repeat 50% 50%; background-size:180px; position:relative; }
-                    .container .main .fin .bg p { width:110px; height:40px; line-height:32px; color:#fff; position:absolute; background-size:cover; }
-                        .container .main .fin .bg p:first-of-type { top:0; right:20px; background:url(../images/pj2_bubble_r.svg) no-repeat; animation:floating1 3s cubic-bezier(0.250,0.460,0.450,0.940) infinite; }
-                        .container .main .fin .bg p:last-of-type { bottom:40px; left:0; background:url(../images/pj2_bubble_l.svg) no-repeat; animation:floating2 2.5s cubic-bezier(0.250,0.460,0.450,0.940) infinite; }
+                    .container .main .fin > p { font-size:1.1em; }
 
-                @keyframes floating1 {
-                    from { transform: translate(0,  0px); }
-                    65%  { transform: translate(0, 15px); }
-                    to   { transform: translate(0,  0px); }    
-                }
-        
-                @keyframes floating2 {
-                    from { transform: translate(0, 0px); }
-                    50% { transform: translate(0, 20px); }
-                    to { transform: translate(0, 0px); }  
-                }
+                    .container .main .fin a { display:block; width:260px; height:50px; line-height:50px; margin:0 auto; text-decoration:none; font-size:1.1em; font-weight:500; transition:0.2s; }
+                    .container .main .fin a:first-of-type { border:1px solid #00275d; color:#00275d; margin-top:25px; }
+                    .container .main .fin a:first-of-type:hover, .container .main .fin a:first-of-type:active { background-color:#00275d; color:#fff; }
+                    .container .main .fin a:last-of-type { border:1px solid #a0a0a0; color:#a0a0a0; margin:20px auto 3%; }
+                    .container .main .fin a:last-of-type:hover, .container .main .fin a:last-of-type:active { background-color:#a0a0a0; color:#fff; }
+
+                    .container .main .fin .bg { margin:0 auto; width:400px; height:300px; background:url(../images/pj2_fin.png) no-repeat 50% 50%; background-size:180px; position:relative; }
+                        .container .main .fin .bg p { width:110px; height:40px; line-height:32px; color:#fff; position:absolute; background-size:cover; }
+                            .container .main .fin .bg p:first-of-type { top:0; right:20px; background:url(../images/pj2_bubble_r.svg) no-repeat; animation:floating1 3s cubic-bezier(0.250,0.460,0.450,0.940) infinite; }
+                            .container .main .fin .bg p:last-of-type { bottom:40px; left:0; background:url(../images/pj2_bubble_l.svg) no-repeat; animation:floating2 2.5s cubic-bezier(0.250,0.460,0.450,0.940) infinite; }
+
+                    @keyframes floating1 {
+                        from { transform: translate(0,  0px); }
+                        65%  { transform: translate(0, 15px); }
+                        to   { transform: translate(0,  0px); }    
+                    }
+            
+                    @keyframes floating2 {
+                        from { transform: translate(0, 0px); }
+                        50% { transform: translate(0, 20px); }
+                        to { transform: translate(0, 0px); }  
+                    }
 
 
         /** PC footer**/
