@@ -237,7 +237,7 @@ ul, li { list-style:none; margin:0; padding:0; }
                     .container .main .persona .psn > p:nth-of-type(6) { margin:40px 0 5px; font-size:1em; color:#5C5B5B; }
                     .container .main .persona .psn > p:last-of-type { margin:0; padding:65px 0 35px; font-size:1.5em; font-weight:400; background:url(../images/pj2_psn_txt.svg) no-repeat 50% 50%; background-size:310px; }
 
-                    .container .main .persona .psn > div { width:80%; margin:0 auto; display:flex; justify-content:space-between; }
+                    .container .main .persona .psn > div { width:80%; margin:0 auto; display:flex; justify-content:space-between; align-items:center; }
                         .container .main .persona .psn > div p { margin:0; }
 
 
