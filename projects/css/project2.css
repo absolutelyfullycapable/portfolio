@@ -250,6 +250,7 @@ ul, li { list-style:none; margin:0; padding:0; }
                 .container .main .ux_flow > p, .container .main .ux_flow > h2 { line-height:1.6; margin:0; text-align:center; }
                 .container .main .ux_flow > p:first-of-type { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:800; color:#00275d; font-size:1.8em; }
                 .container .main .ux_flow > h2 { margin:0 0 7% 0; font-size:3em; font-weight:900; }
+                    .container .main .ux_flow > h2 span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:900; }
 
                 .container .main .ux_flow .flow_txt { display:flex; justify-content:space-between; align-items:flex-start; text-align:center; width:50%; margin:0 auto; background:url(../images/pj2_line.svg) no-repeat 50% 30%; }
                     .container .main .ux_flow .flow_txt li p:first-of-type { width:170px; height:70px; line-height:70px; border-radius:50px; background-color:#fff; box-shadow:0 0 10px rgba(0, 0, 0, 0.1); font-size:1.3em; color:#00275d; font-weight:700; }
