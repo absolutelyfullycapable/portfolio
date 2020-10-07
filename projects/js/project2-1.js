@@ -22,11 +22,4 @@ $(function() {
             $(this).removeClass('rotate');
         }
     });
-
-    // 디자인 레퍼런스 영역에서 버튼 클릭 시 버튼에 해당하는 내용 보여짐
-    $('.tap_menu #tap1').addClass('show');
-    $('.tap_menu li').on('click', function() {
-        $('.tap_menu li').removeClass('show');
-        $(this).addClass('show');
-    });
 });
