@@ -201,15 +201,15 @@ ul, li { list-style:none; margin:0; padding:0; }
                 .container .main .desk > p:nth-of-type(2), .container .main .desk > p:last-of-type { margin:0; font-size:1.1em; text-align:center; line-height:1.6; }
                 .container .main .desk > p:nth-of-type(2) { margin:20px 0 5px; }
 
-                .container .main .desk .tap_menu { width:60%; margin:7% auto 0; position:relative; }
-                    .container .main .desk .tap_menu li h2 { height:65px; font-size:1.2em; font-weight:700; color:#00275d; border:1px solid #00275d; padding:20px 25px; box-sizing:border-box; border-radius:50px; transition:0.2s; cursor:pointer; } 
+                .container .main .desk .tap_menu { width:85%; margin:7% auto 0; position:relative; }
+                    .container .main .desk .tap_menu li h2 { width:250px; height:65px; text-align:center; font-size:1.2em; font-weight:700; color:#00275d; border:1px solid #00275d; padding:20px 15px; box-sizing:border-box; border-radius:50px; transition:0.2s; cursor:pointer; } 
                     .container .main .desk .tap_menu li h2:hover, .container .main .desk .tap_menu li h2:active, .container .main .desk .tap_menu li.show h2 { background-color:#00275d; color:#fff; }
 
                     .container .main .desk .tap_menu #tap1 h2 { position:absolute; top:0; left:20%; }
                     .container .main .desk .tap_menu #tap2 h2 { position:absolute; top:0; left:50%; transform:translateX(-50%); } 
                     .container .main .desk .tap_menu #tap3 h2 { position:absolute; top:0; right:20%; } 
 
-                    .container .main .desk .tap_menu li .txt_box { width:80%; margin:0 auto; padding-top:150px; font-size:1.1em; line-height:1.5; display:none; }
+                    .container .main .desk .tap_menu li .txt_box { width:60%; margin:0 auto; padding-top:150px; font-size:1.1em; line-height:1.5; display:none; }
                     .container .main .desk .tap_menu li.show .txt_box { display:block; }
                     .container .main .desk .tap_menu li .txt_box > div:first-of-type { width:100%;  display:flex; justify-content:space-between; align-items:center; }
                         .container .main .desk .tap_menu li .txt_box > div:first-of-type img { width:200px; }
