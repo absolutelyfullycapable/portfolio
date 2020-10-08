@@ -154,15 +154,15 @@ ul, li { list-style:none; margin:0; padding:0; }
                         .container .main .intro .txt > div img { width:55px; height:55px; margin-bottom:50px; }
 
                         .container .main .intro .txt > div p { position:absolute; display:flex; justify-content:center; align-items:center; padding-bottom:15px; background-size:cover; }
-                        .container .main .intro .txt .good p:first-of-type { width:240px; height:120px; background:url(../images/pj2_tu1.svg) no-repeat 50% 50%; top:75px; left:40px; }
-                        .container .main .intro .txt .good p:nth-of-type(2) { width:230px; height:95px; background:url(../images/pj2_tu2.svg) no-repeat 50% 50%; top:150px; right:40px; }
-                        .container .main .intro .txt .good p:nth-of-type(3) { width:225px; height:120px; background:url(../images/pj2_tu3.svg) no-repeat 50% 50%; top:230px; left:20px; }
-                        .container .main .intro .txt .good p:last-of-type { width:290px; height:105px; background:url(../images/pj2_tu4.svg) no-repeat 50% 50%; top:310px; right:20px; }
+                        .container .main .intro .txt .good p:first-of-type { width:260px; height:120px; background:url(../images/pj2_tu1.svg) no-repeat 50% 50%; top:75px; left:40px; }
+                        .container .main .intro .txt .good p:nth-of-type(2) { width:260px; height:95px; background:url(../images/pj2_tu2.svg) no-repeat 50% 50%; top:150px; right:40px; }
+                        .container .main .intro .txt .good p:nth-of-type(3) { width:260px; height:120px; background:url(../images/pj2_tu3.svg) no-repeat 50% 50%; top:230px; left:20px; }
+                        .container .main .intro .txt .good p:last-of-type { width:330px; height:105px; background:url(../images/pj2_tu4.svg) no-repeat 50% 50%; top:310px; right:20px; }
 
-                        .container .main .intro .txt .bad p:first-of-type { width:200px; height:95px; background:url(../images/pj2_td1.svg) 50% 50%; top:80px; left:50px; }
-                        .container .main .intro .txt .bad p:nth-of-type(2) { width:246px; height:100px; background:url(../images/pj2_td2.svg) no-repeat 50% 50%; top:140px; right:50px; }
-                        .container .main .intro .txt .bad p:nth-of-type(3) { width:360px; height:100px; background:url(../images/pj2_td3.svg) no-repeat 50% 50%; top:250px; left:0; }
-                        .container .main .intro .txt .bad p:last-of-type { width:250px; height:90px; background:url(../images/pj2_td4.svg) no-repeat 50% 50%; top:320px; right:0; }
+                        .container .main .intro .txt .bad p:first-of-type { width:250px; height:95px; background:url(../images/pj2_td1.svg) 50% 50%; top:80px; left:50px; }
+                        .container .main .intro .txt .bad p:nth-of-type(2) { width:300px; height:100px; background:url(../images/pj2_td2.svg) no-repeat 50% 50%; top:140px; right:50px; }
+                        .container .main .intro .txt .bad p:nth-of-type(3) { width:430px; height:100px; background:url(../images/pj2_td3.svg) no-repeat 50% 50%; top:250px; left:0; }
+                        .container .main .intro .txt .bad p:last-of-type { width:290px; height:120px; background:url(../images/pj2_td4.svg) no-repeat 50% 50%; top:310px; right:0; }
 
             /* goal */
             .container .main .goal { padding:7% 0; }
