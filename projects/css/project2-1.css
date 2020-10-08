@@ -232,8 +232,12 @@ ul, li { list-style:none; margin:0; padding:0; }
                     .container .main .fin > p { font-size:1.1em; }
 
                     .container .main .fin a { display:block; width:260px; height:50px; line-height:50px; margin:0 auto; text-decoration:none; font-size:1.1em; font-weight:500; transition:0.2s; }
-                    .container .main .fin a:first-of-type { border:1px solid #00275d; color:#00275d; margin-top:25px; }
-                    .container .main .fin a:first-of-type:hover, .container .main .fin a:first-of-type:active { background-color:#00275d; color:#fff; }
+                    .container .main .fin a:first-of-type, .container .main .fin a:nth-of-type(2) { border:1px solid #00275d; color:#00275d; }
+                        .container .main .fin a:first-of-type { margin-top:25px; }
+                        .container .main .fin a:nth-of-type(2) { margin-top:20px; }
+
+                        .container .main .fin a:first-of-type:hover, .container .main .fin a:first-of-type:active, .container .main .fin a:nth-of-type(2):hover, .container .main .fin a:nth-of-type(2):active { background-color:#00275d; color:#fff; }
+
                     .container .main .fin a:last-of-type { border:1px solid #a0a0a0; color:#a0a0a0; margin:20px auto 3%; }
                     .container .main .fin a:last-of-type:hover, .container .main .fin a:last-of-type:active { background-color:#a0a0a0; color:#fff; }
 
