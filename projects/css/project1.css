@@ -119,8 +119,6 @@ ul, li { list-style:none; margin:0; padding:0; }
                 .container .fin a { display:block; margin:0 auto; text-align:center; text-decoration:none; width:260px; height:50px; line-height:50px; font-size:1.1em; font-weight:500; }
                     .container .fin a:first-of-type { border:1px solid #0027c9; color:#0027c9; transition:0.2s; }
                     .container .fin a:first-of-type:hover, .container .fin a:first-of-type:active { background-color:#0027c9; color:#fff; }
-                    .container .fin a:last-of-type { border:1px solid #a0a0a0; color:#a0a0a0; margin-top:20px; transition:0.2s; }
-                    .container .fin a:last-of-type:hover, .container .fin a:last-of-type:active { background-color:#a0a0a0; color:#fff; }
                 
                 .container .fin .bg { margin:100px auto 0; width:300px; height:200px; background:url(../images/pj1_fin.png) no-repeat 50% 50%; background-size:200px; position:relative; }
                     .container .fin .bg p { width:100px; height:35px; text-align:center; color:#fff; line-height:29px; }
