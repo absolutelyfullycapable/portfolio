@@ -76,7 +76,7 @@ ul, li { list-style:none; margin:0; padding:0; }
         .container .main .second > a img { width:85%; }
 
         /* third project */
-        .container .main .third > a img { width:70%; float:right; }
+        .container .main .third > a img { width:90%; float:right; }
 
 
     /** Mobile footer **/
@@ -168,7 +168,7 @@ ul, li { list-style:none; margin:0; padding:0; }
             .container .main .second ul, .container .main .second > a img { width:50%; }
 
         /* third project */
-        .container .main .third ul, .container .main .third > a img { width:52%; float:right; }
+        .container .main .third ul, .container .main .third > a img { width:70%; float:right; }
 
 
     /** PC footer**/
@@ -179,5 +179,5 @@ ul, li { list-style:none; margin:0; padding:0; }
 @media (min-width:1900px) {
     .container .main .first ul { background:url(../images/line2.png) no-repeat 11% 50%; background-size:30%; }
     .container .main .second ul { background:url(../images/line2.png) no-repeat 18% 50%; background-size:25%; }
-    .container .main .third ul { background:url(../images/line2.png) no-repeat 20% 50%; background-size:30%; }
+    .container .main .third ul { background:url(../images/line2.png) no-repeat 15% 50%; background-size:30%; }
 }
