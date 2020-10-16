@@ -46,8 +46,8 @@ ul, li { list-style:none; margin:0; padding:0; }
         /* projects menu */
         .container .main .projects { margin:20px 0 35px 4%; }
             .container .main .projects li { height:40px; margin:5px 0; }
-                .container .main .projects li a { line-height:40px; text-decoration:none; color:#0027c9; font-family:'Noto Sans KR', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; text-transform:capitalize; font-size:1.1em; font-weight:400; }
-                .container .main .projects li:nth-child(2) a { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; }
+                .container .main .projects li a { line-height:40px; text-decoration:none; color:#0027c9; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; text-transform:capitalize; font-size:1.1em; }
+                .container .main .projects li:first-child a { font-family:'Noto Sans KR', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:400; }
 
                 .container .main .projects li:first-child img { width:20px; margin-left:25px; transform:rotate(180deg); }
                 .container .main .projects li:first-child img.rotate { transform:rotate(360deg); }
@@ -115,7 +115,7 @@ ul, li { list-style:none; margin:0; padding:0; }
         /* PC navigation */
 		.container header .PC_nav { width:22%; display:flex; justify-content:space-between; }
             .container header .PC_nav li { width:45%; }
-                .container header .PC_nav li a { display:block; font-family:'RhodeMediumExtended',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; color:#0027c9; text-decoration:none; text-transform:capitalize; text-align:center; font-size:1.250em; padding:5px; transition:0.3s; }
+                .container header .PC_nav li a { display:block; font-family:'RhodeMediumExtended',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; color:#0027c9; text-decoration:none; text-transform:capitalize; text-align:center; font-size:1.042vw; padding:5px; transition:0.3s; }
                 .container header li:hover a { background-color:#0027c9; color:#fff; }
 
         /** PC main contents **/
