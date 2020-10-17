@@ -48,8 +48,8 @@ ul, li { list-style:none; margin:0; padding:0; }
         .container .main > .hidden { display:none; }
 
         .container .main > p { font-size:1.063em; line-height:1.6; margin:0; }
-        .container .main > p span { font-weight:400; color:#0027c9; border:1px solid #0027c9; padding:0 3px; transition:0.2s; cursor:pointer; }
-        .container .main > p span:hover, .container .main > p span:active { background-color:#0027c9; color:#fff; }
+        .container .main > p a { display:inline-block; text-decoration:none; font-weight:400; color:#0027c9; border:1px solid #0027c9; padding:0 3px; transition:0.2s; cursor:pointer; }
+        .container .main > p a:hover, .container .main > p a:active { background-color:#0027c9; color:#fff; }
 
         /* projects */
         .container .main > div ul { margin-bottom:20px; }
