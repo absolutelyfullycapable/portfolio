@@ -128,8 +128,8 @@ ul, li { list-style:none; margin:0; padding:0; }
                 
                 .container .fin .bg { margin:100px auto 0; width:300px; height:200px; background:url(../images/pj3_fin.png) no-repeat 50% 50%; background-size:140px; position:relative; }
                     .container .fin .bg p { width:100px; height:35px; text-align:center; color:#fff; line-height:29px; }
-                        .container .fin .bg p:first-of-type { background:url(../images/bubble_r.svg) no-repeat; background-size:cover; position:absolute; top:0; right:0; animation:floating1 3s cubic-bezier(0.250,0.460,0.450,0.940) infinite; }
-                        .container .fin .bg p:last-of-type { background:url(../images/bubble_l.svg) no-repeat; background-size:cover; position:absolute; bottom:30px; left:0; animation:floating2 2.5s cubic-bezier(0.250,0.460,0.450,0.940) infinite; }
+                        .container .fin .bg p:first-of-type { background:url(../images/bubble_r.svg) no-repeat; background-size:cover; position:absolute; top:30px; right:-10px; animation:floating1 3s cubic-bezier(0.250,0.460,0.450,0.940) infinite; }
+                        .container .fin .bg p:last-of-type { background:url(../images/bubble_l.svg) no-repeat; background-size:cover; position:absolute; bottom:60px; left:-10px; animation:floating2 2.5s cubic-bezier(0.250,0.460,0.450,0.940) infinite; }
 
                 @keyframes floating1 {
                     from { transform: translate(0,  0px); }
@@ -275,10 +275,10 @@ ul, li { list-style:none; margin:0; padding:0; }
             .container .fin a:first-of-type { margin-top:80px; }
 
             /* bg */
-            .container .fin .bg { margin:100px auto 40px; width:430px; height:300px; background-size:180px; }
+            .container .fin .bg { margin:100px auto 40px; width:430px; height:300px; background-size:250px; }
                 .container .fin .bg p { width:110px; height:40px; line-height:32px; }
-                    .container .fin .bg p:first-of-type { right:30px; }
-                    .container .fin .bg p:last-of-type { left:10px; bottom:50px; }
+                    .container .fin .bg p:first-of-type { top:50px; right:0; }
+                    .container .fin .bg p:last-of-type { left:-10px; bottom:110px; }
 
 
         /** PC footer**/
