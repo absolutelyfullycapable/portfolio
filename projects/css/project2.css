@@ -47,7 +47,7 @@ ul, li { list-style:none; margin:0; padding:0; }
         .container .main .projects { margin:20px 0 35px 4%; }
             .container .main .projects li { height:40px; margin:5px 0; }
                 .container .main .projects li a { line-height:40px; text-decoration:none; color:#0027c9; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; text-transform:capitalize; font-size:1.1em; }
-                .container .main .projects li:first-child a { font-family:'Noto Sans KR', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:400; }
+                .container .main .projects li:first-child a { font-family:'Noto Sans KR', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; }
 
                 .container .main .projects li:first-child img { width:20px; margin-left:25px; transform:rotate(180deg); }
                 .container .main .projects li:first-child img.rotate { transform:rotate(360deg); }
