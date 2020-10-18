@@ -46,7 +46,7 @@ ul, li { list-style:none; margin:0; padding:0; }
         /* projects menu */
         .container .main .projects { margin:20px 0 65px 4%; }
             .container .main .projects li { height:40px; margin:5px 0; }
-                .container .main .projects li a { line-height:40px; text-decoration:none; color:#0027c9; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; text-transform:capitalize; font-size:1.1em; font-weight:500; }
+                .container .main .projects li a { line-height:40px; text-decoration:none; color:#0027c9; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:1.1em; font-weight:500; }
                 .container .main .projects li:nth-child(3) a { font-family:'Noto Sans KR',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; }
 
                 .container .main .projects li:first-child img { width:20px; margin-left:25px; transform:rotate(180deg); }
@@ -60,7 +60,7 @@ ul, li { list-style:none; margin:0; padding:0; }
             .container .main .intro h2 { font-family:'DrukWideCyWebBold',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:normal; color:#0027c9; font-size:2.5em; margin:0; }
             .container .main .intro p:nth-of-type(2) { font-size:1.063em; line-height:1.4; margin-top:210px; }
             .container .main .intro p:last-of-type { display:none; }
-                .container .main .intro p span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; }
+                .container .main .intro p span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:400; }
 
         /* contents */
         .container .contents { width:100%; margin-top:100px; }
@@ -74,7 +74,7 @@ ul, li { list-style:none; margin:0; padding:0; }
                 .container .contents .goal ul li p, .container .contents .publishing ul li p { margin:0px; }
                 .container .contents .goal ul li p:first-of-type, .container .contents .publishing ul li p:first-of-type { margin-right:5px; }
 
-                .container .contents .goal ul li:first-child, .container .contents .publishing ul li:first-child { display:flex; margin-bottom:25px; }
+                .container .contents .goal ul li:first-child, .container .contents .publishing ul li:first-child { margin-bottom:25px; }
 
             /* period */
             .container .contents .period p { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:1.1em; font-weight:400; }
@@ -84,8 +84,7 @@ ul, li { list-style:none; margin:0; padding:0; }
                 .container .contents .role  p span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:400; }
 
             /* publishing */
-            .container .contents .publishing ul li:nth-child(2) { display:flex; margin-bottom:25px; }
-            .container .contents .publishing ul li:nth-child(3) { margin-bottom:25px; }
+            .container .contents .publishing ul li:last-child { display:flex; margin-bottom:25px; }
             .container .contents .publishing ul li p span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:400; }
 
             /* concept */
@@ -102,7 +101,7 @@ ul, li { list-style:none; margin:0; padding:0; }
                 .container .contents .style .description #color { justify-content:center; margin:30px 0 40px; display:flex; }
                     .container .contents .style .description #color .color { width:110px; height:110px; border-radius:50%; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; text-align:center; line-height:110px; color:#000; font-weight:400; }
                         .container .contents .style .description #color .color1 { background-color:#fffbf8; }
-                        .container .contents .style .description #color .color2 { background-color:#fce0d9; box-shadow:0 0 10px rgba(0, 0, 0, 0.05); margin-left:-15px; }
+                        .container .contents .style .description #color .color2 { background-color:#fce0d9; margin-left:-15px; }
                         .container .contents .style .description #color .color3 { background-color:#ec5f69; color:#fff; margin-left:-15px; }
                 
                 /* font */
@@ -128,7 +127,7 @@ ul, li { list-style:none; margin:0; padding:0; }
                 .container .fin .bg { margin:120px auto 0; width:300px; height:200px; background:url(../images/pj5_fin.png) no-repeat 50% 50%; background-size:contain; position:relative; }
                     .container .fin .bg p { width:100px; height:35px; text-align:center; color:#fff; line-height:29px; }
                         .container .fin .bg p:first-of-type { background:url(../images/bubble_r.svg) no-repeat; background-size:cover; position:absolute; top:-45px; right:0; animation:floating1 3s cubic-bezier(0.250,0.460,0.450,0.940) infinite; }
-                        .container .fin .bg p:last-of-type { background:url(../images/bubble_l.svg) no-repeat; background-size:cover; position:absolute; bottom:70px; left:0; animation:floating2 2.5s cubic-bezier(0.250,0.460,0.450,0.940) infinite; }
+                        .container .fin .bg p:last-of-type { background:url(../images/bubble_l.svg) no-repeat; background-size:cover; position:absolute; bottom:70px; left:-10px; animation:floating2 2.5s cubic-bezier(0.250,0.460,0.450,0.940) infinite; }
 
                 @keyframes floating1 {
                     from { transform: translate(0,  0px); }
