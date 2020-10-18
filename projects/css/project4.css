@@ -235,7 +235,7 @@ ul, li { list-style:none; margin:0; padding:0; }
         .container .main .intro p:last-of-type { display:block; margin-top:60px; font-size:1.25em; }
 
         /* contents */
-        .container .contents { margin:120px auto 0; width:75%; font-size:1.1em; }
+        .container .contents { margin:150px auto 0; width:75%; font-size:1.1em; }
             .container .contents > div { margin-bottom:150px; }
                 .container .contents > div > div:first-of-type p { font-size:1.35em; font-weight:600; }
                 .container .contents > div > div:first-of-type h3 { font-size:1.35em; font-weight:500; }
