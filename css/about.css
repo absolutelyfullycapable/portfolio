@@ -73,7 +73,7 @@ ul, li { list-style:none; margin:0; padding:0; }
             .container .main .ability h3 { font-size:1.25em; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:600; color:#0027c9; }
 
             .container .main .ability ul li:nth-child(2) { margin:107px 0; text-align:right; }
-            .container .main .ability ul li img { display:block; margin:50px auto 40px; }
+            .container .main .ability ul li img { display:block; margin:50px auto 40px; width:100%; }
         
         /* contact */
         .container .main .contact { padding:0 5px; }
@@ -205,6 +205,9 @@ ul, li { list-style:none; margin:0; padding:0; }
 
             .container .main .intro .title #container-scroller { width:14.5vw; height:5.4vw; overflow:hidden; }
                 .container .main .intro .title #container-scroller .container-scroller_item { width:100%; }
+
+        /* ability */
+        .container .main .ability ul li img { width:50%; }
 
     /** Tablet footer **/
     .container footer p:first-of-type { display:none; }
@@ -341,15 +344,15 @@ ul, li { list-style:none; margin:0; padding:0; }
             .container .main .ability ul li p:first-of-type { display:none; }
             .container .main .ability ul li img { display:none; }
 
-            .container .main .ability ul li:nth-child(1) { width:100%; height:155px; background:url(../images/toolsPC.png) no-repeat 0 100% / contain; position:relative; margin-bottom:150px; }
+            .container .main .ability ul li:nth-child(1) { width:100%; height:155px; background:url(../images/tools_PC.png) no-repeat 0 100% / contain; position:relative; margin-bottom:150px; }
                 .container .main .ability ul li:nth-child(1) h3 { position:absolute; top:0; right:118px; }
                 .container .main .ability ul li:nth-child(1) .hidden { position:absolute; bottom:-40px; right:-40px; }
 
-            .container .main .ability ul li:nth-child(2) { width:100%; height:155px; background:url(../images/programsPC.png) no-repeat 100% 300% / contain; margin:180px 0; position:relative; }
+            .container .main .ability ul li:nth-child(2) { width:100%; height:155px; background:url(../images/programs_PC.png) no-repeat 100% 300% / contain; margin:180px 0; position:relative; }
                 .container .main .ability ul li:nth-child(2) h3 { position:absolute; top:0; left:44px; }
                 .container .main .ability ul li:nth-child(2) .hidden { position:absolute; bottom:-40px; left:-45px; }
             
-            .container .main .ability ul li:nth-child(3) { width:100%; height:206px; background:url(../images/coworkPC.png) no-repeat 9% 100% / 210px; position:relative; margin-top:150px; }
+            .container .main .ability ul li:nth-child(3) { width:100%; height:206px; background:url(../images/cowork_PC.png) no-repeat 9% 100% / 210px; position:relative; margin-top:150px; }
                 .container .main .ability ul li:nth-child(3) h3 { position:absolute; top:0; right:20px; }
                 .container .main .ability ul li:nth-child(3) .hidden { position:absolute; bottom:-40px; right:-52px; }
 
@@ -461,9 +464,9 @@ ul, li { list-style:none; margin:0; padding:0; }
 }
 
 @media (min-width:1620px) {
-    .container .main .ability ul li:nth-child(1) { background:url(../images/toolsPC.png) no-repeat 0 100% / contain, url(../images/direc1.png) no-repeat 50% 60% / 17%; }
+    .container .main .ability ul li:nth-child(1) { background:url(../images/tools_PC.png) no-repeat 0 100% / contain, url(../images/direc1.png) no-repeat 50% 60% / 17%; }
 
-    .container .main .ability ul li:nth-child(2) { background:url(../images/programsPC.png) no-repeat 100% 300% / contain, url(../images/direc2.png) no-repeat 50% 60% / 17%; }
+    .container .main .ability ul li:nth-child(2) { background:url(../images/programs_PC.png) no-repeat 100% 300% / contain, url(../images/direc2.png) no-repeat 50% 60% / 17%; }
             
-    .container .main .ability ul li:nth-child(3) { background:url(../images/coworkPC.png) no-repeat 9% 100% / 210px, url(../images/direc1.png) no-repeat 50% 50% / 17%;}
+    .container .main .ability ul li:nth-child(3) { background:url(../images/cowork_PC.png) no-repeat 9% 100% / 210px, url(../images/direc1.png) no-repeat 50% 50% / 17%;}
 }
