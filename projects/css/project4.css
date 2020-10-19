@@ -18,7 +18,7 @@ ul, li { list-style:none; margin:0; padding:0; }
         .container header.none { background:none; }
 
         /* logo */
-        .container header h1 { width:60px; height:30px; margin:0; background:url(../../images/logoM2.png) no-repeat 50% 50%; background-size:cover; }
+        .container header h1 { width:60px; height:30px; margin:0; background:url(../../images/logo_M2.png) no-repeat 50% 50%; background-size:cover; }
         .container header h1.none { background:none; }
         .container header h1 a { display:block; width:100%; height:100%; }
         
@@ -43,7 +43,7 @@ ul, li { list-style:none; margin:0; padding:0; }
     .container .menu.active { left:0; }
         .container .menu ul { width:100%; }
             .container .menu ul li { width:100%; margin-bottom:20px;  }
-                .container .menu ul li a { display:block; width:280px; margin:0 auto; font-family:'RhodeMediumExtended',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; text-align:left; text-indent:35px; text-decoration:none; color:#0027c9; text-transform:capitalize; font-size:1.875em; background:url(../../images/menuIcon.png) no-repeat; background-size:16px; }
+                .container .menu ul li a { display:block; width:280px; margin:0 auto; font-family:'RhodeMediumExtended',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; text-align:left; text-indent:35px; text-decoration:none; color:#0027c9; text-transform:capitalize; font-size:1.875em; background:url(../../images/menu_icon.png) no-repeat; background-size:16px; }
 
 
     /** Mobile main contents **/
@@ -158,7 +158,7 @@ ul, li { list-style:none; margin:0; padding:0; }
     .container header { padding:27px 5%; background:url(../../images/line2.png) no-repeat 60% 50%; background-color:#fff; background-size:55% 3px; }
 
         /* logo */
-        .container header h1 { width:120px; height:17px; background:url(../../images/logoPC2.png) no-repeat 50% 50%; background-size:cover; }
+        .container header h1 { width:120px; height:17px; background:url(../../images/logo_PC2.png) no-repeat 50% 50%; background-size:cover; }
         .container header h1 a { display:block; width:100%; height:100%; }
 
 
