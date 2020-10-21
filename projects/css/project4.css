@@ -9,6 +9,10 @@ ul, li { list-style:none; margin:0; padding:0; }
 ::-webkit-scrollbar-thumb { background-color:#0027c9; }
 ::-webkit-scrollbar-track { background-color:#eee; }
 
+::selection { background-color:#0027c9; color:#fff; }
+::-moz-selection { background-color:#0027c9; color:#fff; }
+::-webkit-selection { background-color:#0027c9; color:#fff; }
+
 
 /*** Mobile ***/
 .container { width:100%; height:100%; display:flex; flex-direction:column; justify-content:space-between; position:relative; }
