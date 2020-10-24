@@ -40,20 +40,21 @@ ul { margin:0; padding:0; list-style:none; }
 	.container .menu { width:100%; height:100%; background-color:rgb(255, 255, 255); position:fixed; top:0; left:100%; z-index:999; display:flex; justify-content:center; align-items:center; transition:0.7s; }
 	.container .menu.active { left:0; }
         .container .menu ul { width:100%; }
-        .container .menu ul li { width:100%; margin-bottom:20px; }
-        .container .menu ul li a { display:block; width:280px; margin:0 auto; text-align:left; text-indent:35px; text-decoration:none; color:#0027c9; text-transform:capitalize; font-size:1.875em; background:url(../images/menu_icon.png) no-repeat; background-size:16px; }
+			.container .menu ul li { width:100%; margin-bottom:20px; }
+				.container .menu ul li a { display:block; width:280px; margin:0 auto; text-align:left; text-indent:35px; text-decoration:none; color:#0027c9; text-transform:capitalize; font-size:1.875em; background:url(../images/menu_icon.png) no-repeat; background-size:16px; }
 
     /** Mobile main **/
     .container .main { height:calc(100% - 162px); border-left:1px solid #fff; border-right:1px solid #fff; margin:0 4%; display:flex; justify-content:center; align-items:center; position:relative; }
         .container .main svg { position:fixed; }
-            .container .main svg:first-of-type { display:none; animation: move1 2.5s infinite linear; }
-            .container .main svg:nth-of-type(2) { width:30px; top:8%; left:10%; animation: move2 2s infinite linear; }
-            .container .main svg:nth-of-type(3) { width:20px; top:17%; left:18%; animation: move3 2.5s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955); }
-            .container .main svg:nth-of-type(4) { width:55px; top:29%; left:51%; z-index:1; animation: move4 1.5s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955); }
-            .container .main svg:nth-of-type(5) { width:16px; top:47%; right:28%; animation: move5 3s infinite linear; }
-            .container .main svg:nth-of-type(6) { width:26px; top:65%; right:30%; animation: move6 2.7s infinite linear; }
-            .container .main svg:nth-of-type(7) { width:27px; bottom:9%; right:17%; animation: move7 1.9s infinite linear; }
-            .container .main svg:last-of-type { display:none; animation: move8 2s infinite linear; }
+            .container .main #layer1 { display:none; animation: move1 1.9s infinite linear; }
+            .container .main #layer2 { width:30px; top:8%; left:10%; animation: move2 2s infinite linear; }
+            .container .main #layer3 { width:20px; top:17%; left:18%; animation: move3 2.5s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+            .container .main #layer4 { width:55px; top:29%; left:51%; z-index:1; animation: move2 3s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+            .container .main #layer5 { width:16px; top:47%; right:28%; animation: move4 3s infinite linear; }
+            .container .main #layer6 { width:26px; top:65%; right:30%; animation: move4 2.7s infinite linear; }
+            .container .main #layer7 { width:27px; bottom:9%; right:17%; animation: move2 1.9s infinite linear; }
+			.container .main #layer8 { display:none; animation: move4 2s infinite linear; }
+			
         .container .main p:first-of-type { width:100%; font-size:4.688em; font-family:'DrukWideCyWebBold',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; text-align:center; }
         .container .main p:last-of-type { display:none; font-family:'DrukWideCyWebBold',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; text-align:center; }
 
@@ -65,7 +66,7 @@ ul { margin:0; padding:0; list-style:none; }
 @keyframes move1 {
     0% {
 		opacity:0.5;
-		transform:scale(0.5);
+		transform:scale(0.9);
 	}
 	50% {
 		opacity:1;
@@ -73,7 +74,7 @@ ul { margin:0; padding:0; list-style:none; }
 	}
     100% {
 		opacity:0.5;
-		transform:scale(0.5);
+		transform:scale(0.9);
 	}
 }
 
@@ -102,96 +103,20 @@ ul { margin:0; padding:0; list-style:none; }
 
 @keyframes move3 {
     0% {
-		opacity:0.5;
-		transform:scale(0.5);
+		opacity:0.7;
+		transform:scale(0.8);
 	}
 	50% {
 		opacity:1;
 		transform:scale(1);
 	}
     100% {
-		opacity:0.5;
-		transform:scale(0.5);
+		opacity:0.7;
+		transform:scale(0.8);
 	}
 }
 
 @keyframes move4 {
-    0% {
-		opacity:1;
-		transform:scale(1);
-	}
-	33.333333% {
-		opacity:calc(1 - 2 / 3);
-		transform:scale(0.8);
-	}
-	33.333333% {
-		opacity:calc(1 - 1 / 3);
-		transform:scale(0.6);
-	}
-	33.333333% {
-		opacity:calc(1 - 2 / 3);
-		transform:scale(0.8);
-	}
-    100% {
-		opacity:1;
-		transform:scale(1);
-	}
-}
-
-@keyframes move5 {
-    0% {
-		opacity:0.5;
-		transform:scale(0.5);
-	}
-	50% {
-		opacity:1;
-		transform:scale(1);
-	}
-    100% {
-		opacity:0.5;
-		transform:scale(0.5);
-	}
-}
-
-@keyframes move6 {
-    0% {
-		opacity:0.5;
-		transform:scale(0.5);
-	}
-	50% {
-		opacity:1;
-		transform:scale(1);
-	}
-    100% {
-		opacity:0.5;
-		transform:scale(0.5);
-	}
-}
-
-@keyframes move7 {
-    0% {
-		opacity:1;
-		transform:scale(1);
-	}
-	33.333333% {
-		opacity:calc(1 - 2 / 3);
-		transform:scale(0.8);
-	}
-	33.333333% {
-		opacity:calc(1 - 1 / 3);
-		transform:scale(0.6);
-	}
-	33.333333% {
-		opacity:calc(1 - 2 / 3);
-		transform:scale(0.8);
-	}
-    100% {
-		opacity:1;
-		transform:scale(1);
-	}
-}
-
-@keyframes move8 {
     0% {
 		opacity:0.5;
 		transform:scale(0.5);
@@ -213,18 +138,18 @@ ul { margin:0; padding:0; list-style:none; }
 	
 		/* logo */
         .container header h1 { width:120px; height:17px; background:url(../images/logo_PC1.png) no-repeat 50% 50%; background-size:cover; }
-        .container header h1 a { display:block; width:100%; height:100%; }
+        	.container header h1 a { display:block; width:100%; height:100%; }
 
 		/* Tablet main contents */
         .container .main p:first-of-type { display:none; }
         .container .main p:last-of-type { display:block; font-family:'DrukWideCyWebBold',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; text-align:center; font-size:10vw; }
 
-        .container .main svg:nth-of-type(2) { width:4%; top:25%; left:13%; }
-        .container .main svg:nth-of-type(3) { width:3%; top:32%; left:18%; }
-        .container .main svg:nth-of-type(4) { width:7%; top:33.5%; left:51%; z-index:1; }
-        .container .main svg:nth-of-type(5) { width:2%; top:47%; right:35%; }
-        .container .main svg:nth-of-type(6) { width:3%; top:55%; right:20%; }
-        .container .main svg:nth-of-type(7) { width:4%; bottom:23%; right:15%; }
+        .container .main #layer2 { width:4%; top:25%; left:13%; }
+        .container .main #layer3 { width:3%; top:32%; left:18%; }
+        .container .main #layer4 { width:7%; top:33.5%; left:51%; z-index:1; }
+        .container .main #layer5 { width:2%; top:47%; right:35%; }
+        .container .main #layer6 { width:3%; top:55%; right:20%; }
+        .container .main #layer7 { width:4%; bottom:23%; right:15%; }
 
 	/* Tablet footer */
     .container footer { padding:27px 4.5%; font-size:1.172vw; }
@@ -242,7 +167,7 @@ ul { margin:0; padding:0; list-style:none; }
 		
 		/* logo */
         .container header h1 { width:160px; height:23px; background:url(../images/logo_PC1.png) no-repeat 50% 50%; }
-        .container header h1 a { display:block; width:100%; height:100%; }
+        	.container header h1 a { display:block; width:100%; height:100%; }
 		
 		/* mobile navigation icon */
         .container header .menu-wrapper { display:none; }
@@ -258,12 +183,12 @@ ul { margin:0; padding:0; list-style:none; }
 		.container .menu { display:none; }
 
 		/* PC main contents */
-        .container .main svg:first-of-type { display:block; width:35px; height:62px; top:15%; left:15%; }
-        .container .main svg:nth-of-type(2) { width:52px; top:30%; left:30%; }
-        .container .main svg:nth-of-type(3) { width:68px; top:16%; left:18%; }
-        .container .main svg:nth-of-type(4) { width:114px; top:43%; left:32%; z-index:1; }
-        .container .main svg:nth-of-type(5) { width:25px; top:37%; right:33%; }
-        .container .main svg:nth-of-type(6) { width:53px; top:56%; right:18%; }
-        .container .main svg:nth-of-type(7) { width:76px; bottom:19%; right:21%; }
-        .container .main svg:last-of-type { display:block; width:34px; bottom:14%; right:15%; }
+        .container .main #layer1 { display:block; width:35px; height:62px; top:15%; left:15%; }
+        .container .main #layer2 { width:52px; top:30%; left:30%; }
+        .container .main #layer3 { width:68px; top:16%; left:18%; }
+        .container .main #layer4 { width:114px; top:43%; left:32%; z-index:1; }
+        .container .main #layer5 { width:25px; top:37%; right:33%; }
+        .container .main #layer6 { width:53px; top:56%; right:18%; }
+        .container .main #layer7 { width:76px; bottom:19%; right:21%; }
+        .container .main #layer8 { display:block; width:34px; bottom:14%; right:15%; }
 }
