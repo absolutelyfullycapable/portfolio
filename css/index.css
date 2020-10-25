@@ -47,13 +47,13 @@ ul { margin:0; padding:0; list-style:none; }
     .container .main { height:calc(100% - 162px); border-left:1px solid #fff; border-right:1px solid #fff; margin:0 4%; display:flex; justify-content:center; align-items:center; position:relative; }
         .container .main svg { position:fixed; }
             .container .main #layer1 { display:none; animation:move1 1.9s infinite linear; }
-            .container .main #layer2 { width:30px; top:8%; left:10%; animation:move2 2s infinite linear; }
-			.container .main #layer3 { width:20px; top:17%; left:18%; animation:move3 2.5s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955); }
-			.container .main #layer4 { display:none; width:22px; animation:move5 2s infinite linear; }
-            .container .main #layer5 { width:55px; top:29%; left:51%; z-index:1; animation:move2 3s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955); }
-			.container .main #layer6 { display:none; width:15px; animation:move5 2.5s infinite linear; }
-			.container .main #layer7 { width:16px; top:47%; right:28%; animation:move5 1.9s infinite linear; }
-			.container .main #layer8 { display:none; width:55px; animation:move2 2.9s infinite linear; }
+            .container .main #layer2 { width:30px; top:8%; left:10%; animation:move2 1.8s infinite linear; }
+			.container .main #layer3 { width:20px; top:17%; left:18%; animation:move3 2.3s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+			.container .main #layer4 { display:none; width:22px; animation:move5 1.6s infinite linear; }
+            .container .main #layer5 { width:55px; top:29%; left:51%; z-index:1; animation:move2 2.8s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+			.container .main #layer6 { display:none; width:15px; animation:move5 2s infinite linear; }
+			.container .main #layer7 { width:16px; top:47%; right:28%; animation:move5 1.5s infinite linear; }
+			.container .main #layer8 { display:none; width:55px; animation:move2 2.3s infinite linear; }
             .container .main #layer9 { width:26px; top:65%; right:30%; animation:move2 2.7s infinite linear; }
             .container .main #layer10 { width:27px; bottom:9%; right:17%; animation:move2 1.9s infinite linear; }
 			.container .main #layer11 { display:none; width:34px; animation:move4 2s infinite linear; }
