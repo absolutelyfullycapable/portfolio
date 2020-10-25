@@ -111,7 +111,7 @@ ul, li { list-style:none; margin:0; padding:0; }
 
 
 
-@media (min-width:1440px) {
+@media (min-width:1280px) {
     /** PC header **/
     .container header { padding:27px 4%; background:url(../../images/line2.png) no-repeat 40% 50%; background-color:#fff; background-size:52% 3px; }
 

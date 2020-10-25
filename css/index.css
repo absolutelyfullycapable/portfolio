@@ -174,7 +174,7 @@ ul { margin:0; padding:0; list-style:none; }
 }
 
 /*** PC ***/
-@media (min-width:1440px) {
+@media (min-width:1280px) {
     .container { position:relative; }
 
 	/* PC header */
