@@ -65,7 +65,7 @@ ul, li { list-style:none; margin:0; padding:0; }
         .container .main > div ul { margin-bottom:20px; }
             .container .main > div ul li:first-child { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:600; color:#0027c9; font-size:1.4em; }
             .container .main > div ul li:last-child a { text-decoration:none; -webkit-text-stroke:1px #0027c9; text-shadow:-1px -1px 0 #0027c9, 1px -1px 0 #0027c9, -1px 1px 0 #0027c9, 1px 1px 0 #0027c9; color:#fff; transition:0.2s; }
-            .container .main > div ul li:last-child a:hover, .container .main > div ul li:last-child a:active { color:#0027c9; -webkit-text-stroke:0px; }
+            .container .main > div ul li:last-child a:hover, .container .main > div ul li:last-child a:active { color:#0027c9; -webkit-text-stroke:0px; text-shadow:none; }
                 .container .main > div > a img { width:95%; }
 
             .container .main > div > p { margin-top:20px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; color:#0027c9; font-weight:600; font-size:0.82em; }
