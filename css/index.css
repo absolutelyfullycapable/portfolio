@@ -169,8 +169,7 @@ ul { margin:0; padding:0; list-style:none; }
 	/* Tablet footer */
     .container footer { padding:27px 4.5%; font-size:1.172vw; }
         .container footer > p:first-of-type { display:none; }
-        .container footer .hidden { background:url(../images/line1.png) no-repeat 34% 50%; background-size:40% 3px; display:flex; justify-content:center; align-items:center; width:100%; }
-            .container footer .hidden p:first-of-type { margin-right:auto; }
+        .container footer .hidden { background:url(../images/line1.png) no-repeat 34% 50%; background-size:40% 3px; display:flex; justify-content:space-between; align-items:center; width:100%; }
 }
 
 /*** PC ***/
