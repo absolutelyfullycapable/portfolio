@@ -5,14 +5,11 @@ html, body { height:100%; }
 body { margin:0; padding:0; font-family:'Noto Sans KR',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:300; letter-spacing:-1px; }
 ul, li { list-style:none; margin:0; padding:0; }
 
-::selection { background-color:#0027c9; color:#fff; }
-::-moz-selection { background-color:#0027c9; color:#fff; }
-::-webkit-selection { background-color:#0027c9; color:#fff; }
+::selection, ::-webkit-selection, ::-moz-selection, ::-ms-selection, ::-o-selection { background-color:#0027c9; color:#fff; }
 
-::-webkit-scrollbar { width:10px; background-color:#eee; }
-::-webkit-scrollbar-thumb { background-color:#0027c9; }
-::-webkit-scrollbar-track { background-color:#eee; }
-
+::-webkit-scrollbar, ::-moz-scrollbar, ::-ms-scrollbar, ::-o-scrollbar { width:10px; background-color:#eee; }
+::-webkit-scrollbar-thumb, ::-moz-scrollbar-thumb, ::-ms-scrollbar-thumb, ::-o-scrollbar-thumb { background-color:#0027c9; }
+::-webkit-scrollbar-track, ::-moz-scrollbar-track, ::-ms-scrollbar-track, ::-o-scrollbar-track { background-color:#eee; }
 
 /*** Mobile ***/
 .container { width:100%; height:100%; display:flex; flex-direction:column; justify-content:space-between; position:relative; }
@@ -64,8 +61,8 @@ ul, li { list-style:none; margin:0; padding:0; }
         /* projects */
         .container .main > div ul { margin-bottom:20px; }
             .container .main > div ul li:first-child { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:600; color:#0027c9; font-size:1.4em; }
-            .container .main > div ul li:last-child a { text-decoration:none; -webkit-text-stroke:1px #0027c9; text-shadow:-1px -1px 0 #0027c9, 1px -1px 0 #0027c9, -1px 1px 0 #0027c9, 1px 1px 0 #0027c9; color:#fff; transition:0.2s; }
-            .container .main > div ul li:last-child a:hover, .container .main > div ul li:last-child a:active { color:#0027c9; -webkit-text-stroke:0px; text-shadow:none; }
+            .container .main > div ul li:last-child a { text-decoration:none; text-shadow:-1px -1px 0 #0027c9, 1px -1px 0 #0027c9, -1px 1px 0 #0027c9, 1px 1px 0 #0027c9; color:#fff; transition:0.2s; }
+            .container .main > div ul li:last-child a:hover, .container .main > div ul li:last-child a:active { color:#0027c9; text-shadow:none; }
                 .container .main > div > a img { width:95%; }
 
             .container .main > div > p { margin-top:20px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; color:#0027c9; font-weight:600; font-size:0.82em; }
@@ -168,7 +165,6 @@ ul, li { list-style:none; margin:0; padding:0; }
             .container .main> div:nth-child(2n+1) ul { float:right; width:85%; }
             .container .main .first ul { background:url(../images/line2.png) no-repeat 11% 50%; background-size:30%; }
             .container .main .third ul { background:url(../images/line2.png) no-repeat 15% 50%; background-size:42%; }
-                .container .main .first ul li:last-child a, .container .main .third ul li:last-child a { -webkit-text-stroke:1.5px #0027c9; color:#fff; }
 
                 .container .main .first > a img, .container .main .third > a img, .container .main .fifth > a img { width:85%; }
 
