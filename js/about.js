@@ -29,29 +29,4 @@ $(function() {
         observer.observe(mark);
     });
     })(document);
-
-    // 호버 애니메이션
-    $(".hoverA").hover(function() {
-        $(this).css({"cursor":"pointer", "transform":"translateY(-10px)", "transition":"0.4s"});
-        $(".hoverA1").css("visibility", "visible");
-    }, function() {
-        $(this).css("transform", "translateY(0px)");
-        $(".hoverA1").css("visibility", "hidden");
-    });
-
-    $(".hoverB").hover(function() {
-        $(this).css({"cursor":"pointer", "transform":"translateY(-10px)", "transition":"0.4s"});
-        $(".hoverB1").css("visibility", "visible");
-    }, function() {
-        $(this).css("transform", "translateY(0px)");
-        $(".hoverB1").css("visibility", "hidden");
-    });
-
-    $(".hoverC").hover(function() {
-        $(this).css({"transform":"translateY(-10px)", "transition":"0.4s"});
-        $(".hoverC1").css("visibility", "visible");
-    }, function() {
-        $(this).css("transform", "translateY(0px)");
-        $(".hoverC1").css("visibility", "hidden");
-    });
 });
