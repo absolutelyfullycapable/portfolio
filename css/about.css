@@ -610,7 +610,7 @@ ul, li { list-style:none; margin:0; padding:0; }
                 .container .main .contact .hidden2 li a { transition:all 0.4s ease 0s; }
                 .container .main .contact .hidden2 li:hover a { transform:translateY(-10px); }
 
-                .container .main .contact .hidden2 li > img { display:none; margin-top:15px; }
+                .container .main .contact .hidden2 li > img { display:none; margin:15px 0 0 6px; }
             
             .container .main .contact .hidden2 li:nth-child(2) { left:6.25vw; }
             .container .main .contact .hidden2 li:nth-child(3) { left:12.5vw; }
