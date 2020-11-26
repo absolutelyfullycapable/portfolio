@@ -5,8 +5,7 @@ html, body { height:100%; }
 body { margin:0; padding:0; background-color:#0027c9; color:#fff; font-family:'RhodeMediumExtended',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; letter-spacing:-1px; }
 ul { margin:0; padding:0; list-style:none; }
 
-::selection, ::-webkit-selection, ::-moz-selection, ::-ms-selection, ::-o-selection { background-color:#0027c9; color:#fff; }
-
+::selection { background-color:#0027c9; color:#fff; }
 
 /*** Mobile ***/
 .container { width:100%; height:100%; display:flex; flex-direction:column; justify-content:space-between; position:relative; }
