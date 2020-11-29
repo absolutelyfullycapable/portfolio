@@ -93,7 +93,7 @@ ul, li { list-style:none; margin:0; padding:0; }
                 .container .main .contact ul:first-of-type li:first-child { background:url(../images/tel.png) no-repeat 0 50%; background-size:contain; }
                 .container .main .contact ul:first-of-type li:nth-child(2) { background:url(../images/mail.png) no-repeat 0 50%; background-size:contain; }
                 .container .main .contact ul:first-of-type li:nth-child(3) { background:url(../images/blog.png) no-repeat 0 50%; background-size:contain; }
-                .container .main .contact ul:first-of-type li:last-child { background:url(../images/git.png) no-repeat 0 50%; background-size:contain; margin-bottom:0; }
+                .container .main .contact ul:first-of-type li:last-child { background:url(../images/github.png) no-repeat 0 50%; background-size:contain; margin-bottom:0; }
                 
                 .container .main .contact ul:first-of-type li a { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:300; text-decoration:none; color:#000; }
 
