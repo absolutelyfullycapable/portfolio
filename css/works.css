@@ -27,7 +27,7 @@ ul, li { list-style:none; margin:0; padding:0; }
         .container header .menu-wrapper { width:39px; height: 39px; background-color:#0027c9; border-radius:50%; cursor: pointer; display:flex; justify-content:center; align-items:center; }
         .container header .menu-wrapper.visible { z-index:9999; }
 
-        .container header .menu-wrapper .hamburger-menu, .container header .menu-wrapper .hamburger-menu:after, .container header .menu-wrapper .hamburger-menu:before { width:22px; height:1px; border-radius:50px; margin:auto; }
+        .container header .menu-wrapper .hamburger-menu, .container header .menu-wrapper .hamburger-menu:after, .container header .menu-wrapper .hamburger-menu:before { width:22px; height:1px; border-radius:50px; margin:0 auto; }
 
         .container header .menu-wrapper .hamburger-menu { position:relative; background:white; transition: all 0ms 300ms; }
         .container header .menu-wrapper .hamburger-menu.animate { background: rgba(255, 255, 255, 0); }
