@@ -72,7 +72,23 @@ ul, li { list-style:none; margin:0; padding:0; }
         /* ability */
         .container .main .ability { margin:180px 0; }
             .container .main .ability h2, .container .main .ability > p { text-align:right; padding:0 5px; }
-            .container .main .ability h2 .slide { color:#fff; --color1:#0027c9; --color2:#0027c9; --bg-height:100%; background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color1)), to(var(--color2))); background-image: -moz-gradient(linear, left top, left bottom, from(var(--color1)), to(var(--color2))); background-image: -ms-gradient(linear, left top, left bottom, from(var(--color1)), to(var(--color2))); background-image: linear-gradient(var(--color1), var(--color2)); background-repeat: no-repeat; background-size: 0 var(--bg-height); -webkit-animation:highlight 800ms 1 ease-out; -moz-animation:highlight 800ms 1 ease-out; -ms-animation:highlight 800ms 1 ease-out; animation:highlight 800ms 1 ease-out; -webkit-animation-fill-mode:forwards; -moz-animation-fill-mode:forwards; -ms-animation-fill-mode:forwards; animation-fill-mode: forwards; -webkit-animation-play-state:paused; -moz-animation-play-state:paused; -ms-animation-play-state:paused; animation-play-state:paused; color:#fff; font-weight:500; padding:0 1.5% 0 1%; }
+                .container .main .ability h2 .slide {
+                    --color1:#0027c9; --color2:#0027c9; --bg-height:100%;
+                    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color1)), to(var(--color2)));
+                    background-image: linear-gradient(var(--color1), var(--color2));
+
+                    background-repeat: no-repeat;
+
+                    background-size: 0 var(--bg-height); 
+                    
+                    -webkit-animation: highlight 800ms 1 ease-out; animation: highlight 800ms 1 ease-out;
+                    
+                    -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; 
+                    
+                    -webkit-animation-play-state: paused; animation-play-state: paused;
+                
+                    color:#fff; font-weight:500; padding:0 1.5% 0 1%;
+                }
             .container .main .ability > p { font-size:1.063em; margin-bottom:130px; line-height:1.6; }
             .container .main .ability ul li p { line-height:1.6; font-size:1.01em; }
             .container .main .ability .hidden { display:none; }
@@ -298,6 +314,24 @@ ul, li { list-style:none; margin:0; padding:0; }
         }
 
         @-webkit-keyframes highlight {
+            to {
+                background-size: 100% var(--bg-height);
+            }
+        }
+
+        @-moz-keyframes highlight {
+            to {
+                background-size: 100% var(--bg-height);
+            }
+        }
+
+        @-ms-keyframes highlight {
+            to {
+                background-size: 100% var(--bg-height);
+            }
+        }
+
+        @-o-keyframes highlight {
             to {
                 background-size: 100% var(--bg-height);
             }

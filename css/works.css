@@ -51,7 +51,7 @@ ul, li { list-style:none; margin:0; padding:0; }
 
         /* main title */
         .container .main > h2 { font-weight:300; font-size:2.5em; letter-spacing:-3px; line-height:1.4; margin-bottom:20px; }
-        .container .main > h2 .slide { color:#fff; --color1:#0027c9; --color2:#0027c9; --bg-height:100%; background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color1)), to(var(--color2))); background-image:linear-gradient(var(--color1), var(--color2)); background-repeat:no-repeat; background-size:0 var(--bg-height); -webkit-animation:highlight 800ms 1 ease-out; animation:highlight 800ms 1 ease-out; -webkit-animation-fill-mode:forwards; animation-fill-mode:forwards; -webkit-animation-play-state:paused; animation-play-state:paused; }
+        .container .main > h2 .slide { color:#fff; --color1:#0027c9; --color2:#0027c9; --bg-height:100%; background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color1)), to(var(--color2))); background-image:linear-gradient(var(--color1), var(--color2)); background-repeat:no-repeat; background-size:0 var(--bg-height); -webkit-animation:highlight 800ms 1 ease-out; animation:highlight 800ms 1 ease-out; -webkit-animation-fill-mode:forwards; animation-fill-mode:forwards; -webkit-animation-play-state:paused; animation-play-state:paused; color:#fff; font-weight:500; padding:0 1.5% 0 1%; }
         .container .main > .hidden { display:none; }
 
         .container .main > p { font-size:1.063em; line-height:1.6; margin:0; }
