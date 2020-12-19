@@ -10,23 +10,22 @@ $(function() {
         $('.container header h1').toggleClass('none');
     });
 
-    // 스크롤 애니메이션
-    (function (document) {
-        const markers = [...document.querySelectorAll('.slide')];
-        
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach((entry) => {
-            if (entry.intersectionRatio > 0) {
-                    entry.target.style.animationPlayState = 'running';
-                    observer.unobserve(entry.target);
-                }
-    });
-    }, {
-        threshold: 0.8
-    });
+    // 스크롤 시 가려진 제목 나타나는 애니메이션
+    $(window).scroll(function() {
+        var scr = $(window).scrollTop(),
+            ability = $('.ability').offset().top,
+            contact = $('.contact').offset().top;
 
-    markers.forEach(mark => {
-        observer.observe(mark);
+        if(scr >= ability - 500) {
+            $('.ability h2 span').addClass('slide');
+        } else {
+            $('.ability h2 span').removeClass('slide');
+        }
+
+        if(scr >= contact - 500) {
+            $('.contact h2 span').addClass('slide');
+        } else {
+            $('.contact h2 span').removeClass('slide');
+        }
     });
-    })(document);
 });

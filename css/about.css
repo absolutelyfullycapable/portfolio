@@ -72,23 +72,9 @@ ul, li { list-style:none; margin:0; padding:0; }
         /* ability */
         .container .main .ability { margin:180px 0; }
             .container .main .ability h2, .container .main .ability > p { text-align:right; padding:0 5px; }
-                .container .main .ability h2 .slide {
-                    --color1:#0027c9; --color2:#0027c9; --bg-height:100%;
-                    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color1)), to(var(--color2)));
-                    background-image: linear-gradient(var(--color1), var(--color2));
-
-                    background-repeat: no-repeat;
-
-                    background-size: 0 var(--bg-height); 
-                    
-                    -webkit-animation: highlight 800ms 1 ease-out; animation: highlight 800ms 1 ease-out;
-                    
-                    -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; 
-                    
-                    -webkit-animation-play-state: paused; animation-play-state: paused;
-                
-                    color:#fff; font-weight:500; padding:0 1.5% 0 1%;
-                }
+                .container .main .ability h2 span { color:#fff; font-weight:500; padding:0 1.5% 0 1%; position:relative; }
+                .container .main .ability h2 span::after { content:""; display:block; position:absolute; z-index:-1; left:0; bottom:0; background-color:#0028c9; width:0; height:100%; transition:1s; }
+                .container .main .ability h2 span.slide::after { width:100%; }
             .container .main .ability > p { font-size:1.063em; margin-bottom:130px; line-height:1.6; }
             .container .main .ability ul li p { line-height:1.6; font-size:1.01em; }
             .container .main .ability .hidden { display:none; }
@@ -100,7 +86,9 @@ ul, li { list-style:none; margin:0; padding:0; }
         
         /* contact */
         .container .main .contact { padding:0 5px; }
-            .container .main .contact h2 .slide { color:#fff; --color1:#0027c9; --color2:#0027c9; --bg-height:100%; background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color1)), to(var(--color2))); background-image: linear-gradient(var(--color1), var(--color2)); background-repeat: no-repeat; background-size: 0 var(--bg-height); -webkit-animation: highlight 800ms 1 ease-out; animation: highlight 800ms 1 ease-out; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-play-state: paused; animation-play-state: paused; color:#fff; font-weight:500; padding:0 1.5% 0 1%; }
+            .container .main .contact h2 span { color:#fff; font-weight:500; padding:0 1.5% 0 1%; position:relative; }
+            .container .main .contact h2 span::after { content:""; display:block; position:absolute; z-index:-1; left:0; bottom:0; background-color:#0028c9; width:0; height:100%; transition:1s; }
+            .container .main .contact h2 span.slide::after { width:100%; }
             .container .main .contact p:first-of-type { font-size:1.063em; margin:45px 0 75px; line-height:1.6; }
 
             .container .main .contact .hidden1, .container .main .contact .hidden2 { display:none; }
@@ -119,7 +107,7 @@ ul, li { list-style:none; margin:0; padding:0; }
         .container footer .hidden { display:none; }
 
         @-webkit-keyframes scroll-M {
-            0.0% {
+            0% {
                 -webkit-transform: translateY(0px);
                 transform: translateY(0px)
             }
@@ -158,7 +146,7 @@ ul, li { list-style:none; margin:0; padding:0; }
         }
         
         @-moz-keyframes scroll-M {
-            0.0% {
+            0% {
                 -webkit-transform: translateY(0px);
                 transform: translateY(0px)
             }
@@ -197,7 +185,7 @@ ul, li { list-style:none; margin:0; padding:0; }
         }
         
         @-ms-keyframes scroll-M {
-            0.0% {
+            0% {
                 -webkit-transform: translateY(0px);
                 transform: translateY(0px)
             }
@@ -236,7 +224,7 @@ ul, li { list-style:none; margin:0; padding:0; }
         }
         
         @-o-keyframes scroll-M {
-            0.0% {
+            0% {
                 -webkit-transform: translateY(0px);
                 transform: translateY(0px)
             }
@@ -275,7 +263,7 @@ ul, li { list-style:none; margin:0; padding:0; }
         }
         
         @keyframes scroll-M {
-            0.0% {
+            0% {
                 -webkit-transform: translateY(0px);
                 transform: translateY(0px)
             }
@@ -313,36 +301,6 @@ ul, li { list-style:none; margin:0; padding:0; }
             }
         }
 
-        @-webkit-keyframes highlight {
-            to {
-                background-size: 100% var(--bg-height);
-            }
-        }
-
-        @-moz-keyframes highlight {
-            to {
-                background-size: 100% var(--bg-height);
-            }
-        }
-
-        @-ms-keyframes highlight {
-            to {
-                background-size: 100% var(--bg-height);
-            }
-        }
-
-        @-o-keyframes highlight {
-            to {
-                background-size: 100% var(--bg-height);
-            }
-        }
-
-        @keyframes highlight {
-            to {
-                background-size: 100% var(--bg-height);
-            }
-        }
-
 
 /*** Tablet ***/
 @media (min-width:767px) {
@@ -373,7 +331,7 @@ ul, li { list-style:none; margin:0; padding:0; }
     .container footer .hidden { display:block; }
 
     @-webkit-keyframes scroll-T {
-        0.0% {
+        0% {
             -webkit-transform: translateY(0px);
             transform: translateY(0px)
         }
@@ -412,7 +370,7 @@ ul, li { list-style:none; margin:0; padding:0; }
     }
     
     @-moz-keyframes scroll-T {
-        0.0% {
+        0% {
             -webkit-transform: translateY(0px);
             transform: translateY(0px)
         }
@@ -451,7 +409,7 @@ ul, li { list-style:none; margin:0; padding:0; }
     }
     
     @-ms-keyframes scroll-T {
-        0.0% {
+        0% {
             -webkit-transform: translateY(0px);
             transform: translateY(0px)
         }
@@ -490,7 +448,7 @@ ul, li { list-style:none; margin:0; padding:0; }
     }
     
     @-o-keyframes scroll-T {
-        0.0% {
+        0% {
             -webkit-transform: translateY(0px);
             transform: translateY(0px)
         }
@@ -529,7 +487,7 @@ ul, li { list-style:none; margin:0; padding:0; }
     }
     
     @keyframes scroll-T {
-        0.0% {
+        0% {
             -webkit-transform: translateY(0px);
             transform: translateY(0px)
         }
@@ -656,7 +614,7 @@ ul, li { list-style:none; margin:0; padding:0; }
         .container footer .hidden { font-size:0.938em; }
 
         @-webkit-keyframes scroll-PC {
-            0.0% {
+            0% {
                 -webkit-transform: translateY(0px);
                 transform: translateY(0px)
             }
@@ -695,7 +653,7 @@ ul, li { list-style:none; margin:0; padding:0; }
         }
         
         @-moz-keyframes scroll-PC {
-            0.0% {
+            0% {
                 -webkit-transform: translateY(0px);
                 transform: translateY(0px)
             }
@@ -734,7 +692,7 @@ ul, li { list-style:none; margin:0; padding:0; }
         }
         
         @-ms-keyframes scroll-PC {
-            0.0% {
+            0% {
                 -webkit-transform: translateY(0px);
                 transform: translateY(0px)
             }
@@ -773,7 +731,7 @@ ul, li { list-style:none; margin:0; padding:0; }
         }
         
         @-o-keyframes scroll-PC {
-            0.0% {
+            0% {
                 -webkit-transform: translateY(0px);
                 transform: translateY(0px)
             }
@@ -812,7 +770,7 @@ ul, li { list-style:none; margin:0; padding:0; }
         }
         
         @keyframes scroll-PC {
-            0.0% {
+            0% {
                 -webkit-transform: translateY(0px);
                 transform: translateY(0px)
             }
