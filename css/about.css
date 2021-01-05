@@ -324,8 +324,8 @@ ul, li { list-style:none; margin:0; padding:0; }
 
         /* ability */
         .container .main .ability ul li img { width:50%; }
-        .container .main .ability ul li:nth-child(1) p, .container .main .ability ul li:nth-child(3) p { display:none; }
-        .container .main .ability ul li:nth-child(1) .hidden, .container .main .ability ul li:nth-child(3) .hidden { display:block; }
+        .container .main .ability ul li p { display:none; }
+        .container .main .ability ul li .hidden { display:block; }
 
     /** Tablet footer **/
     .container footer p:first-of-type { display:none; }
@@ -378,7 +378,7 @@ ul, li { list-style:none; margin:0; padding:0; }
             .container .main .ability h2 span { padding:0 10px 0 5px; }
             .container .main .ability > p { margin-bottom:230px; }
             .container .main .ability > p:first-of-type { display:none; }
-            .container .main .ability ul li:nth-child(2) p, .container .main .ability .hidden { display:block; font-size:1.375em; margin-top:60px; line-height:1.6; }
+            .container .main .ability .hidden { display:block; font-size:1.375em; margin-top:60px; line-height:1.6; }
 
             .container .main .ability ul li h3 { font-size:1.875em; font-weight:600; }
             .container .main .ability ul li img { display:none; }
