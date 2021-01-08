@@ -88,26 +88,21 @@ ul, li { list-style:none; margin:0; padding:0; }
         /* projects */
         .container .main > div ul { margin-bottom:20px; }
             .container .main > div ul li:first-child { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:600; color:#0027c9; font-size:1.4em; }
-            .container .main > div ul li:last-child a { text-decoration:none; text-shadow:-1px -1px 0 #0027c9, 1px -1px 0 #0027c9, -1px 1px 0 #0027c9, 1px 1px 0 #0027c9; color:#fff; transition:0.2s; }
+            .container .main > div ul li:last-child a { font-family:'DrukWideCyWebBold',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:1.7em; font-weight:900; text-decoration:none; text-shadow:-1px -1px 0 #0027c9, 1px -1px 0 #0027c9, -1px 1px 0 #0027c9, 1px 1px 0 #0027c9; color:#fff; transition:0.2s; }
             .container .main > div ul li:last-child a:hover, .container .main > div ul li:last-child a:active { color:#0027c9; text-shadow:none; }
                 .container .main > div > a img { width:95%; }
 
             .container .main > div > p { margin-top:20px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; color:#0027c9; font-weight:600; font-size:0.82em; }
 
-        /* first, third, fifth project */
+        /* odd number projects */
         .container .main > div:nth-child(2n+1) { margin:100px 0; }
-        .container .main > div:nth-child(2n+1) ul li:first-child, .container .main > div:nth-child(2n+1) ul li:last-child { text-align:right; }
-            .container .main > div:nth-child(2n+1) ul li:last-child a { font-family:'DrukWideCyWebBold',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:1.7em; }
-
+            .container .main > div:nth-child(2n+1) ul li { text-align:right; }
             .container .main > div:nth-child(2n+1) > a img { float:right; }
-
             .container .main > div:nth-child(2n+1) > p { float:right; text-align:right; }
 
-        /* second, fourth project */
+        /* even number projects */
         .container .main > div:nth-child(2n+2) { clear:both; padding-top:100px; }
-            .container .main .second ul li:last-child a, .container .main .fourth ul li:last-child a { font-size:1.7em; font-weight:900; }
-                .container .main .fourth ul li:last-child a  { font-family:'Noto Sans KR',"Helvetica Neue","Apple SD Gothic Neo",sans-serif;  }
-                .container .main .fourth ul li:last-child a  { font-family:'DrukWideCyWebBold',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; }
+            .container .main .second ul li:last-child a { font-family:'Noto Sans KR',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; }
 
 
     /** Mobile footer **/
@@ -138,9 +133,10 @@ ul, li { list-style:none; margin:0; padding:0; }
 
     /* projects */
     .container .main > div ul li:first-child { font-size:3em; font-weight:500; }
-        .container .main > div:nth-child(2n+1) ul li:last-child a, .container .main > div:nth-child(2n+2) ul li:last-child a { font-size:3.5em; }
-
+    .container .main > div ul li:last-child a { font-size:3.5em; }
     .container .main > div > p { font-size:1.146vw; font-weight:600; }
+
+    .container .main > .sixth { padding-bottom:60px; }
 
 
     /** Tablet footer **/
@@ -173,23 +169,23 @@ ul, li { list-style:none; margin:0; padding:0; }
         /* projects */
         .container .main > div ul { display:flex; justify-content:space-between; align-items:center; margin-bottom:55px; }
         
-        .container .main > div:nth-child(2n+1) ul li:last-child a, .container .main > div:nth-child(2n+2) ul li:last-child a { font-size:3.75vw; }
+        .container .main > div ul li:last-child a { font-size:3.75vw; }
 
-        /* first, third, fifth project */
+        /* odd number projects */
         .container .main > div:nth-child(2n+1) { margin-top:270px; }
             .container .main> div:nth-child(2n+1) ul { float:right; width:85%; }
             .container .main .first ul { background:url(../images/line2.png) no-repeat 11% 50%; background-size:30%; }
             .container .main .third ul { background:url(../images/line2.png) no-repeat 15% 50%; background-size:42%; }
+            .container .main .fifth ul { background:url(../images/line2.png) no-repeat 35% 50%; background-size:60%; }
 
                 .container .main .first > a img, .container .main .third > a img, .container .main .fifth > a img { width:85%; }
 
                 .container .main .first > p { clear:both; }
 
-        /* second, fourth project */
+        /* even number projects */
         .container .main > div:nth-child(2n+2) { padding-top:250px; }
             .container .main > div:nth-child(2n+2) ul, .container .main > div:nth-child(2n+2) > a img { width:85%; }
             .container .main .second ul { background:url(../images/line2.png) no-repeat 22% 50%; background-size:50%; }
-
             .container .main .fourth ul { background:url(../images/line2.png) no-repeat 21% 50%; background-size:45%; }
 
 
