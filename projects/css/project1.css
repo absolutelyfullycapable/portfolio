@@ -15,7 +15,7 @@ ul, li { list-style:none; margin:0; padding:0; }
 
 
 /*** Mobile ***/
-.container { width:100%; height:100%; display:flex; flex-direction:column; justify-content:space-between; position:relative; }
+.container { width:100%; display:flex; flex-direction:column; justify-content:space-between; position:relative; }
 
     /** Mobile header **/
     .container header { position:fixed; z-index:9999; width:100%; height:81px; padding:27px 4%; box-sizing:border-box; display:flex; justify-content:space-between; align-items:center; background:url(../../images/line2.png) no-repeat 55% 50%; background-color:#fff; background-size:52% 3px; }
