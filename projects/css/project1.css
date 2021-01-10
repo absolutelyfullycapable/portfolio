@@ -27,7 +27,7 @@ ul, li { list-style:none; margin:0; padding:0; }
         .container header h1 a { display:block; width:100%; height:100%; }
         
         /* mobile navigation icon */
-        .container header .menu-wrapper { width:39px; height: 39px; background-color:#0027c9; border-radius:50%; cursor: pointer; display:flex; justify-content:center; align-items:center; }
+        .container header .menu-wrapper { width:39px; height: 39px; background-color:#0027c9; border-radius:50%; cursor: pointer; display:flex; align-items:center; }
         .container header .menu-wrapper.visible { z-index:9999; }
 
         .container header .menu-wrapper .hamburger-menu, .container header .menu-wrapper .hamburger-menu:after, .container header .menu-wrapper .hamburger-menu:before { width:22px; height:1px; border-radius:50px; margin:auto; }
@@ -260,6 +260,7 @@ ul, li { list-style:none; margin:0; padding:0; }
         .container .contents .concept .hidden span { font-size:1.15em; }
 
         /* style */
+        .container .contents .style { margin-bottom:0; }
         /* color */
         .container .contents .style .description #color { margin:40px 0 80px; }
             .container .contents .style .description #color .color { width:150px; height:150px; line-height:150px; }
@@ -272,7 +273,7 @@ ul, li { list-style:none; margin:0; padding:0; }
             .container .contents .style .description > ul li:nth-child(4) p:last-of-type { font-size:1.4em; }
 
         /* fin */
-        .container .fin { margin-top:180px; }
+        .container .fin { padding-top:180px; margin-top:0; }
             .container .fin .hidden { display:block; margin:0 0 15px 0; font-size:1.2em; }
                 .container .fin .hidden span { font-weight:400; }
             .container .fin a:first-of-type { margin-top:80px; }
