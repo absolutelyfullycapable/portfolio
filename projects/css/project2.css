@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /*** basic ***/
-html, body { height:100%; }
+html, body { height:100%; overflow-x:hidden; }
 body { margin:0; padding:0; font-family:'Noto Sans KR',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:300; letter-spacing:-1px; }
 ul, li { list-style:none; margin:0; padding:0; }
 
@@ -231,7 +231,7 @@ ul, li { list-style:none; margin:0; padding:0; }
                         .container .main .desk .tap_menu li .txt_box .good img, .container .main .desk .tap_menu li .txt_box .bad img { width:45px; }
 
             /* persona */
-            .container .main .persona { display:flex; flex-wrap:wrap; justify-content:center; padding:7% 0; text-align:center; background-color:#f9fafb; }
+            .container .main .persona { width:100%; display:flex; flex-wrap:wrap; justify-content:center; padding:7% 0; text-align:center; background-color:#f9fafb; }
                 .container .main .persona > p:first-of-type, .container .main .persona > h2 { line-height:1.6; margin:0; text-align:center; width:100%; }
                 .container .main .persona > p:first-of-type { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:800; color:#00275d; font-size:1.8em; }
                 .container .main .persona > h2 { margin:0 0 20px 0; font-size:3em; font-weight:900; }
@@ -252,7 +252,7 @@ ul, li { list-style:none; margin:0; padding:0; }
 
 
                 .container .main .persona > p:last-of-type { width:100%; font-size:1.1em; margin-bottom:25px; }
-                .container .main .persona a { display:block; margin:0 auto; width:350px; height:60px; line-height:60px; border:1px solid #00275d; color:#00275d; text-decoration:none; font-size:1.15em; font-weight:500; transition:0.2s; }
+                .container .main .persona a { display:block; width:350px; height:60px; line-height:60px; border:1px solid #00275d; color:#00275d; text-decoration:none; font-size:1.15em; font-weight:500; transition:0.2s; }
                 .container .main .persona a:hover, .container .main .persona a:active { background-color:#00275d; color:#fff; }
 
             /* ux flow */
