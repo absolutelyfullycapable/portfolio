@@ -198,7 +198,7 @@ ul, li { list-style:none; margin:0; padding:0; }
                 .container .main .target > h2 { font-weight:900; font-size:3em; margin:0 0 20px 0; line-height:1.6; }
 
                 .container .main .target ul { margin:6% auto; width:55%; display:flex; justify-content:space-between; flex-wrap:wrap; }
-                    .container .main .target ul li { width:28%; height:70px; line-height:70px; border-radius:50px; background-color:#fff; margin:2% 0; font-size:1.2em; font-weight:700; color:#00275d; box-shadow:10px 10px 10px rgba(0, 0, 0, 0.1); }
+                    .container .main .target ul li { width:28%; height:70px; line-height:70px; border-radius:50px; background-color:#fff; margin:2% 0; font-size:1vw; font-weight:700; color:#00275d; box-shadow:10px 10px 10px rgba(0, 0, 0, 0.1); }
 
 
                 .container .main .target > p:last-of-type { font-size:1.1em; margin-bottom:25px; }
@@ -215,7 +215,7 @@ ul, li { list-style:none; margin:0; padding:0; }
                 .container .main .desk > p:nth-of-type(2) { margin:20px 0 5px; }
 
                 .container .main .desk .tap_menu { width:85%; margin:7% auto 0; position:relative; }
-                    .container .main .desk .tap_menu li h2 { width:250px; height:65px; text-align:center; font-size:1.2em; font-weight:700; color:#00275d; border:1px solid #00275d; padding:20px 15px; box-sizing:border-box; border-radius:50px; transition:0.2s; cursor:pointer; } 
+                    .container .main .desk .tap_menu li h2 { width:13.021vw; height:65px; text-align:center; font-size:1vw; font-weight:700; color:#00275d; border:1px solid #00275d; padding:20px 15px; box-sizing:border-box; border-radius:50px; transition:0.2s; cursor:pointer; } 
                     .container .main .desk .tap_menu li h2:hover, .container .main .desk .tap_menu li h2:active, .container .main .desk .tap_menu li.show h2 { background-color:#00275d; color:#fff; }
 
                     .container .main .desk .tap_menu #tap1 h2 { position:absolute; top:0; left:20%; }

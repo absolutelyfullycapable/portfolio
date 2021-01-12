@@ -143,7 +143,7 @@ ul, li { list-style:none; margin:0; padding:0; }
                 .container .main .wireframe > p:first-of-type { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:800; color:#00275d; font-size:1.8em; }
                 .container .main .wireframe > h2 { margin-bottom:7%; font-size:3em; font-weight:900; }
 
-                .container .main .wireframe img { width:1400px; margin-bottom:4%; }
+                .container .main .wireframe img { width:91.5%; margin-bottom:4%; }
 
                 .container .main .wireframe > p:last-of-type { font-size:1.1em; margin-bottom:25px; }
                 .container .main .wireframe a { display:block; margin:0 auto; width:350px; height:60px; line-height:60px; border:1px solid #00275d; color:#00275d; text-decoration:none; font-size:1.15em; font-weight:500; transition:0.2s; }
@@ -156,16 +156,15 @@ ul, li { list-style:none; margin:0; padding:0; }
                 .container .main .reference > h2 { margin-bottom:7%; font-size:3em; font-weight:900; }
                     .container .main .reference > h2 span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:800; }
 
-                    .container .main .reference .tap_menu { width:60%; margin:7% auto 0; position:relative; }
-                        .container .main .reference .tap_menu li h2 { width:150px; height:65px; font-size:1.2em; font-weight:700; text-align:center; color:#00275d; border:1px solid #00275d; padding:20px 25px; box-sizing:border-box; border-radius:50px; transition:0.2s; cursor:pointer; } 
+                    .container .main .reference .tap_menu { width:85%; margin:7% auto 0; position:relative; }
+                        .container .main .reference .tap_menu li h2 { width:13vw; height:65px; font-size:1.2em; font-weight:700; text-align:center; color:#00275d; border:1px solid #00275d; padding:20px 25px; box-sizing:border-box; border-radius:50px; transition:0.2s; cursor:pointer; } 
                         .container .main .reference .tap_menu li h2:hover, .container .main .reference .tap_menu li h2:active, .container .main .reference .tap_menu li.show h2 { background-color:#00275d; color:#fff; }
 
                     .container .main .reference .tap_menu #tap1 h2 { position:absolute; top:0; left:20%; }
                     .container .main .reference .tap_menu #tap2 h2 { position:absolute; top:0; left:50%; transform:translateX(-50%); } 
                     .container .main .reference .tap_menu #tap3 h2 { position:absolute; top:0; right:20%; } 
 
-                    .container .main .reference .tap_menu li .txt_box { width:80%; margin:0 auto; padding-top:150px; font-size:1.1em; line-height:1.5; display:none; }
-                        .container .main .reference .tap_menu #tap1 .txt_box { width:90%;  }
+                    .container .main .reference .tap_menu li .txt_box { width:60%; margin:0 auto; padding-top:150px; font-size:1.1em; line-height:1.5; display:none; }
                     .container .main .reference .tap_menu li.show .txt_box { display:block; }
                         .container .main .reference .tap_menu li .txt_box > div:first-of-type { width:100%;  display:flex; justify-content:space-between; align-items:center; }
                             .container .main .reference .tap_menu li .txt_box > div:first-of-type img { width:200px; }
@@ -226,10 +225,11 @@ ul, li { list-style:none; margin:0; padding:0; }
                     
                         
             /* final */
-            .container .main .final { padding:7% 0; text-align:center; height:1910px; box-sizing:border-box; background:#f9fafb url(../images/pj2_final.png) no-repeat 50% 100%; background-size:contain; }
+            .container .main .final { padding:7% 0; text-align:center; box-sizing:border-box; background-color:#f9fafb; }
                 .container .main .final p, .container .main .final h2 { text-align:center; margin:0; line-height:1.6; }
-                .container .main .final > p { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:800; color:#00275d; font-size:1.8em; }
-                .container .main .final > h2 { margin-bottom:7%; font-size:3em; font-weight:900; }
+                .container .main .final p { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:800; color:#00275d; font-size:1.8em; }
+                .container .main .final h2 { margin-bottom:7%; font-size:3em; font-weight:900; }
+                .container .main .final img { width:100%; }
 
             /* fin */
             .container .main .fin { padding:3% 0; background-color:#f9fafb; text-align:center; }
