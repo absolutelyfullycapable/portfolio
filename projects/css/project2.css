@@ -143,9 +143,12 @@ ul, li { list-style:none; margin:0; padding:0; }
                     .container .main .info ul li:first-child { font-weight:500; }
 
             /* title */
-            .container .main .title { text-align:center; background:url(../images/pj2_intro.svg) no-repeat 50% 70%; background-size:cover; }
-                .container .main .title h2 { font-weight:900; font-size:5.5em; padding-top:120px; margin:0; color:#00275d; }
-                .container .main .title p { margin:0; font-size:1.2em; font-weight:400; }
+            .container .main .title { text-align:center; padding-top:120px; }
+                .container .main .title h2 { font-weight:900; font-size:4.583vw; margin:0; color:#00275d; position:relative; }
+                .container .main .title h2::after { content:''; display:block; width:10px; height:10px; border-radius:50%; background-color:#00275d; position:absolute; top:50%; left:31.5vw; }
+                .container .main .title h2::before { content:''; display:block; width:10px; height:10px; border-radius:50%; background-color:#00275d; position:absolute; top:50%; right:31.5vw; }
+
+                .container .main .title p { margin:0; font-size:1vw; font-weight:400; }
                     .container .main .title p:first-of-type { margin-top:30px; color:#222; }
                     .container .main .title p:last-of-type { margin-top:20px; color:rgba(0, 39, 93, 0.4); }
 
