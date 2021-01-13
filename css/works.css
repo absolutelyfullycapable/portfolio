@@ -50,7 +50,7 @@ ul, li { list-style:none; margin:0; padding:0; }
 					.container .menu ul li a p { margin:0 auto; text-align:center; color:#0027c9; }
 					.container .menu ul li a p:first-of-type { font-family:'DrukWideCyWebBold',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:2.5em; }
 					.container .menu ul li a p:last-of-type { margin-top:10px; font-family:'RhodeMediumExtended',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:0.8em; opacity:0.8; }
-                    .container .menu ul li a img { width:20px; position:relative; left:50%; }
+                    .container .menu ul li a img { width:20px; position:relative; left:50%; transform:translateX(-50%); }
                     
 
     /** Mobile main contents **/
