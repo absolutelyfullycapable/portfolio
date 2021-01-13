@@ -40,11 +40,17 @@ ul, li { list-style:none; margin:0; padding:0; }
 		.container header .PC_nav { display:none; }
 
     /** mobile navigation **/
-    .container .menu { width:100%; height:100%; background-color:rgb(255, 255, 255); position:fixed; top:0; left:100%; z-index:999; display:flex; justify-content:center; align-items:center; transition:0.7s; }
-    .container .menu.active { left:0; }
+	.container .menu { width:100%; height:100%; background-color:rgb(255, 255, 255); position:fixed; top:0; left:100%; z-index:999; display:flex; justify-content:center; align-items:center; transition:0.7s; }
+	.container .menu.active { left:0; }
         .container .menu ul { width:100%; }
-            .container .menu ul li { width:100%; margin-bottom:20px;  }
-                .container .menu ul li a { display:block; width:280px; margin:0 auto; font-family:'RhodeMediumExtended',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; text-align:left; text-indent:35px; text-decoration:none; color:#0027c9; text-transform:capitalize; font-size:1.875em; background:url(../images/menu_icon.png) no-repeat; background-size:16px; }
+			.container .menu ul li { width:100%; margin-bottom:70px; position:relative; }
+			.container .menu ul li:first-child::after { content:''; display:block; width:80%; height:1.5px; background-color:#0027c9; opacity:0.6; position:absolute; left:50%; bottom:-35px; transform:translateX(-50%); }
+			.container .menu ul li:last-child { margin-bottom:0; }
+				.container .menu ul li a { display:block; width:100%; text-decoration:none; }
+					.container .menu ul li a p { margin:0 auto; text-align:center; color:#0027c9; }
+					.container .menu ul li a p:first-of-type { font-family:'DrukWideCyWebBold',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:2.5em; }
+					.container .menu ul li a p:last-of-type { margin-top:10px; font-family:'RhodeMediumExtended',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:0.8em; opacity:0.8; }
+					.container .menu ul li a img { width:20px; position:relative; left:50%; }
 
     /** Mobile main contents **/
     .container .main { border:1px solid #0027c9; border-top:none; margin:78px 4% 0; padding:0 4% 65px; }
