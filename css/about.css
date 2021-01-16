@@ -387,7 +387,7 @@ ul, li { list-style:none; margin:0; padding:0; }
             .container .main .ability > p:first-of-type { display:none; }
             .container .main .ability .hidden { display:block; font-size:1.375em; margin-top:60px; line-height:1.6; }
 
-            .container .main .ability ul li h3 { font-size:1.875em; font-weight:600; }
+            .container .main .ability ul li h3 { font-size:1.875em; font-weight:600; margin:0; }
 
         /* contact */
         .container .main .contact p:first-of-type, .container .main .contact ul:first-of-type { display:none; }
@@ -618,20 +618,20 @@ ul, li { list-style:none; margin:0; padding:0; }
         .container .main .ability ul li:nth-child(1) h3 { position:absolute; top:0; right:160px; }
         .container .main .ability ul li:nth-child(1) .hidden { position:absolute; bottom:-40px; right:0; }
 
-    .container .main .ability ul li:nth-child(2) { width:100%; height:155px; background:url(../images/languages_PC.jpg) no-repeat 100% 300% / contain; margin:180px 0; position:relative; }
-        .container .main .ability ul li:nth-child(2) h3 { position:absolute; top:0; left:44px; }
-        .container .main .ability ul li:nth-child(2) p { position:absolute; bottom:-40px; left:-50px; }
+    .container .main .ability ul li:nth-child(2) { width:100%; height:155px; background:url(../images/publishing_skills_PC.jpg) no-repeat 100% 100% / contain; margin:180px 0; position:relative; }
+        .container .main .ability ul li:nth-child(2) h3 { position:absolute; top:0; left:145px; }
+        .container .main .ability ul li:nth-child(2) p { position:absolute; bottom:-70px; left:-30px; }
     
     .container .main .ability ul li:nth-child(3) { width:100%; height:206px; background:url(../images/cowork_PC.png) no-repeat 9% 100% / 210px; position:relative; margin-top:150px; }
         .container .main .ability ul li:nth-child(3) h3 { position:absolute; top:0; right:35px; }
-        .container .main .ability ul li:nth-child(3) .hidden { position:absolute; bottom:-40px; right:-35px; }
+        .container .main .ability ul li:nth-child(3) .hidden { position:absolute; bottom:-10px; right:-35px; }
 }
 
 
 @media (min-width:1620px) {
-    .container .main .ability ul li:nth-child(1) { background:url(../images/tools_PC.png) no-repeat 0 100% / contain, url(../images/direc1.png) no-repeat 47% 60% / 17%; }
+    .container .main .ability ul li:nth-child(1) { background:url(../images/tools_PC.png) no-repeat 0 100% / contain, url(../images/direc1.png) no-repeat 48% 60% / 17%; }
 
-    .container .main .ability ul li:nth-child(2) { background:url(../images/languages_PC.jpg) no-repeat 100% 300% / contain, url(../images/direc2.png) no-repeat 47% 60% / 17%; }
+    .container .main .ability ul li:nth-child(2) { background:url(../images/publishing_skills_PC.jpg) no-repeat 100% 100% / contain, url(../images/direc2.png) no-repeat 48% 60% / 17%; }
             
-    .container .main .ability ul li:nth-child(3) { background:url(../images/cowork_PC.png) no-repeat 9% 100% / 210px, url(../images/direc1.png) no-repeat 47% 50% / 17%;}
+    .container .main .ability ul li:nth-child(3) { background:url(../images/cowork_PC.png) no-repeat 9% 100% / 210px, url(../images/direc1.png) no-repeat 48% 50% / 17%;}
 }
