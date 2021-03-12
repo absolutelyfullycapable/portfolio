@@ -18,279 +18,278 @@ ul, li { list-style:none; margin:0; padding:0; }
 .container { width:100%; display:flex; flex-direction:column; justify-content:space-between; position:relative; }
 
     /** Mobile header **/
-    .container header { position:fixed; z-index:9999; width:100%; height:81px; padding:27px 4%; box-sizing:border-box; display:flex; justify-content:space-between; align-items:center; background:url(../../images/line2.png) no-repeat 55% 50%; background-color:#fff; background-size:52% 3px; }
-        .container header.none { background:none; }
-
+    header { position:fixed; z-index:9999; width:100%; height:81px; padding:27px 4%; box-sizing:border-box; display:flex; justify-content:space-between; align-items:center; background:url(../../images/line2.png) no-repeat 55% 50%; background-color:#fff; background-size:52% 3px; }
+        header.none { background:none; }
         /* logo */
-        .container header h1 { width:60px; height:30px; margin:0; background:url(../../images/logo_M2.png) no-repeat 50% 50%; background-size:cover; }
-        .container header h1.none { background:none; }
-        .container header h1 a { display:block; width:100%; height:100%; }
-        
+        header h1 { width:60px; height:30px; margin:0; background:url(../../images/logo_M2.png) no-repeat 50% 50%; background-size:cover; }
+        header h1.none { background:none; }
+        header h1 a { display:block; width:100%; height:100%; }
+
         /* mobile navigation icon */
-        .container header .menu-wrapper { width:39px; height: 39px; background-color:#0027c9; border-radius:50%; cursor: pointer; display:flex; align-items:center; }
-        .container header .menu-wrapper.visible { z-index:9999; }
+        header .menu-wrapper { width:39px; height: 39px; background-color:#0027c9; border-radius:50%; cursor: pointer; display:flex; align-items:center; }
+        header .menu-wrapper.visible { z-index:9999; }
 
-        .container header .menu-wrapper .hamburger-menu, .container header .menu-wrapper .hamburger-menu:after, .container header .menu-wrapper .hamburger-menu:before { width:22px; height:1px; border-radius:50px; margin:auto; }
+        header .menu-wrapper .hamburger-menu, header .menu-wrapper .hamburger-menu:after, header .menu-wrapper .hamburger-menu:before { width:22px; height:1px; border-radius:50px; margin:auto; }
 
-        .container header .menu-wrapper .hamburger-menu { position:relative; background:white; transition: all 0ms 300ms; }
-        .container header .menu-wrapper .hamburger-menu.animate { background: rgba(255, 255, 255, 0); }
-        .container header .menu-wrapper .hamburger-menu:before { content: ""; position: absolute; left: 0; bottom:6px; background: white; transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
-        .container header .menu-wrapper .hamburger-menu:after { content: ""; position: absolute; left: 0; top:6px; background: white; transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
-        .container header .menu-wrapper .hamburger-menu.animate:after { background-color:white; top: 0; transform: rotate(45deg); transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
-        .container header .menu-wrapper .hamburger-menu.animate:before { background-color:white; bottom: 0; transform: rotate(-45deg); transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+        header .menu-wrapper .hamburger-menu { position:relative; background:white; transition: all 0ms 300ms; }
+        header .menu-wrapper .hamburger-menu.animate { background: rgba(255, 255, 255, 0); }
+        header .menu-wrapper .hamburger-menu:before { content: ""; position: absolute; left: 0; bottom:6px; background: white; transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+        header .menu-wrapper .hamburger-menu:after { content: ""; position: absolute; left: 0; top:6px; background: white; transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+        header .menu-wrapper .hamburger-menu.animate:after { background-color:white; top: 0; transform: rotate(45deg); transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+        header .menu-wrapper .hamburger-menu.animate:before { background-color:white; bottom: 0; transform: rotate(-45deg); transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
 
         /* PC navigation */
-		.container header .PC_nav { display:none; }
+		header .PC_nav { display:none; }
 
     /** mobile navigation **/
-	.container .menu { width:100%; height:100%; background-color:rgb(255, 255, 255); position:fixed; top:0; left:100%; z-index:999; display:flex; justify-content:center; align-items:center; transition:0.7s; }
-	.container .menu.active { left:0; }
-        .container .menu ul { width:100%; }
-			.container .menu ul li { width:100%; margin-bottom:70px; position:relative; }
-			.container .menu ul li:first-child::after { content:''; display:block; width:80%; height:1.5px; background-color:#0027c9; opacity:0.6; position:absolute; left:50%; bottom:-35px; transform:translateX(-50%); }
-			.container .menu ul li:last-child { margin-bottom:0; }
-				.container .menu ul li a { display:block; width:100%; text-decoration:none; }
-					.container .menu ul li a p { margin:0 auto; text-align:center; color:#0027c9; }
-					.container .menu ul li a p:first-of-type { font-family:'DrukWideCyWebBold',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:2.5em; }
-					.container .menu ul li a p:last-of-type { margin-top:10px; font-family:'RhodeMediumExtended',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:0.8em; opacity:0.8; }
-					.container .menu ul li a img { width:20px; position:relative; left:50%; transform:translateX(-50%); }
+	.menu { width:100%; height:100%; background-color:rgb(255, 255, 255); position:fixed; top:0; left:100%; z-index:999; display:flex; justify-content:center; align-items:center; transition:0.7s; }
+	.menu.active { left:0; }
+        .menu ul { width:100%; }
+			.menu ul li { width:100%; margin-bottom:70px; position:relative; }
+			.menu ul li:first-child::after { content:''; display:block; width:80%; height:1.5px; background-color:#0027c9; opacity:0.6; position:absolute; left:50%; bottom:-35px; transform:translateX(-50%); }
+			.menu ul li:last-child { margin-bottom:0; }
+				.menu ul li a { display:block; width:100%; text-decoration:none; }
+					.menu ul li a p { margin:0 auto; text-align:center; color:#0027c9; }
+					.menu ul li a p:first-of-type { font-family:'DrukWideCyWebBold',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:2.5em; }
+					.menu ul li a p:last-of-type { margin-top:10px; font-family:'RhodeMediumExtended',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:0.8em; opacity:0.8; }
+					.menu ul li a img { width:20px; position:relative; left:50%; transform:translateX(-50%); }
 
 
     /** Mobile main contents **/
-    .container .main { border:1px solid #0027c9; border-top:none; margin:78px 4% 0; padding:0 4% 65px; }
+    .main { border:1px solid #0027c9; border-top:none; margin:78px 4% 0; padding:0 4% 65px; }
 
         /* projects menu */
-        .container .main .projects { margin:20px 0 45px 4%; }
-            .container .main .projects li { height:40px; margin:5px 0; }
-                .container .main .projects li a { line-height:40px; text-decoration:none; color:#0027c9; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:1.1em; font-weight:500; }
-                .container .main .projects li:nth-child(2) a { font-family:'Noto Sans KR',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; }
+        .projects { margin:20px 0 45px 4%; }
+            .projects li { height:40px; margin:5px 0; }
+                .projects li a { line-height:40px; text-decoration:none; color:#0027c9; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:1.1em; font-weight:500; }
+                .projects li:nth-child(2) a { font-family:'Noto Sans KR',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; }
 
-                .container .main .projects li:first-child img { width:20px; margin-left:25px; transform:rotate(180deg); }
-                .container .main .projects li:first-child img.rotate { transform:rotate(360deg); }
+                .projects li:first-child img { width:20px; margin-left:25px; transform:rotate(180deg); }
+                .projects li:first-child img.rotate { transform:rotate(360deg); }
 
-        .container .main > .hidden { display:none; }
+        .main > .hidden { display:none; }
 
         /* intro */
-        .container .main .intro { text-align:right; padding-right:4%; background:url(../images/pj1_mockup.png) no-repeat 50% 87%; background-size:320px; }
-            .container .main .intro p:first-of-type { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; color:#0027c9; font-weight:500; font-size:1.6em; margin:0; }
-            .container .main .intro h2 { text-transform:capitalize; font-family:'DrukWideCyWebBold',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:normal; color:#0027c9; font-size:2.5em; margin:0; }
-            .container .main .intro p:nth-of-type(2) { font-size:1em; line-height:1.4; margin-top:210px; }
-            .container .main .intro p:last-of-type { display:none; }
+        .intro { text-align:right; padding-right:4%; background:url(../images/pj1_mockup.png) no-repeat 50% 87%; background-size:320px; }
+            .intro p:first-of-type { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; color:#0027c9; font-weight:500; font-size:1.6em; margin:0; }
+            .intro h2 { text-transform:capitalize; font-family:'DrukWideCyWebBold',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:normal; color:#0027c9; font-size:2.5em; margin:0; }
+            .intro p:nth-of-type(2) { font-size:1em; line-height:1.4; margin-top:210px; }
+            .intro p:last-of-type { display:none; }
 
         /* contents */
-        .container .contents { width:100%; margin-top:100px; }
-            .container .contents > div { width:100%; margin-bottom:90px; }
-            .container .contents > div > div:first-of-type { display:flex; align-items:center; color:#0027c9; margin-bottom:30px; }
-            .container .contents > div > div:first-of-type p { margin:0; margin-right:50px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:600; font-size:1.1em; }
-            .container .contents > div > div:first-of-type h3 { margin:0; font-weight:normal; }
+        .contents { width:100%; margin-top:100px; }
+            .contents > div { width:100%; margin-bottom:90px; }
+            .contents > div > div:first-of-type { display:flex; align-items:center; color:#0027c9; margin-bottom:30px; }
+            .contents > div > div:first-of-type p { margin:0; margin-right:50px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:600; font-size:1.1em; }
+            .contents > div > div:first-of-type h3 { margin:0; font-weight:normal; }
 
             /* goal, publishing */
-            .container .contents .goal ul li, .container .contents .publishing ul li { font-size:1.02em; line-height:1.4; display:flex; margin:0; }
-                .container .contents .goal ul li p, .container .contents .publishing ul li p { margin:0px; }
-                .container .contents .goal ul li p:first-of-type, .container .contents .publishing ul li p:first-of-type { margin-right:5px; }
+            .contents .goal ul li, .contents .publishing ul li { font-size:1.02em; line-height:1.4; display:flex; margin:0; }
+                .contents .goal ul li p, .contents .publishing ul li p { margin:0px; }
+                .contents .goal ul li p:first-of-type, .contents .publishing ul li p:first-of-type { margin-right:5px; }
 
-                .container .contents .goal ul li:first-child, .container .contents .publishing ul li:first-child { margin-bottom:25px; }
+                .contents .goal ul li:first-child, .contents .publishing ul li:first-child { margin-bottom:25px; }
 
             /* period */
-            .container .contents .period p { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:1.1em; font-weight:400; }
+            .contents .period p { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:1.1em; font-weight:400; }
 
             /* role */
-            .container .contents .role  p { font-size:1.02em; }
-                .container .contents .role  p span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:400; }
+            .contents .role  p { font-size:1.02em; }
+                .contents .role  p span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:400; }
 
             /* publishing */
-            .container .contents .publishing ul li:nth-child(2) { margin-bottom:25px; }
-            .container .contents .publishing ul li p span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:400; }
+            .contents .publishing ul li:nth-child(2) { margin-bottom:25px; }
+            .contents .publishing ul li p span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:400; }
 
             /* concept */
-            .container .contents .concept h4 { font-weight:500; font-size:1.1em; }
-            .container .contents .concept > p { font-size:1.02em; line-height:1.4; }
-            .container .contents .concept .hidden { display:none; }
+            .contents .concept h4 { font-weight:500; font-size:1.1em; }
+            .contents .concept > p { font-size:1.02em; line-height:1.4; }
+            .contents .concept .hidden { display:none; }
 
             /* style */
-            .container .contents .style .description > p { font-size:1.1em; font-weight:500; margin:0; }
-                .container .contents .style .description > p span { font-weight:300; display:none; }
+            .contents .style .description > p { font-size:1.1em; font-weight:500; margin:0; }
+                .contents .style .description > p span { font-weight:300; display:none; }
 
                 /* color */
-                .container .contents .style .description { display:flex; flex-direction:column; }
-                .container .contents .style .description #color { justify-content:center; margin:30px 0 40px; display:flex; }
-                    .container .contents .style .description #color .color { width:110px; height:110px; border-radius:50%; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; text-align:center; line-height:110px; color:#000; font-weight:400; }
-                        .container .contents .style .description #color .color1 { background-color:#f3f1e4; }
-                        .container .contents .style .description #color .color2 { background-color:#fcf9f4; margin-left:-15px; }
-                        .container .contents .style .description #color .color3 { background-color:#3a3123; color:#fff; margin-left:-15px; }
-                
-                /* font */
-                .container .contents .style .description > ul { margin-top:30px; }
-                    .container .contents .style .description > ul li p:first-of-type { text-transform:capitalize; display:none; }
-                    .container .contents .style .description > ul li p:last-of-type { font-size:1.1em; letter-spacing:0; }
+                .contents .style .description { display:flex; flex-direction:column; }
+                .contents .style .description #color { justify-content:center; margin:30px 0 40px; display:flex; }
+                    .contents .style .description #color .color { width:110px; height:110px; border-radius:50%; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; text-align:center; line-height:110px; color:#000; font-weight:400; }
+                        .contents .style .description #color .color1 { background-color:#f3f1e4; }
+                        .contents .style .description #color .color2 { background-color:#fcf9f4; margin-left:-15px; }
+                        .contents .style .description #color .color3 { background-color:#3a3123; color:#fff; margin-left:-15px; }
 
-                    .container .contents .style .description > ul li:first-child p span { font-weight:400; }
-                    .container .contents .style .description > ul li:nth-child(2) p { font-family:'ZapfHumanist',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; }
-                    .container .contents .style .description > ul li:nth-child(3) p { font-family:'Kumbh Sans',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; }
-                    .container .contents .style .description > ul li:nth-child(4) p { font-family:'AntroVectra',"Helvetica Neue","Apple SD Gothic Neo",serif; font-size:1.4em; margin:17px 0; }
-                    .container .contents .style .description > ul li:last-child p { font-family:'TamoroScriptPersonalUseOnly',"Helvetica Neue","Apple SD Gothic Neo",serif; margin:17px 0; }
+                /* font */
+                .contents .style .description > ul { margin-top:30px; }
+                    .contents .style .description > ul li p:first-of-type { text-transform:capitalize; display:none; }
+                    .contents .style .description > ul li p:last-of-type { font-size:1.1em; letter-spacing:0; }
+
+                    .contents .style .description > ul li:first-child p span { font-weight:400; }
+                    .contents .style .description > ul li:nth-child(2) p { font-family:'ZapfHumanist',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; }
+                    .contents .style .description > ul li:nth-child(3) p { font-family:'Kumbh Sans',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; }
+                    .contents .style .description > ul li:nth-child(4) p { font-family:'AntroVectra',"Helvetica Neue","Apple SD Gothic Neo",serif; font-size:1.4em; margin:17px 0; }
+                    .contents .style .description > ul li:last-child p { font-family:'TamoroScriptPersonalUseOnly',"Helvetica Neue","Apple SD Gothic Neo",serif; margin:17px 0; }
 
             /* fin */
-            .container .fin { margin-top:100px; }
-                .container .fin .hidden { text-align:center; display:none; }
-                .container .fin a { display:block; margin:0 auto; text-align:center; text-decoration:none; width:260px; height:50px; line-height:50px; font-size:1.1em; font-weight:500; }
-                    .container .fin a:first-of-type { border:1px solid #0027c9; color:#0027c9; transition:0.2s; }
-                    .container .fin a:first-of-type:hover, .container .fin a:first-of-type:active { background-color:#0027c9; color:#fff; }
-                
-                .container .fin .bg { margin:100px auto 0; width:300px; height:200px; background:url(../images/pj1_fin.png) no-repeat 50% 50%; background-size:200px; position:relative; }
-                    .container .fin .bg p { width:100px; height:35px; text-align:center; color:#fff; line-height:29px; }
-                        .container .fin .bg p:first-of-type { background:url(../images/bubble_r.svg) no-repeat; background-size:cover; position:absolute; top:0; right:0; animation:floating1 3s cubic-bezier(0.250,0.460,0.450,0.940) infinite; }
-                        .container .fin .bg p:last-of-type { background:url(../images/bubble_l.svg) no-repeat; background-size:cover; position:absolute; bottom:10px; left:15px; animation:floating2 2.5s cubic-bezier(0.250,0.460,0.450,0.940) infinite; }
+            .fin { margin-top:100px; }
+                .fin .hidden { text-align:center; display:none; }
+                .fin a { display:block; margin:0 auto; text-align:center; text-decoration:none; width:260px; height:50px; line-height:50px; font-size:1.1em; font-weight:500; }
+                    .fin a:first-of-type { border:1px solid #0027c9; color:#0027c9; transition:0.2s; }
+                    .fin a:first-of-type:hover, .fin a:first-of-type:active { background-color:#0027c9; color:#fff; }
+
+                .fin .bg { margin:100px auto 0; width:300px; height:200px; background:url(../images/pj1_fin.png) no-repeat 50% 50%; background-size:200px; position:relative; }
+                    .fin .bg p { width:100px; height:35px; text-align:center; color:#fff; line-height:29px; }
+                        .fin .bg p:first-of-type { background:url(../images/bubble_r.svg) no-repeat; background-size:cover; position:absolute; top:0; right:0; animation:floating1 3s cubic-bezier(0.250,0.460,0.450,0.940) infinite; }
+                        .fin .bg p:last-of-type { background:url(../images/bubble_l.svg) no-repeat; background-size:cover; position:absolute; bottom:10px; left:15px; animation:floating2 2.5s cubic-bezier(0.250,0.460,0.450,0.940) infinite; }
 
                 @keyframes floating1 {
                     from { transform: translate(0,  0px); }
                     65%  { transform: translate(0, 15px); }
-                    to   { transform: translate(0,  0px); }    
+                    to   { transform: translate(0,  0px); }
                 }
 
                 @keyframes floating2 {
                     from { transform: translate(0, 0px); }
                     50% { transform: translate(0, 20px); }
-                    to { transform: translate(0, 0px); }  
+                    to { transform: translate(0, 0px); }
                 }
 
     /** Mobile footer **/
-    .container footer { width:100%; padding:39px 0; }
-        .container footer p { margin:0; text-align:center; font-family:'RhodeMediumExtended',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:0.563em; color:#0027c9; }
-        .container footer .hidden { display:none; }
+    footer { width:100%; padding:39px 0; }
+        footer p { margin:0; text-align:center; font-family:'RhodeMediumExtended',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:0.563em; color:#0027c9; }
+        footer .hidden { display:none; }
 
 
 /*** Tablet ***/
 @media (min-width:767px) {
     /** Tablet header **/
-    .container header { padding:27px 5%; background:url(../../images/line2.png) no-repeat 60% 50%; background-color:#fff; background-size:55% 3px; }
+    header { padding:27px 5%; background:url(../../images/line2.png) no-repeat 60% 50%; background-color:#fff; background-size:55% 3px; }
 
         /* logo */
-        .container header h1 { width:120px; height:17px; background:url(../../images/logo_PC2.png) no-repeat 50% 50%; background-size:cover; }
-        .container header h1 a { display:block; width:100%; height:100%; }
+        header h1 { width:120px; height:17px; background:url(../../images/logo_PC2.png) no-repeat 50% 50%; background-size:cover; }
+        header h1 a { display:block; width:100%; height:100%; }
 
 
     /** Tablet main contents **/
-    .container .main .projects { margin-bottom:0; }
-        .container .main .intro { padding:13.5% 0; margin:0 auto; background:url(../images/pj1_mockup.png) no-repeat 100% 82%; background-size:63%; }
-            .container .main .intro > * { width:45%; }
-                .container .main .intro h2 { font-size:5.208vw; }
-                .container .main .intro p:first-of-type { font-size:2.5vw; }
-                .container .main .intro p:nth-of-type(2) { margin-top:30px; }
+    .projects { margin-bottom:0; }
+        .intro { padding:13.5% 0; margin:0 auto; background:url(../images/pj1_mockup.png) no-repeat 100% 82%; background-size:63%; }
+            .intro > * { width:45%; }
+                .intro h2 { font-size:5.208vw; }
+                .intro p:first-of-type { font-size:2.5vw; }
+                .intro p:nth-of-type(2) { margin-top:30px; }
 
         /* contents */
-        .container .contents { margin-top:20px; width:100%; }
-            .container .contents > div { width:100%; display:flex; align-items:flex-start; }
-                .container .contents > div > div:first-of-type { width:40%; }
-                .container .contents > div > div:first-of-type p { font-size:1.02em; }
-                .container .contents > div > div:first-of-type h3 { font-size:1em; }
+        .contents { margin-top:20px; width:100%; }
+            .contents > div { width:100%; display:flex; align-items:flex-start; }
+                .contents > div > div:first-of-type { width:40%; }
+                .contents > div > div:first-of-type p { font-size:1.02em; }
+                .contents > div > div:first-of-type h3 { font-size:1em; }
 
             /* goal, publishing */
-            .container .contents .goal ul, .container .contents .publishing ul { width:60%; }
-                .container .contents .goal ul li, .container .contents .publishing ul li { font-size:1em; }
+            .contents .goal ul, .contents .publishing ul { width:60%; }
+                .contents .goal ul li, .contents .publishing ul li { font-size:1em; }
 
             /* period, role */
-            .container .contents .period > p, .container .contents .role > p { margin:0; font-size:1em; margin-left:5px; }
+            .contents .period > p, .contents .role > p { margin:0; font-size:1em; margin-left:5px; }
 
             /* concept */
-            .container .contents .concept > h4, .container .contents .concept > p { display:none; }
-            .container .contents .concept .hidden { display:block; width:60%; }
-                .container .contents .concept .hidden li { margin-bottom:25px; font-size:1em; line-height:1.4; }
-                    .container .contents .concept .hidden li:last-child { margin-bottom:0px; }
-                    .container .contents .concept .hidden li span { font-weight:500; }
+            .contents .concept > h4, .contents .concept > p { display:none; }
+            .contents .concept .hidden { display:block; width:60%; }
+                .contents .concept .hidden li { margin-bottom:25px; font-size:1em; line-height:1.4; }
+                    .contents .concept .hidden li:last-child { margin-bottom:0px; }
+                    .contents .concept .hidden li span { font-weight:500; }
 
             /* style */
-            .container .contents .style .description { width:60%; text-align:left; }
-            .container .contents .style .description > p { font-size:1em; }
+            .contents .style .description { width:60%; text-align:left; }
+            .contents .style .description > p { font-size:1em; }
 
                 /* color */
-                .container .contents .style .description #color { justify-content:flex-start; }
+                .contents .style .description #color { justify-content:flex-start; }
 
                 /* font */
-                .container .contents .style .description > ul li { display:flex; }
-                .container .contents .style .description > ul li p:first-of-type { text-transform:capitalize; display:block; width:45%; }
-                .container .contents .style .description > ul li p:last-of-type { font-size:1em; }
-                .container .contents .style .description > ul li:first-child p { margin-top:0; }
+                .contents .style .description > ul li { display:flex; }
+                .contents .style .description > ul li p:first-of-type { text-transform:capitalize; display:block; width:45%; }
+                .contents .style .description > ul li p:last-of-type { font-size:1em; }
+                .contents .style .description > ul li:first-child p { margin-top:0; }
 
 
     /** Tablet footer **/
-    .container footer p:first-of-type { display:none; }
-    .container footer .hidden { display:block; }
+    footer p:first-of-type { display:none; }
+    footer .hidden { display:block; }
 }
 
 
 /*** PC ***/
 @media (min-width:1280px) {
     /** PC header **/
-    .container header { padding:27px 4%; background:url(../../images/line2.png) no-repeat 40% 50%; background-color:#fff; background-size:52% 3px; }
+    header { padding:27px 4%; background:url(../../images/line2.png) no-repeat 40% 50%; background-color:#fff; background-size:52% 3px; }
 
         /* logo */
-        .container header h1 { width:160px; height:23px; background:url(../../images/logo_PC2.png) no-repeat 50% 50%; }
-        .container header h1 a { display:block; width:100%; height:100%; }
+        header h1 { width:160px; height:23px; background:url(../../images/logo_PC2.png) no-repeat 50% 50%; }
+        header h1 a { display:block; width:100%; height:100%; }
 
         /* mobile navigation icon */
-        .container header .menu-wrapper { display:none; }
+        header .menu-wrapper { display:none; }
 
         /* PC navigation */
-		.container header .PC_nav { width:22%; display:flex; justify-content:space-between; }
-            .container header .PC_nav li { width:45%; }
-                .container header .PC_nav li a { display:block; font-family:'RhodeMediumExtended',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; color:#0027c9; text-decoration:none; text-transform:capitalize; text-align:center; font-size:1.042vw; padding:5px; transition:0.3s; }
-                .container header li:hover a { background-color:#0027c9; color:#fff; }
+		header .PC_nav { width:22%; display:flex; justify-content:space-between; }
+            header .PC_nav li { width:45%; }
+                header .PC_nav li a { display:block; font-family:'RhodeMediumExtended',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; color:#0027c9; text-decoration:none; text-transform:capitalize; text-align:center; font-size:1.042vw; padding:5px; transition:0.3s; }
+                header li:hover a { background-color:#0027c9; color:#fff; }
 
         /** PC main contents **/
         /* projects menu */
-        .container .main .projects { display:none; }
+        .projects { display:none; }
 
-        .container .main > .hidden { display:block; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:600; text-transform:capitalize; color:#0027c9; margin:50px 0 0 80px; font-size:1.1em; }
+        .main > .hidden { display:block; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:600; text-transform:capitalize; color:#0027c9; margin:50px 0 0 80px; font-size:1.1em; }
 
         /* intro */
-        .container .main .intro p:nth-of-type(2) { display:none; }
-        .container .main .intro p:last-of-type { display:block; margin-top:60px; font-size:1.25em; }
+        .intro p:nth-of-type(2) { display:none; }
+        .intro p:last-of-type { display:block; margin-top:60px; font-size:1.25em; }
 
         /* contents */
-        .container .contents { margin:80px auto 0; width:75%; font-size:1.1em; }
-            .container .contents > div { margin-bottom:150px; }
-                .container .contents > div > div:first-of-type p { font-size:1.35em; font-weight:600; }
-                .container .contents > div > div:first-of-type h3 { font-size:1.35em; font-weight:500; }
+        .contents { margin:80px auto 0; width:75%; font-size:1.1em; }
+            .contents > div { margin-bottom:150px; }
+                .contents > div > div:first-of-type p { font-size:1.35em; font-weight:600; }
+                .contents > div > div:first-of-type h3 { font-size:1.35em; font-weight:500; }
 
         /* goal, publishing */
-        .container .contents .goal ul li, .container .contents .publishing ul li { font-size:1.15em; line-height:1.6; }
+        .contents .goal ul li, .contents .publishing ul li { font-size:1.15em; line-height:1.6; }
 
         /* period, role */
-        .container .contents .period > p { font-size:1.2em; }
+        .contents .period > p { font-size:1.2em; }
 
         /* role */
-        .container .contents .role > p { font-size:1.15em; }
+        .contents .role > p { font-size:1.15em; }
 
         /* concept */
-        .container .contents .concept .hidden span { font-size:1.15em; }
+        .contents .concept .hidden span { font-size:1.15em; }
 
         /* style */
         /* color */
-        .container .contents .style .description #color { margin:40px 0 80px; }
-            .container .contents .style .description #color .color { width:150px; height:150px; line-height:150px; }
-            .container .contents .style .description #color .color2, .container .contents .style .description #color .color3 { margin-left:30px; }
-            
+        .contents .style .description #color { margin:40px 0 80px; }
+            .contents .style .description #color .color { width:150px; height:150px; line-height:150px; }
+            .contents .style .description #color .color2, .contents .style .description #color .color3 { margin-left:30px; }
+
         /* font */
-        .container .contents .style .description > p { font-size:1.15em; line-height:1.4; }
-        .container .contents .style .description > p span { display:inline; font-size:0.9em; }
-        .container .contents .style .description > ul { margin-top:40px; }
-            .container .contents .style .description > ul li:nth-child(4) p:last-of-type { font-size:1.4em; }
+        .contents .style .description > p { font-size:1.15em; line-height:1.4; }
+        .contents .style .description > p span { display:inline; font-size:0.9em; }
+        .contents .style .description > ul { margin-top:40px; }
+            .contents .style .description > ul li:nth-child(4) p:last-of-type { font-size:1.4em; }
 
         /* fin */
-        .container .fin { margin-top:180px; }
-            .container .fin .hidden { display:block; margin:0 0 15px 0; font-size:1.2em; }
-                .container .fin .hidden span { font-weight:400; }
-            .container .fin a:first-of-type { margin-top:80px; }
+        .fin { margin-top:180px; }
+            .fin .hidden { display:block; margin:0 0 15px 0; font-size:1.2em; }
+                .fin .hidden span { font-weight:400; }
+            .fin a:first-of-type { margin-top:80px; }
 
             /* bg */
-            .container .fin .bg { margin:100px auto 40px; width:430px; height:300px; background-size:280px; }
-                .container .fin .bg p { width:110px; height:40px; line-height:32px; }
-                    .container .fin .bg p:first-of-type { right:20px; }
-                    .container .fin .bg p:last-of-type { left:40px; }
+            .fin .bg { margin:100px auto 40px; width:430px; height:300px; background-size:280px; }
+                .fin .bg p { width:110px; height:40px; line-height:32px; }
+                    .fin .bg p:first-of-type { right:20px; }
+                    .fin .bg p:last-of-type { left:40px; }
 
 
         /** PC footer**/
-        .container footer { padding:51px 0; }
-            .container footer .hidden { font-size:0.938em; }
-} 
+        footer { padding:51px 0; }
+            footer .hidden { font-size:0.938em; }
+}

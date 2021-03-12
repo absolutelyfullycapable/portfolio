@@ -11,63 +11,62 @@ ul { margin:0; padding:0; list-style:none; }
 .container { width:100%; height:100%; display:flex; flex-direction:column; justify-content:space-between; position:relative; }
 
     /** Mobile header **/
-	.container header { width:100%; height:81px; padding:27px 4%; box-sizing:border-box; display:flex; justify-content:space-between; align-items:center; background:url(../images/line1.png) no-repeat 54% 50%; background-size:52% 3px; }
-
+	header { width:100%; height:81px; padding:27px 4%; box-sizing:border-box; display:flex; justify-content:space-between; align-items:center; background:url(../images/line1.png) no-repeat 54% 50%; background-size:52% 3px; }
 		/* logo */
-        .container header h1 { width:60px; height:30px; margin:0; background:url(../images/logo_M1.png) no-repeat 50% 50%; background-size:cover; }
-            .container header h1 a { display:block; width:100%; height:100%; }
+        header h1 { width:60px; height:30px; margin:0; background:url(../images/logo_M1.png) no-repeat 50% 50%; background-size:cover; }
+            header h1 a { display:block; width:100%; height:100%; }
 
 		/* mobile navigation icon */
-        .container header .menu-wrapper { width:39px; height: 39px; border:1px solid #fff; border-radius:50%; cursor: pointer; display:flex; align-items:center; }
-        .container header .menu-wrapper.visible { z-index:9999; border:1px solid #0027c9; }
-          
-        .container header .menu-wrapper .hamburger-menu, .container header .menu-wrapper .hamburger-menu:after, .container header .menu-wrapper .hamburger-menu:before { width:22px; height:1px; border-radius:50px; margin:auto; }
-          
-        .container header .menu-wrapper .hamburger-menu { position:relative; background: white; transition: all 0ms 300ms; }
-        .container header .menu-wrapper .hamburger-menu.animate { background: rgba(255, 255, 255, 0); }
-        .container header .menu-wrapper .hamburger-menu:before { content: ""; position: absolute; left: 0; bottom:6px; background: white; transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
-        .container header .menu-wrapper .hamburger-menu:after { content: ""; position: absolute; left: 0; top:6px; background: white; transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
-        .container header .menu-wrapper .hamburger-menu.animate:after { background-color:#0027c9; top: 0; transform: rotate(45deg); transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
-		.container header .menu-wrapper .hamburger-menu.animate:before { background-color:#0027c9; bottom: 0; transform: rotate(-45deg); transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
-		
+        header .menu-wrapper { width:39px; height: 39px; border:1px solid #fff; border-radius:50%; cursor: pointer; display:flex; align-items:center; }
+        header .menu-wrapper.visible { z-index:9999; border:1px solid #0027c9; }
+
+        header .menu-wrapper .hamburger-menu, header .menu-wrapper .hamburger-menu:after, header .menu-wrapper .hamburger-menu:before { width:22px; height:1px; border-radius:50px; margin:auto; }
+
+        header .menu-wrapper .hamburger-menu { position:relative; background: white; transition: all 0ms 300ms; }
+        header .menu-wrapper .hamburger-menu.animate { background: rgba(255, 255, 255, 0); }
+        header .menu-wrapper .hamburger-menu:before { content: ""; position: absolute; left: 0; bottom:6px; background: white; transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+        header .menu-wrapper .hamburger-menu:after { content: ""; position: absolute; left: 0; top:6px; background: white; transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+        header .menu-wrapper .hamburger-menu.animate:after { background-color:#0027c9; top: 0; transform: rotate(45deg); transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+		header .menu-wrapper .hamburger-menu.animate:before { background-color:#0027c9; bottom: 0; transform: rotate(-45deg); transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+
 		/* PC navigation */
-		.container header .PC_nav { display:none; }
+		header .PC_nav { display:none; }
 
 	/** mobile navigation **/
-	.container .menu { width:100%; height:100%; background-color:rgb(255, 255, 255); position:fixed; top:0; left:100%; z-index:999; display:flex; justify-content:center; align-items:center; transition:0.7s; }
-	.container .menu.active { left:0; }
-        .container .menu ul { width:100%; }
-			.container .menu ul li { width:100%; margin-bottom:70px; position:relative; }
-			.container .menu ul li:first-child::after { content:''; display:block; width:80%; height:1.5px; background-color:#0027c9; opacity:0.6; position:absolute; left:50%; bottom:-35px; transform:translateX(-50%); }
-			.container .menu ul li:last-child { margin-bottom:0; }
-				.container .menu ul li a { display:block; width:100%; text-decoration:none; }
-					.container .menu ul li a p { margin:0 auto; text-align:center; color:#0027c9; }
-					.container .menu ul li a p:first-of-type { font-family:'DrukWideCyWebBold',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:2.5em; }
-					.container .menu ul li a p:last-of-type { margin-top:10px; font-size:0.8em; opacity:0.8; }
-					.container .menu ul li a img { width:20px; position:relative; left:50%; transform:translateX(-50%); }
+	.menu { width:100%; height:100%; background-color:rgb(255, 255, 255); position:fixed; top:0; left:100%; z-index:999; display:flex; justify-content:center; align-items:center; transition:0.7s; }
+	.menu.active { left:0; }
+        .menu ul { width:100%; }
+			.menu ul li { width:100%; margin-bottom:70px; position:relative; }
+			.menu ul li:first-child::after { content:''; display:block; width:80%; height:1.5px; background-color:#0027c9; opacity:0.6; position:absolute; left:50%; bottom:-35px; transform:translateX(-50%); }
+			.menu ul li:last-child { margin-bottom:0; }
+				.menu ul li a { display:block; width:100%; text-decoration:none; }
+					.menu ul li a p { margin:0 auto; text-align:center; color:#0027c9; }
+					.menu ul li a p:first-of-type { font-family:'DrukWideCyWebBold',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:2.5em; }
+					.menu ul li a p:last-of-type { margin-top:10px; font-size:0.8em; opacity:0.8; }
+					.menu ul li a img { width:20px; position:relative; left:50%; transform:translateX(-50%); }
 
     /** Mobile main **/
-    .container .main { height:calc(100% - 162px); border-left:1px solid #fff; border-right:1px solid #fff; margin:0 4%; display:flex; justify-content:center; align-items:center; position:relative; }
-        .container .main svg { position:fixed; }
-            .container .main #layer1 { display:none; animation:move1 1.9s infinite linear; }
-            .container .main #layer2 { width:30px; top:8%; left:10%; animation:move2 1.8s infinite linear; }
-			.container .main #layer3 { width:20px; top:17%; left:18%; animation:move3 2.3s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955); }
-			.container .main #layer4 { display:none; width:22px; animation:move5 1.6s infinite linear; }
-            .container .main #layer5 { width:55px; top:29%; left:51%; z-index:1; animation:move2 2.8s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955); }
-			.container .main #layer6 { display:none; width:15px; animation:move5 2s infinite linear; }
-			.container .main #layer7 { width:16px; top:47%; right:28%; animation:move5 1.5s infinite linear; }
-			.container .main #layer8 { display:none; width:55px; animation:move2 2.3s infinite linear; }
-            .container .main #layer9 { width:26px; top:65%; right:30%; animation:move2 2.7s infinite linear; }
-            .container .main #layer10 { width:27px; bottom:9%; right:17%; animation:move2 1.9s infinite linear; }
-			.container .main #layer11 { display:none; width:34px; animation:move4 2s infinite linear; }
-			
-        .container .main p:first-of-type { width:100%; font-size:4.688em; font-family:'DrukWideCyWebBold',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; text-align:center; }
-        .container .main p:last-of-type { display:none; font-family:'DrukWideCyWebBold',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; text-align:center; }
+    .main { height:calc(100% - 162px); border-left:1px solid #fff; border-right:1px solid #fff; margin:0 4%; display:flex; justify-content:center; align-items:center; position:relative; }
+        .main svg { position:fixed; }
+            .main #layer1 { display:none; animation:move1 1.9s infinite linear; }
+            .main #layer2 { width:30px; top:8%; left:10%; animation:move2 1.8s infinite linear; }
+			.main #layer3 { width:20px; top:17%; left:18%; animation:move3 2.3s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+			.main #layer4 { display:none; width:22px; animation:move5 1.6s infinite linear; }
+            .main #layer5 { width:55px; top:29%; left:51%; z-index:1; animation:move2 2.8s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+			.main #layer6 { display:none; width:15px; animation:move5 2s infinite linear; }
+			.main #layer7 { width:16px; top:47%; right:28%; animation:move5 1.5s infinite linear; }
+			.main #layer8 { display:none; width:55px; animation:move2 2.3s infinite linear; }
+            .main #layer9 { width:26px; top:65%; right:30%; animation:move2 2.7s infinite linear; }
+            .main #layer10 { width:27px; bottom:9%; right:17%; animation:move2 1.9s infinite linear; }
+			.main #layer11 { display:none; width:34px; animation:move4 2s infinite linear; }
+
+        .main p:first-of-type { width:100%; font-size:4.688em; font-family:'DrukWideCyWebBold',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; text-align:center; }
+        .main p:last-of-type { display:none; font-family:'DrukWideCyWebBold',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; text-align:center; }
 
     /** Mobile footer **/
-    .container footer { display:flex; justify-content:center; align-items:center; width:100%; height:81px; font-size:0.563em; text-align:center; padding:27px 8px; box-sizing:border-box; }
-        .container footer p span { color:#ffd112; font-weight:bold; }
-        .container footer .hidden { display:none; }
+    footer { display:flex; justify-content:center; align-items:center; width:100%; height:81px; font-size:0.563em; text-align:center; padding:27px 8px; box-sizing:border-box; }
+        footer p span { color:#ffd112; font-weight:bold; }
+        footer .hidden { display:none; }
 
 @keyframes move1 {
     0% {
@@ -148,31 +147,30 @@ ul { margin:0; padding:0; list-style:none; }
 		opacity:0;
 	}
 }
-          
+
 /*** Tablet ***/
 @media (min-width:767px) {
 	/* Tablet header */
-	.container header { padding:27px 5%; background:url(../images/line1.png) no-repeat 60% 50%; background-size:55% 3px; }
-	
+	header { padding:27px 5%; background:url(../images/line1.png) no-repeat 60% 50%; background-size:55% 3px; }
 		/* logo */
-        .container header h1 { width:120px; height:17px; background:url(../images/logo_PC1.png) no-repeat 50% 50%; background-size:cover; }
-        	.container header h1 a { display:block; width:100%; height:100%; }
+        header h1 { width:120px; height:17px; background:url(../images/logo_PC1.png) no-repeat 50% 50%; background-size:cover; }
+        	header h1 a { display:block; width:100%; height:100%; }
 
 		/* Tablet main contents */
-        .container .main p:first-of-type { display:none; }
-        .container .main p:last-of-type { display:block; font-family:'DrukWideCyWebBold',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; text-align:center; font-size:10vw; }
+        .main p:first-of-type { display:none; }
+        .main p:last-of-type { display:block; font-family:'DrukWideCyWebBold',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; text-align:center; font-size:10vw; }
 
-        .container .main #layer2 { width:4%; top:25%; left:13%; }
-        .container .main #layer3 { width:3%; top:32%; left:18%; }
-        .container .main #layer5 { width:7%; top:33.5%; left:51%; z-index:1; }
-        .container .main #layer7 { width:2%; top:47%; right:35%; }
-        .container .main #layer9 { width:3%; top:55%; right:20%; }
-        .container .main #layer10 { width:4%; bottom:23%; right:15%; }
+        .main #layer2 { width:4%; top:25%; left:13%; }
+        .main #layer3 { width:3%; top:32%; left:18%; }
+        .main #layer5 { width:7%; top:33.5%; left:51%; z-index:1; }
+        .main #layer7 { width:2%; top:47%; right:35%; }
+        .main #layer9 { width:3%; top:55%; right:20%; }
+        .main #layer10 { width:4%; bottom:23%; right:15%; }
 
 	/* Tablet footer */
-    .container footer { padding:27px 4.5%; font-size:1.172vw; }
-        .container footer > p:first-of-type { display:none; }
-        .container footer .hidden { background:url(../images/line1.png) no-repeat 34% 50%; background-size:40% 3px; display:flex; justify-content:space-between; align-items:center; width:100%; }
+    footer { padding:27px 4.5%; font-size:1.172vw; }
+        footer > p:first-of-type { display:none; }
+        footer .hidden { background:url(../images/line1.png) no-repeat 34% 50%; background-size:40% 3px; display:flex; justify-content:space-between; align-items:center; width:100%; }
 }
 
 /*** PC ***/
@@ -180,35 +178,34 @@ ul { margin:0; padding:0; list-style:none; }
     .container { position:relative; }
 
 	/* PC header */
-	.container header { padding:27px 4%; background:url(../images/line1.png) no-repeat 40% 50%; background-size:52% 3px; }
-		
+	header { padding:27px 4%; background:url(../images/line1.png) no-repeat 40% 50%; background-size:52% 3px; }
 		/* logo */
-        .container header h1 { width:160px; height:23px; background:url(../images/logo_PC1.png) no-repeat 50% 50%; }
-        	.container header h1 a { display:block; width:100%; height:100%; }
-		
+        header h1 { width:160px; height:23px; background:url(../images/logo_PC1.png) no-repeat 50% 50%; }
+        	header h1 a { display:block; width:100%; height:100%; }
+
 		/* mobile navigation icon */
-        .container header .menu-wrapper { display:none; }
+        header .menu-wrapper { display:none; }
 
 		/* PC navigation */
-		.container header .PC_nav { width:22%; display:flex; justify-content:space-between; }
-			.container header .PC_nav li { width:45%; }
-				.container header .PC_nav li a { display:block; font-family:'RhodeMediumExtended',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; color:#fff; text-decoration:none; text-transform:capitalize; text-align:center; font-size:1.042vw; padding:5px; transition:0.3s; }
-                .container header li:hover a { background-color:#fff; color:#0027c9; }
+		header .PC_nav { width:22%; display:flex; justify-content:space-between; }
+			header .PC_nav li { width:45%; }
+				header .PC_nav li a { display:block; font-family:'RhodeMediumExtended',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; color:#fff; text-decoration:none; text-transform:capitalize; text-align:center; font-size:1.042vw; padding:5px; transition:0.3s; }
+                header li:hover a { background-color:#fff; color:#0027c9; }
 
 
 		/* mobile navigation */
-		.container .menu { display:none; }
+		.menu { display:none; }
 
 		/* PC main contents */
-        .container .main #layer1 { display:block; width:35px; height:62px; top:15%; left:15%; }
-        .container .main #layer2 { width:52px; top:30%; left:30%; }
-		.container .main #layer3 { width:68px; top:16%; left:18%; }
-		.container .main #layer4 { display:block; top:7%; left:18%; }
-		.container .main #layer5 { width:114px; top:43%; left:32%; z-index:1; }
-		.container .main #layer6 { display:block; top:42%; left:29%; }
-        .container .main #layer7 { width:25px; top:37%; right:33%; }
-        .container .main #layer8 { display:block; right:30%; }
-        .container .main #layer9 { width:53px; top:56%; right:18%; }
-        .container .main #layer10 { width:76px; bottom:19%; right:21%; }
-        .container .main #layer11 { display:block; bottom:14%; right:15%; }
+        .main #layer1 { display:block; width:35px; height:62px; top:15%; left:15%; }
+        .main #layer2 { width:52px; top:30%; left:30%; }
+		.main #layer3 { width:68px; top:16%; left:18%; }
+		.main #layer4 { display:block; top:7%; left:18%; }
+		.main #layer5 { width:114px; top:43%; left:32%; z-index:1; }
+		.main #layer6 { display:block; top:42%; left:29%; }
+        .main #layer7 { width:25px; top:37%; right:33%; }
+        .main #layer8 { display:block; right:30%; }
+        .main #layer9 { width:53px; top:56%; right:18%; }
+        .main #layer10 { width:76px; bottom:19%; right:21%; }
+        .main #layer11 { display:block; bottom:14%; right:15%; }
 }

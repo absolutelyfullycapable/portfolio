@@ -18,269 +18,265 @@ ul, li { list-style:none; margin:0; padding:0; }
 .container { width:100%; display:flex; flex-direction:column; justify-content:space-between; position:relative; }
 
     /** Mobile header **/
-    .container header { position:fixed; z-index:9999; width:100%; height:81px; padding:27px 4%; box-sizing:border-box; display:flex; justify-content:space-between; align-items:center; background:url(../../images/line2.png) no-repeat 55% 50%; background-color:#fff; background-size:52% 3px; }
-        .container header.none { background:none; }
-
+    header { position:fixed; z-index:9999; width:100%; height:81px; padding:27px 4%; box-sizing:border-box; display:flex; justify-content:space-between; align-items:center; background:url(../../images/line2.png) no-repeat 55% 50%; background-color:#fff; background-size:52% 3px; }
+        header.none { background:none; }
         /* logo */
-        .container header h1 { width:60px; height:30px; margin:0; background:url(../../images/logo_M2.png) no-repeat 50% 50%; background-size:cover; }
-        .container header h1.none { background:none; }
-        .container header h1 a { display:block; width:100%; height:100%; }
-        
+        header h1 { width:60px; height:30px; margin:0; background:url(../../images/logo_M2.png) no-repeat 50% 50%; background-size:cover; }
+        header h1.none { background:none; }
+        header h1 a { display:block; width:100%; height:100%; }
+
         /* mobile navigation icon */
-        .container header .menu-wrapper { width:39px; height: 39px; background-color:#0027c9; border-radius:50%; cursor: pointer; display:flex; align-items:center; }
-        .container header .menu-wrapper.visible { z-index:9999; }
+        header .menu-wrapper { width:39px; height: 39px; background-color:#0027c9; border-radius:50%; cursor: pointer; display:flex; align-items:center; }
+        header .menu-wrapper.visible { z-index:9999; }
 
-        .container header .menu-wrapper .hamburger-menu, .container header .menu-wrapper .hamburger-menu:after, .container header .menu-wrapper .hamburger-menu:before { width:22px; height:1px; border-radius:50px; margin:auto; }
+        header .menu-wrapper .hamburger-menu, header .menu-wrapper .hamburger-menu:after, header .menu-wrapper .hamburger-menu:before { width:22px; height:1px; border-radius:50px; margin:auto; }
 
-        .container header .menu-wrapper .hamburger-menu { position:relative; background:white; transition: all 0ms 300ms; }
-        .container header .menu-wrapper .hamburger-menu.animate { background: rgba(255, 255, 255, 0); }
-        .container header .menu-wrapper .hamburger-menu:before { content: ""; position: absolute; left: 0; bottom:6px; background: white; transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
-        .container header .menu-wrapper .hamburger-menu:after { content: ""; position: absolute; left: 0; top:6px; background: white; transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
-        .container header .menu-wrapper .hamburger-menu.animate:after { background-color:white; top: 0; transform: rotate(45deg); transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
-        .container header .menu-wrapper .hamburger-menu.animate:before { background-color:white; bottom: 0; transform: rotate(-45deg); transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+        header .menu-wrapper .hamburger-menu { position:relative; background:white; transition: all 0ms 300ms; }
+        header .menu-wrapper .hamburger-menu.animate { background: rgba(255, 255, 255, 0); }
+        header .menu-wrapper .hamburger-menu:before { content: ""; position: absolute; left: 0; bottom:6px; background: white; transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+        header .menu-wrapper .hamburger-menu:after { content: ""; position: absolute; left: 0; top:6px; background: white; transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+        header .menu-wrapper .hamburger-menu.animate:after { background-color:white; top: 0; transform: rotate(45deg); transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+        header .menu-wrapper .hamburger-menu.animate:before { background-color:white; bottom: 0; transform: rotate(-45deg); transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
 
         /* PC navigation */
-		.container header .PC_nav { display:none; }
+		header .PC_nav { display:none; }
 
     /** mobile navigation **/
-	.container .menu { width:100%; height:100%; background-color:rgb(255, 255, 255); position:fixed; top:0; left:100%; z-index:999; display:flex; justify-content:center; align-items:center; transition:0.7s; }
-	.container .menu.active { left:0; }
-        .container .menu ul { width:100%; }
-			.container .menu ul li { width:100%; margin-bottom:70px; position:relative; }
-			.container .menu ul li:first-child::after { content:''; display:block; width:80%; height:1.5px; background-color:#0027c9; opacity:0.6; position:absolute; left:50%; bottom:-35px; transform:translateX(-50%); }
-			.container .menu ul li:last-child { margin-bottom:0; }
-				.container .menu ul li a { display:block; width:100%; text-decoration:none; }
-					.container .menu ul li a p { margin:0 auto; text-align:center; color:#0027c9; }
-					.container .menu ul li a p:first-of-type { font-family:'DrukWideCyWebBold',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:2.5em; }
-					.container .menu ul li a p:last-of-type { margin-top:10px; font-family:'RhodeMediumExtended',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:0.8em; opacity:0.8; }
-					.container .menu ul li a img { width:20px; position:relative; left:50%; transform:translateX(-50%); }
+	.menu { width:100%; height:100%; background-color:rgb(255, 255, 255); position:fixed; top:0; left:100%; z-index:999; display:flex; justify-content:center; align-items:center; transition:0.7s; }
+	.menu.active { left:0; }
+        .menu ul { width:100%; }
+			.menu ul li { width:100%; margin-bottom:70px; position:relative; }
+			.menu ul li:first-child::after { content:''; display:block; width:80%; height:1.5px; background-color:#0027c9; opacity:0.6; position:absolute; left:50%; bottom:-35px; transform:translateX(-50%); }
+			.menu ul li:last-child { margin-bottom:0; }
+				.menu ul li a { display:block; width:100%; text-decoration:none; }
+					.menu ul li a p { margin:0 auto; text-align:center; color:#0027c9; }
+					.menu ul li a p:first-of-type { font-family:'DrukWideCyWebBold',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:2.5em; }
+					.menu ul li a p:last-of-type { margin-top:10px; font-family:'RhodeMediumExtended',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:0.8em; opacity:0.8; }
+					.menu ul li a img { width:20px; position:relative; left:50%; transform:translateX(-50%); }
 
 
     /** Mobile main contents **/
-    .container .main { border:1px solid #0027c9; border-top:none; margin:78px 4% 0; padding:0 4% 65px; box-sizing:border-box; }
+    .main { border:1px solid #0027c9; border-top:none; margin:78px 4% 0; padding:0 4% 65px; box-sizing:border-box; }
 
         /* projects menu */
-        .container .main .projects { margin:20px 0 35px 4%; }
-            .container .main .projects li { height:40px; margin:5px 0; }
-                .container .main .projects li a { line-height:40px; text-decoration:none; color:#0027c9; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; text-transform:capitalize; font-size:1.1em; }
-                .container .main .projects li:first-child a { font-family:'Noto Sans KR', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; }
+        .projects { margin:20px 0 35px 4%; }
+            .projects li { height:40px; margin:5px 0; }
+                .projects li a { line-height:40px; text-decoration:none; color:#0027c9; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; text-transform:capitalize; font-size:1.1em; }
+                .projects li:first-child a { font-family:'Noto Sans KR', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; }
 
-                .container .main .projects li:first-child img { width:20px; margin-left:25px; transform:rotate(180deg); }
-                .container .main .projects li:first-child img.rotate { transform:rotate(360deg); }
+                .projects li:first-child img { width:20px; margin-left:25px; transform:rotate(180deg); }
+                .projects li:first-child img.rotate { transform:rotate(360deg); }
 
         /* notice */
-        .container .main .notice { width:100%; }
-            .container .main .notice div { font-weight:700; font-size:1.5em; border:2px solid #0027c9; color:#0027c9; width:30px; height:30px; border-radius:50%; line-height:30px; text-align:center; margin:0 auto; animation:float 3s cubic-bezier(0.250,0.460,0.450,0.940) infinite; }
-            
+        .notice { width:100%; }
+            .notice div { font-weight:700; font-size:1.5em; border:2px solid #0027c9; color:#0027c9; width:30px; height:30px; border-radius:50%; line-height:30px; text-align:center; margin:0 auto; animation:float 3s cubic-bezier(0.250,0.460,0.450,0.940) infinite; }
+
             @keyframes float {
                 from { transform: translate(0,  0px); }
                 65%  { transform: translate(0, 15px); }
-                to   { transform: translate(0,  0px); }    
+                to   { transform: translate(0,  0px); }
             }
 
-            .container .main .notice img { width:160px; display:block; margin:20px auto 0; }
+            .notice img { width:160px; display:block; margin:20px auto 0; }
 
-            .container .main .notice h2 { font-weight:500; text-align:center; font-size:1.3em; line-height:1.6; }
-                .container .main .notice h2 span { color:#0027c9; font-weight:700; }
+            .notice h2 { font-weight:500; text-align:center; font-size:1.3em; line-height:1.6; }
+                .notice h2 span { color:#0027c9; font-weight:700; }
 
-            .container .main .notice p { text-align:center; margin:0 0 60px 0; }
+            .notice p { text-align:center; margin:0 0 60px 0; }
 
-            .container .main .notice a { display:block; width:260px; height:50px; margin:0 auto; line-height:50px; text-decoration:none; text-align:center; border:1px solid #0027c9; color:#0027c9; font-size:1.1em; font-weight:500; transition:0.2s; }
-            .container .main .notice a:hover, .container .main .notice a:active { background-color:#0027c9; color:#fff; }
-                .container .main .notice a:nth-of-type(2) { margin:20px auto; }
+            .notice a { display:block; width:260px; height:50px; margin:0 auto; line-height:50px; text-decoration:none; text-align:center; border:1px solid #0027c9; color:#0027c9; font-size:1.1em; font-weight:500; transition:0.2s; }
+            .notice a:hover, .notice a:active { background-color:#0027c9; color:#fff; }
+                .notice a:nth-of-type(2) { margin:20px auto; }
 
         /* extra */
-        .container .main .info, .container .main .title, .container .main .intro, .container .main .goal, .container .main .target, .container .main .desk, .container .main .persona, .container .main .ux_flow, .container .main > a { display:none; }
-
+        .info, .title, .intro, .goal, .target, .desk, .persona, .ux_flow, .main > a { display:none; }
 
     /** Mobile footer **/
-    .container footer { width:100%; padding:39px 0; }
-    .container footer p { margin:0; text-align:center; font-family:'RhodeMediumExtended',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:0.563em; color:#0027c9; }
-    .container footer .hidden { display:none; }
+    footer { width:100%; padding:39px 0; }
+    footer p { margin:0; text-align:center; font-family:'RhodeMediumExtended',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:0.563em; color:#0027c9; }
+    footer .hidden { display:none; }
 
 
 /*** Tablet ***/
 @media (min-width:767px) {
     /** Tablet header **/
-    .container header { padding:27px 5%; background:url(../../images/line2.png) no-repeat 60% 50%; background-color:#fff; background-size:55% 3px; }
-
-    /* logo */
-    .container header h1 { width:120px; height:17px; background:url(../../images/logo_PC2.png) no-repeat 50% 50%; background-size:cover; }
-    .container header h1 a { display:block; width:100%; height:100%; }
+    header { padding:27px 5%; background:url(../../images/line2.png) no-repeat 60% 50%; background-color:#fff; background-size:55% 3px; }
+        /* logo */
+        header h1 { width:120px; height:17px; background:url(../../images/logo_PC2.png) no-repeat 50% 50%; background-size:cover; }
+        header h1 a { display:block; width:100%; height:100%; }
 
     /** Tablet footer **/
-    .container footer p:first-of-type { display:none; }
-    .container footer .hidden { display:block; }
+    footer p:first-of-type { display:none; }
+    footer .hidden { display:block; }
 }
 
 
 /*** PC ***/
 @media (min-width:1280px) {
     /** PC header **/
-    .container header { padding:27px 4%; background:url(../../images/line2.png) no-repeat 40% 50%; background-color:#fff; background-size:52% 3px; }
-
+    header { padding:27px 4%; background:url(../../images/line2.png) no-repeat 40% 50%; background-color:#fff; background-size:52% 3px; }
         /* logo */
-        .container header h1 { width:160px; height:23px; background:url(../../images/logo_PC2.png) no-repeat 50% 50%; }
-        .container header h1 a { display:block; width:100%; height:100%; }
+        header h1 { width:160px; height:23px; background:url(../../images/logo_PC2.png) no-repeat 50% 50%; }
+        header h1 a { display:block; width:100%; height:100%; }
 
         /* mobile navigation icon */
-        .container header .menu-wrapper { display:none; }
+        header .menu-wrapper { display:none; }
 
         /* PC navigation */
-		.container header .PC_nav { width:22%; display:flex; justify-content:space-between; }
-            .container header .PC_nav li { width:45%; }
-                .container header .PC_nav li a { display:block; font-family:'RhodeMediumExtended',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; color:#0027c9; text-decoration:none; text-transform:capitalize; text-align:center; font-size:1.042vw; padding:5px; transition:0.3s; }
-                .container header li:hover a { background-color:#0027c9; color:#fff; }
+		header .PC_nav { width:22%; display:flex; justify-content:space-between; }
+            header .PC_nav li { width:45%; }
+                header .PC_nav li a { display:block; font-family:'RhodeMediumExtended',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; color:#0027c9; text-decoration:none; text-transform:capitalize; text-align:center; font-size:1.042vw; padding:5px; transition:0.3s; }
+                header li:hover a { background-color:#0027c9; color:#fff; }
 
         /** PC main contents **/
-        .container .main { padding:0; }
+        .main { padding:0; }
 
             /* projects menu, notice */
-            .container .main .projects, .container .main .notice { display:none; }
+            .projects, .notice { display:none; }
 
             /* extra */
-            .container .main .title, .container .main .intro, .container .main .goal, .container .main .target, .container .main .desk, .container .main .ux_flow, .container .main > a { display:block; }
+            .title, .intro, .goal, .target, .desk, .ux_flow, .main > a { display:block; }
 
             /* info */
-            .container .main .info { display:flex; justify-content:space-between; align-items:flex-start; width:80%; margin:80px auto; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:1.1em; color:#00275d; }
-                .container .main .info p { font-weight:500; }
-                .container .main .info ul { text-align:right; }
-                    .container .main .info ul li { margin-bottom:3px; }
-                    .container .main .info ul li:first-child { font-weight:500; }
+            .info { display:flex; justify-content:space-between; align-items:flex-start; width:80%; margin:80px auto; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:1.1em; color:#00275d; position: relative; }
+                .info p { font-weight:500; margin: 0; }
+                .info p:last-of-type { position: absolute; left: 50%; transform: translateX(-50%); }
+                .info ul { text-align:right; }
+                    .info ul li { margin-bottom:3px; }
+                    .info ul li:first-child { font-weight:500; }
 
             /* title */
-            .container .main .title { text-align:center; padding-top:120px; }
-                .container .main .title h2 { font-weight:900; font-size:4.583vw; margin:0; color:#00275d; position:relative; }
-                .container .main .title h2::after { content:''; display:block; width:10px; height:10px; border-radius:50%; background-color:#00275d; position:absolute; top:50%; left:31.5vw; }
-                .container .main .title h2::before { content:''; display:block; width:10px; height:10px; border-radius:50%; background-color:#00275d; position:absolute; top:50%; right:31.5vw; }
+            .title { text-align:center; padding-top:120px; }
+                .title h2 { font-weight:900; font-size:4.583vw; margin:0; color:#00275d; position:relative; }
+                .title h2::after { content:''; display:block; width:10px; height:10px; border-radius:50%; background-color:#00275d; position:absolute; top:50%; left:31.5vw; }
+                .title h2::before { content:''; display:block; width:10px; height:10px; border-radius:50%; background-color:#00275d; position:absolute; top:50%; right:31.5vw; }
 
-                .container .main .title p { margin:0; font-size:1vw; font-weight:400; }
-                    .container .main .title p:first-of-type { margin-top:30px; color:#222; }
-                    .container .main .title p:last-of-type { margin-top:20px; color:rgba(0, 39, 93, 0.4); }
+                .title p { margin:0; font-size:1vw; font-weight:400; }
+                    .title p:first-of-type { margin-top:30px; color:#222; }
+                    .title p:last-of-type { margin-top:20px; color:rgba(0, 39, 93, 0.4); }
 
             /* intro */
-            .container .main .intro { position:relative; background-color:#f9fafb; margin-top:45%; padding:12% 0 10%; box-sizing:border-box; }
-                .container .main .intro > img { width:90%; position:absolute; top:-46.5%; left:50%; transform:translateX(-50%); }
-                .container .main .intro > p, .container .main .intro > h2 { text-align:center; margin:0; font-size:1.2em; line-height:1.6; }
-                    .container .main .intro > p:first-of-type { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:800; color:#00275d; font-size:1.8em; margin-top:200px; }
-                    .container .main .intro > p:last-of-type { margin-top:15px; }
-                    
-                    .container .main .intro > h2 { font-weight:900; font-size:3em; margin:0 0 20px 0; }
-                        .container .main .intro > h2 span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:900; }
+            .intro { position:relative; background-color:#f9fafb; margin-top:45%; padding:12% 0 10%; box-sizing:border-box; }
+                .intro > img { width:90%; position:absolute; top:-46.5%; left:50%; transform:translateX(-50%); }
+                .intro > p, .intro > h2 { text-align:center; margin:0; font-size:1.2em; line-height:1.6; }
+                    .intro > p:first-of-type { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:800; color:#00275d; font-size:1.8em; margin-top:200px; }
+                    .intro > p:last-of-type { margin-top:15px; }
 
-                .container .main .intro .txt { width:70%; margin:150px auto 0; display:flex; justify-content:space-between; text-align:center; }
-                    .container .main .intro .txt > div { width:40%; height:430px; position:relative; font-size:1.1em; font-weight:400; color:#222; }
-                        .container .main .intro .txt > div img { width:55px; height:55px; margin-bottom:50px; }
+                    .intro > h2 { font-weight:900; font-size:3em; margin:0 0 20px 0; }
+                        .intro > h2 span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:900; }
 
-                        .container .main .intro .txt > div p { position:absolute; display:flex; justify-content:center; align-items:center; padding-bottom:15px; background-size:cover; }
-                        .container .main .intro .txt .good p:first-of-type { width:260px; height:120px; background:url(../images/pj2_tu1.svg) no-repeat 50% 50%; top:75px; left:40px; }
-                        .container .main .intro .txt .good p:nth-of-type(2) { width:260px; height:95px; background:url(../images/pj2_tu2.svg) no-repeat 50% 50%; top:150px; right:20px; }
-                        .container .main .intro .txt .good p:nth-of-type(3) { width:260px; height:120px; background:url(../images/pj2_tu3.svg) no-repeat 50% 50%; top:230px; left:20px; }
-                        .container .main .intro .txt .good p:last-of-type { width:330px; height:105px; background:url(../images/pj2_tu4.svg) no-repeat 50% 50%; top:310px; right:5px; }
+                .intro .txt { width:70%; margin:150px auto 0; display:flex; justify-content:space-between; text-align:center; }
+                    .intro .txt > div { width:40%; height:430px; position:relative; font-size:1.1em; font-weight:400; color:#222; }
+                        .intro .txt > div img { width:55px; height:55px; margin-bottom:50px; }
 
-                        .container .main .intro .txt .bad p:first-of-type { width:250px; height:95px; background:url(../images/pj2_td1.svg) 50% 50%; top:80px; left:50px; }
-                        .container .main .intro .txt .bad p:nth-of-type(2) { width:300px; height:100px; background:url(../images/pj2_td2.svg) no-repeat 50% 50%; top:150px; right:50px; }
-                        .container .main .intro .txt .bad p:nth-of-type(3) { width:430px; height:100px; background:url(../images/pj2_td3.svg) no-repeat 50% 50%; top:260px; left:0; }
-                        .container .main .intro .txt .bad p:last-of-type { width:290px; height:120px; background:url(../images/pj2_td4.svg) no-repeat 50% 50%; top:320px; right:0; }
+                        .intro .txt > div p { position:absolute; display:flex; justify-content:center; align-items:center; padding-bottom:15px; background-size:cover; }
+                        .intro .txt .good p:first-of-type { width:260px; height:120px; background:url(../images/pj2_tu1.svg) no-repeat 50% 50%; top:75px; left:40px; }
+                        .intro .txt .good p:nth-of-type(2) { width:260px; height:95px; background:url(../images/pj2_tu2.svg) no-repeat 50% 50%; top:150px; right:20px; }
+                        .intro .txt .good p:nth-of-type(3) { width:260px; height:120px; background:url(../images/pj2_tu3.svg) no-repeat 50% 50%; top:230px; left:20px; }
+                        .intro .txt .good p:last-of-type { width:330px; height:105px; background:url(../images/pj2_tu4.svg) no-repeat 50% 50%; top:310px; right:5px; }
+
+                        .intro .txt .bad p:first-of-type { width:250px; height:95px; background:url(../images/pj2_td1.svg) 50% 50%; top:80px; left:50px; }
+                        .intro .txt .bad p:nth-of-type(2) { width:300px; height:100px; background:url(../images/pj2_td2.svg) no-repeat 50% 50%; top:150px; right:50px; }
+                        .intro .txt .bad p:nth-of-type(3) { width:430px; height:100px; background:url(../images/pj2_td3.svg) no-repeat 50% 50%; top:260px; left:0; }
+                        .intro .txt .bad p:last-of-type { width:290px; height:120px; background:url(../images/pj2_td4.svg) no-repeat 50% 50%; top:320px; right:0; }
 
             /* goal */
-            .container .main .goal { padding:7% 0; }
-                .container .main .goal > p, .container .main .goal > h2  { text-align:center; }
-                .container .main .goal > p { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:800; color:#00275d; font-size:1.8em; margin:0; line-height:1.6; }
-                .container .main .goal > h2 { margin:0 0 20px 0; font-size:3em; line-height:1.4; font-weight:400; letter-spacing:-3px; }
-                        .container .main .goal > h2 span { font-weight:700; position:relative; }
-                        .container .main .goal > h2 span:after { content:""; display:block; position:absolute; bottom:0; left:0; width:100%; height:40%; background-color:rgba(2, 100, 206, 0.3); }
+            .goal { padding:7% 0; }
+                .goal > p, .goal > h2  { text-align:center; }
+                .goal > p { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:800; color:#00275d; font-size:1.8em; margin:0; line-height:1.6; }
+                .goal > h2 { margin:0 0 20px 0; font-size:3em; line-height:1.4; font-weight:400; letter-spacing:-3px; }
+                        .goal > h2 span { font-weight:700; position:relative; }
+                        .goal > h2 span:after { content:""; display:block; position:absolute; bottom:0; left:0; width:100%; height:40%; background-color:rgba(2, 100, 206, 0.3); }
 
-                .container .main .goal > div { display:flex; justify-content:space-between; align-items:flex-start; width:50%; margin:7% auto 0; text-align:center; background:url(../images/pj2_direc.svg) no-repeat 50% 0%; background-size:25%; }
-                    .container .main .goal > div h3 { margin:0 0 35px 0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:800; font-size:1.7em; }
-                            .container .main .goal .as_is h3 { color:rgba(83, 83, 84, 0.5); }
-                            .container .main .goal .to_be h3 { color:#00275d; }
-                    .container .main .goal > div p { line-height:1.6; margin:0; }
-                    .container .main .goal .to_be p:first-of-type { margin-bottom:10px; }
+                .goal > div { display:flex; justify-content:space-between; align-items:flex-start; width:50%; margin:7% auto 0; text-align:center; background:url(../images/pj2_direc.svg) no-repeat 50% 0%; background-size:25%; }
+                    .goal > div h3 { margin:0 0 35px 0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:800; font-size:1.7em; }
+                            .goal .as_is h3 { color:rgba(83, 83, 84, 0.5); }
+                            .goal .to_be h3 { color:#00275d; }
+                    .goal > div p { line-height:1.6; margin:0; }
+                    .goal .to_be p:first-of-type { margin-bottom:10px; }
 
             /* target */
-            .container .main .target { padding:7% 0; text-align:center; background-color:#f9fafb; }
-                .container .main .target > p:first-of-type { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:800; color:#00275d; font-size:1.8em; margin:0; line-height:1.6; }
-                .container .main .target > h2 { font-weight:900; font-size:3em; margin:0 0 20px 0; line-height:1.6; }
+            .target { padding:7% 0; text-align:center; background-color:#f9fafb; }
+                .target > p:first-of-type { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:800; color:#00275d; font-size:1.8em; margin:0; line-height:1.6; }
+                .target > h2 { font-weight:900; font-size:3em; margin:0 0 20px 0; line-height:1.6; }
 
-                .container .main .target ul { margin:6% auto; width:55%; display:flex; justify-content:space-between; flex-wrap:wrap; }
-                    .container .main .target ul li { width:28%; height:70px; line-height:70px; border-radius:50px; background-color:#fff; margin:2% 0; font-size:1vw; font-weight:700; color:#00275d; box-shadow:10px 10px 10px rgba(0, 0, 0, 0.1); }
+                .target ul { margin:6% auto; width:55%; display:flex; justify-content:space-between; flex-wrap:wrap; }
+                    .target ul li { width:28%; height:70px; line-height:70px; border-radius:50px; background-color:#fff; margin:2% 0; font-size:1vw; font-weight:700; color:#00275d; box-shadow:10px 10px 10px rgba(0, 0, 0, 0.1); }
 
 
-                .container .main .target > p:last-of-type { font-size:1.1em; margin-bottom:25px; }
-                .container .main .target a { display:block; margin:0 auto; width:350px; height:60px; line-height:60px; border:1px solid #00275d; color:#00275d; text-decoration:none; font-size:1.15em; font-weight:500; transition:0.2s; }
-                .container .main .target a:hover, .container .main .target a:active { background-color:#00275d; color:#fff; }
+                .target > p:last-of-type { font-size:1.1em; margin-bottom:25px; }
+                .target a { display:block; margin:0 auto; width:350px; height:60px; line-height:60px; border:1px solid #00275d; color:#00275d; text-decoration:none; font-size:1.15em; font-weight:500; transition:0.2s; }
+                .target a:hover, .target a:active { background-color:#00275d; color:#fff; }
 
             /* desk */
-            .container .main .desk { padding:7% 0; }
-                .container .main .desk > p:first-of-type, .container .main .desk > h2 { line-height:1.6; margin:0; text-align:center; }
-                .container .main .desk > p:first-of-type { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:800; color:#00275d; font-size:1.8em; }
-                .container .main .desk > h2 { margin:0 0 20px 0; font-size:3em; font-weight:900; }
+            .desk { padding:7% 0; }
+                .desk > p:first-of-type, .desk > h2 { line-height:1.6; margin:0; text-align:center; }
+                .desk > p:first-of-type { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:800; color:#00275d; font-size:1.8em; }
+                .desk > h2 { margin:0 0 20px 0; font-size:3em; font-weight:900; }
 
-                .container .main .desk > p:nth-of-type(2), .container .main .desk > p:last-of-type { margin:0; font-size:1.1em; text-align:center; line-height:1.6; }
-                .container .main .desk > p:nth-of-type(2) { margin:20px 0 5px; }
+                .desk > p:nth-of-type(2), .desk > p:last-of-type { margin:0; font-size:1.1em; text-align:center; line-height:1.6; }
+                .desk > p:nth-of-type(2) { margin:20px 0 5px; }
 
-                .container .main .desk .tap_menu { width:85%; margin:7% auto 0; position:relative; }
-                    .container .main .desk .tap_menu li h2 { width:13.021vw; height:65px; text-align:center; font-size:1vw; font-weight:700; color:#00275d; border:1px solid #00275d; padding:20px 15px; box-sizing:border-box; border-radius:50px; transition:0.2s; cursor:pointer; } 
-                    .container .main .desk .tap_menu li h2:hover, .container .main .desk .tap_menu li h2:active, .container .main .desk .tap_menu li.show h2 { background-color:#00275d; color:#fff; }
+                .desk .tap_menu { width:85%; margin:7% auto 0; position:relative; }
+                    .desk .tap_menu li h2 { width:13.021vw; height:65px; text-align:center; font-size:1vw; font-weight:700; color:#00275d; border:1px solid #00275d; padding:20px 15px; box-sizing:border-box; border-radius:50px; transition:0.2s; cursor:pointer; } 
+                    .desk .tap_menu li h2:hover, .desk .tap_menu li h2:active, .desk .tap_menu li.show h2 { background-color:#00275d; color:#fff; }
 
-                    .container .main .desk .tap_menu #tap1 h2 { position:absolute; top:0; left:20%; }
-                    .container .main .desk .tap_menu #tap2 h2 { position:absolute; top:0; left:50%; transform:translateX(-50%); } 
-                    .container .main .desk .tap_menu #tap3 h2 { position:absolute; top:0; right:20%; } 
+                    .desk .tap_menu #tap1 h2 { position:absolute; top:0; left:20%; }
+                    .desk .tap_menu #tap2 h2 { position:absolute; top:0; left:50%; transform:translateX(-50%); } 
+                    .desk .tap_menu #tap3 h2 { position:absolute; top:0; right:20%; } 
 
-                    .container .main .desk .tap_menu li .txt_box { width:60%; margin:0 auto; padding-top:150px; font-size:1.1em; line-height:1.5; display:none; }
-                    .container .main .desk .tap_menu li.show .txt_box { display:block; }
-                    .container .main .desk .tap_menu li .txt_box > div:first-of-type { width:100%;  display:flex; justify-content:space-between; align-items:center; }
-                        .container .main .desk .tap_menu li .txt_box > div:first-of-type img { width:200px; }
-                        .container .main .desk .tap_menu li .txt_box > div:first-of-type > div { width:70%; }
+                    .desk .tap_menu li .txt_box { width:60%; margin:0 auto; padding-top:150px; font-size:1.1em; line-height:1.5; display:none; }
+                    .desk .tap_menu li.show .txt_box { display:block; }
+                    .desk .tap_menu li .txt_box > div:first-of-type { width:100%;  display:flex; justify-content:space-between; align-items:center; }
+                        .desk .tap_menu li .txt_box > div:first-of-type img { width:200px; }
+                        .desk .tap_menu li .txt_box > div:first-of-type > div { width:70%; }
 
-                        .container .main .desk .tap_menu li .txt_box .good, .container .main .desk .tap_menu li .txt_box .bad { margin-top:65px; }
-                            .container .main .desk .tap_menu li .txt_box .good { margin-left:5%; }
-                            .container .main .desk .tap_menu li .txt_box .bad { text-align:right; margin-right:5%; }
-                        .container .main .desk .tap_menu li .txt_box .good img, .container .main .desk .tap_menu li .txt_box .bad img { width:45px; }
+                        .desk .tap_menu li .txt_box .good, .desk .tap_menu li .txt_box .bad { margin-top:65px; }
+                            .desk .tap_menu li .txt_box .good { margin-left:5%; }
+                            .desk .tap_menu li .txt_box .bad { text-align:right; margin-right:5%; }
+                        .desk .tap_menu li .txt_box .good img, .desk .tap_menu li .txt_box .bad img { width:45px; }
 
             /* persona */
-            .container .main .persona { width:100%; display:flex; flex-wrap:wrap; justify-content:center; padding:7% 0; text-align:center; background-color:#f9fafb; }
-                .container .main .persona > p:first-of-type, .container .main .persona > h2 { line-height:1.6; margin:0; text-align:center; width:100%; }
-                .container .main .persona > p:first-of-type { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:800; color:#00275d; font-size:1.8em; }
-                .container .main .persona > h2 { margin:0 0 20px 0; font-size:3em; font-weight:900; }
+            .persona { width:100%; display:flex; flex-wrap:wrap; justify-content:center; padding:7% 0; text-align:center; background-color:#f9fafb; }
+                .persona > p:first-of-type, .persona > h2 { line-height:1.6; margin:0; text-align:center; width:100%; }
+                .persona > p:first-of-type { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:800; color:#00275d; font-size:1.8em; }
+                .persona > h2 { margin:0 0 20px 0; font-size:3em; font-weight:900; }
 
-                .container .main .persona .psn { margin:7% 0; padding:40px 30px; width:320px; background-color:#fff; box-shadow:0 0 10px rgba(0, 0, 0, 0.1); border-radius:30px; }
-                .container .main .persona #psn1 { margin-right:7%; }
-                    .container .main .persona .psn > img:first-of-type { width:200px; }
-                    .container .main .persona .psn > img:nth-of-type(2) { width:80%; }
-                    .container .main .persona .psn > img:last-of-type { width:90%; margin-top:65px; }
+                .persona .psn { margin:7% 0; padding:40px 30px; width:320px; background-color:#fff; box-shadow:0 0 10px rgba(0, 0, 0, 0.1); border-radius:30px; }
+                .persona #psn1 { margin-right:7%; }
+                    .persona .psn > img:first-of-type { width:200px; }
+                    .persona .psn > img:nth-of-type(2) { width:80%; }
+                    .persona .psn > img:last-of-type { width:90%; margin-top:65px; }
 
-                    .container .main .persona .psn > p { font-size:1.1em; line-height:1.6; }
-                    .container .main .persona .psn > p:first-of-type { margin:40px 0; font-size:1.6em; font-weight:500; color:#00275d; }
-                    .container .main .persona .psn > p:nth-of-type(6) { margin:40px 0 5px; font-size:1em; color:#5C5B5B; }
-                    .container .main .persona .psn > p:last-of-type { margin:0; padding:65px 0 35px; font-size:1.5em; font-weight:400; background:url(../images/pj2_psn_txt.svg) no-repeat 50% 50%; background-size:310px; }
+                    .persona .psn > p { font-size:1.1em; line-height:1.6; }
+                    .persona .psn > p:first-of-type { margin:40px 0; font-size:1.6em; font-weight:500; color:#00275d; }
+                    .persona .psn > p:nth-of-type(6) { margin:40px 0 5px; font-size:1em; color:#5C5B5B; }
+                    .persona .psn > p:last-of-type { margin:0; padding:65px 0 35px; font-size:1.5em; font-weight:400; background:url(../images/pj2_psn_txt.svg) no-repeat 50% 50%; background-size:310px; }
 
-                    .container .main .persona .psn > div { width:80%; margin:0 auto; display:flex; justify-content:space-between; align-items:center; }
-                        .container .main .persona .psn > div p { margin:0; }
+                    .persona .psn > div { width:80%; margin:0 auto; display:flex; justify-content:space-between; align-items:center; }
+                        .persona .psn > div p { margin:0; }
 
 
-                .container .main .persona > p:last-of-type { width:100%; font-size:1.1em; margin-bottom:25px; }
-                .container .main .persona a { display:block; width:350px; height:60px; line-height:60px; border:1px solid #00275d; color:#00275d; text-decoration:none; font-size:1.15em; font-weight:500; transition:0.2s; }
-                .container .main .persona a:hover, .container .main .persona a:active { background-color:#00275d; color:#fff; }
+                .persona > p:last-of-type { width:100%; font-size:1.1em; margin-bottom:25px; }
+                .persona a { display:block; width:350px; height:60px; line-height:60px; border:1px solid #00275d; color:#00275d; text-decoration:none; font-size:1.15em; font-weight:500; transition:0.2s; }
+                .persona a:hover, .persona a:active { background-color:#00275d; color:#fff; }
 
             /* ux flow */
-            .container .main .ux_flow { padding:7% 0; }
-                .container .main .ux_flow > p, .container .main .ux_flow > h2 { line-height:1.6; margin:0; text-align:center; }
-                .container .main .ux_flow > p:first-of-type { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:800; color:#00275d; font-size:1.8em; }
-                .container .main .ux_flow > h2 { margin:0 0 7% 0; font-size:3em; font-weight:900; }
-                    .container .main .ux_flow > h2 span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:900; }
+            .ux_flow { padding:7% 0; }
+                .ux_flow > p, .ux_flow > h2 { line-height:1.6; margin:0; text-align:center; }
+                .ux_flow > p:first-of-type { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:800; color:#00275d; font-size:1.8em; }
+                .ux_flow > h2 { margin:0 0 7% 0; font-size:3em; font-weight:900; }
+                    .ux_flow > h2 span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:900; }
 
-                .container .main .ux_flow .flow_txt { display:flex; justify-content:space-between; align-items:flex-start; text-align:center; width:50%; margin:0 auto; background:url(../images/pj2_line.svg) no-repeat 50% 30%; }
-                    .container .main .ux_flow .flow_txt li p:first-of-type { width:170px; height:70px; line-height:70px; border-radius:50px; background-color:#fff; box-shadow:0 0 10px rgba(0, 0, 0, 0.1); font-size:1.3em; color:#00275d; font-weight:700; }
-                    .container .main .ux_flow .flow_txt li p:last-of-type { font-size:1.1em; line-height:1.6; color:#222; }
+                .ux_flow .flow_txt { display:flex; justify-content:space-between; align-items:flex-start; text-align:center; width:50%; margin:0 auto; background:url(../images/pj2_line.svg) no-repeat 50% 30%; }
+                    .ux_flow .flow_txt li p:first-of-type { width:170px; height:70px; line-height:70px; border-radius:50px; background-color:#fff; box-shadow:0 0 10px rgba(0, 0, 0, 0.1); font-size:1.3em; color:#00275d; font-weight:700; }
+                    .ux_flow .flow_txt li p:last-of-type { font-size:1.1em; line-height:1.6; color:#222; }
 
             /* to next chapter */
-            .container .main > a { display:block; margin:0 auto 7%; width:350px; height:60px; line-height:60px; border:1px solid #00275d; color:#00275d; text-decoration:none; font-size:1.15em; font-weight:500; text-align:center; transition:0.2s; }
-            .container .main > a:hover, .container .main > a:active { background-color:#00275d; color:#fff; }
-
+            .main > a { display:block; margin:0 auto 7%; width:350px; height:60px; line-height:60px; border:1px solid #00275d; color:#00275d; text-decoration:none; font-size:1.15em; font-weight:500; text-align:center; transition:0.2s; }
+            .main > a:hover, .main > a:active { background-color:#00275d; color:#fff; }
 
         /** PC footer**/
-        .container footer { padding:51px 0; }
-            .container footer .hidden { font-size:0.938em; }
+        footer { padding:51px 0; }
+            footer .hidden { font-size:0.938em; }
 }
