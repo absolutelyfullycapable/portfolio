@@ -1,7 +1,6 @@
 ![index](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FlOkkI%2FbtqLf7f3lkp%2F4fOh6pA03mWdkROrSxNMiK%2Fimg.png)
 
 ## Absolutely Fully Capable
-I am a person who can be any**ONE** that I want.<br>되고자 하는 어떤 모습이든 될 수 있는 제가 궁금하지 않으세요?
 
 ### about
 - 이곳은 **개인 포트폴리오 저장소**입니다.
