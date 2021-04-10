@@ -321,10 +321,10 @@ ul, li { list-style:none; margin:0; padding:0; }
         .intro { padding-top:30px; }
             .intro .title > div:first-of-type { margin-top:0; }
             .intro .title .profile img { width:160px; }
-            .intro .title .profile img:first-of-type { top:0; right:70px; width:170px; }
+            .intro .title .profile img:first-of-type { top:0; right:70px; width:170px; transform:rotate(10deg); }
             .intro .title .profile img:nth-of-type(2), .intro .title .profile img:last-of-type { display:block; }
-            .intro .title .profile img:nth-of-type(2) { top:100px; right:-80px; }
-            .intro .title .profile img:last-of-type { top:170px; right:70px; }
+            .intro .title .profile img:nth-of-type(2) { top:100px; right:-80px; transform:rotate(-5deg); }
+            .intro .title .profile img:last-of-type { top:170px; right:50px; transform:rotate(-10deg); }
 
             .intro .title #container-scroller .container-scroller_item { width:100%; }
 
@@ -367,7 +367,7 @@ ul, li { list-style:none; margin:0; padding:0; }
             .intro .title .profile img { width:21.875vw; }
             .intro .title .profile img:first-of-type { right:10.417vw; width:22.396vw; }
             .intro .title .profile img:nth-of-type(2) { top:250px; right:-6.25vw; }
-            .intro .title .profile img:last-of-type { top:400px; right:13.021vw; }
+            .intro .title .profile img:last-of-type { top:400px; right:12vw; }
 
             .intro .title #container-scroller { width:17.5vw; height:14vh; overflow:hidden; }
                 .intro .title #container-scroller .container-scroller_item { width:100%; height:100%; font-size:4.948vw; -webkit-animation:scroll-pc 9s cubic-bezier(0.645, 0.045, 0.355, 1) infinite; -moz-animation:scroll-pc 9s cubic-bezier(0.645, 0.045, 0.355, 1) infinite; -ms-animation:scroll-pc 9s cubic-bezier(0.645, 0.045, 0.355, 1) infinite; -o-animation:scroll-pc 9s cubic-bezier(0.645, 0.045, 0.355, 1) infinite; animation:scroll-pc 9s cubic-bezier(0.645, 0.045, 0.355, 1) infinite; }
