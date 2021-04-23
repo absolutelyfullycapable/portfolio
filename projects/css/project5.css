@@ -73,7 +73,7 @@ ul, li { list-style:none; margin:0; padding:0; }
         .intro { text-align:right; padding-right:4%; background:url(../images/pj5_mockup.png) no-repeat 50% 60%; background-size:320px; }
             .intro p:first-of-type { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; color:#0027c9; font-weight:500; font-size:1.6em; margin:0; }
             .intro h2 { font-family:'DrukWideCyWebBold',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:normal; color:#0027c9; font-size:2.5em; margin:0; }
-            .intro p:nth-of-type(2) { font-size:1.063em; line-height:1.4; margin-top:250px; }
+            .intro p:nth-of-type(2) { font-size:1em; line-height:1.4; margin-top:250px; }
             .intro p:last-of-type { display:none; }
                 .intro p span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:400; }
 
@@ -84,39 +84,64 @@ ul, li { list-style:none; margin:0; padding:0; }
             .contents > div > div:first-of-type p { margin:0; margin-right:50px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:600; font-size:1.1em; }
             .contents > div > div:first-of-type h3 { margin:0; font-weight:normal; }
 
-            /* goal, role */
-            .contents .goal ul li, .contents .role ul li { font-size:1.02em; line-height:1.4; display:flex; margin:0; }
-            .contents .goal ul li:first-child { margin-bottom:25px; }
-                .contents .goal ul li p, .contents .role ul li p { margin:0px; }
-                .contents .goal ul li p:first-of-type, .contents .role ul li p:first-of-type { margin-right:5px; }
+            /* goal, publishing */
+            .contents .goal ul li, .contents .publishing ul li { font-size:1.02em; line-height:1.4; display:flex; margin:0; }
+                .contents .goal ul li p, .contents .publishing ul li p { margin:0px; }
+                .contents .goal ul li p:first-of-type, .contents .publishing ul li p:first-of-type { margin-right:5px; }
+
+                .contents .goal ul li:first-child, .contents .publishing ul li:first-child { margin-bottom:25px; }
 
             /* period */
             .contents .period p { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:1.1em; font-weight:400; }
 
             /* role */
-            .contents .role ul li { margin-bottom:25px; }
-            .contents .role ul li:nth-child(3), .contents .role ul li:nth-child(5) { margin-bottom:10px; }
-                .contents .role ul li  p span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:400; }
+            .contents .role  p { font-size:1.02em; }
+                .contents .role  p span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:400; }
 
-            .contents .role ul .none_flex { display:block; margin-left:10px; margin-bottom:25px; }
-            .contents .role ul .none_flex p { line-height:1.6; }
+            /* publishing */
+            .contents .publishing ul li:nth-child(2) { margin-bottom:25px; }
+            .contents .publishing ul li p span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:400; }
 
-            /* review */
-            .contents .review .txt p { margin:0; font-size:1.02em; line-height:1.4; }
-            .contents .review .txt p:nth-of-type(2), .contents .review .txt p:nth-of-type(3) { margin:20px 0; }
-                .contents .review .txt p span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; }
+            /* concept */
+            .contents .concept h4 { font-weight:500; font-size:1.1em; }
+            .contents .concept > p { font-size:1.02em; line-height:1.4; }
+            .contents .concept .hidden { display:none; }
+
+            /* style */
+            .contents .style .description > p { font-size:1.1em; font-weight:500; margin:0; }
+                .contents .style .description > p span { font-weight:300; display:none; }
+
+                /* color */
+                .contents .style .description { display:flex; flex-direction:column; }
+                .contents .style .description #color { justify-content:center; margin:30px 0 40px; display:flex; }
+                    .contents .style .description #color .color { width:110px; height:110px; border-radius:50%; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; text-align:center; line-height:110px; color:#fff; font-weight:400; }
+                        .contents .style .description #color .color1 { background-color:#0063E6; }
+                        .contents .style .description #color .color2 { background-color:#fff; box-shadow:0 0 10px rgba(0, 0, 0, 0.05); margin-left:-15px; color:#000; }
+                        .contents .style .description #color .color3 { background-color:#000; margin-left:-15px; }
+
+                /* font */
+                .contents .style .description > ul { margin-top:30px; }
+                    .contents .style .description > ul li em { font-style:normal; }
+                        .contents .style .description > ul li p:first-of-type { text-transform:capitalize; display:none; }
+                        .contents .style .description > ul li p:last-of-type { font-size:1.1em; line-height:1.6; letter-spacing:0; }
+                            .contents .style .description > ul li p:last-of-type .medium { font-weight:500; }
+                            .contents .style .description > ul li p:last-of-type .semi_bold { font-weight:600; }
+                            .contents .style .description > ul li p:last-of-type .bold { font-weight:700; }
+                            .contents .style .description > ul li p:last-of-type .black { font-weight:900; }
+
+                    .contents .style .description > ul li:last-child p { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",serif; margin:17px 0; }
 
             /* fin */
-            .fin { margin-top:150px; }
+            .fin { margin-top:100px; }
                 .fin .hidden { text-align:center; display:none; }
                 .fin a { display:block; margin:0 auto; text-align:center; text-decoration:none; width:260px; height:50px; line-height:50px; font-size:1.1em; font-weight:500; }
                     .fin a:first-of-type { border:1px solid #0027c9; color:#0027c9; transition:0.2s; }
                     .fin a:first-of-type:hover, .fin a:first-of-type:active { background-color:#0027c9; color:#fff; }
 
-                .fin .bg { margin:100px auto 0; width:300px; height:200px; background:url(../images/pj5_fin.png) no-repeat 50% 50%; background-size:150px; position:relative; }
+                .fin .bg { margin:100px auto 0; width:300px; height:200px; background:url(../images/pj5_fin.png) no-repeat 50% 50%; background-size:170px; position:relative; }
                     .fin .bg p { width:100px; height:35px; text-align:center; color:#fff; line-height:29px; }
-                        .fin .bg p:first-of-type { background:url(../images/bubble_r.svg) no-repeat; background-size:cover; position:absolute; top:-20px; right:0; animation:floating1 3s cubic-bezier(0.250,0.460,0.450,0.940) infinite; }
-                        .fin .bg p:last-of-type { background:url(../images/bubble_l.svg) no-repeat; background-size:cover; position:absolute; top:20px; left:0; animation:floating2 2.5s cubic-bezier(0.250,0.460,0.450,0.940) infinite; }
+                        .fin .bg p:first-of-type { background:url(../images/bubble_r.svg) no-repeat; background-size:cover; position:absolute; top:0; right:0; animation:floating1 3s cubic-bezier(0.250,0.460,0.450,0.940) infinite; }
+                        .fin .bg p:last-of-type { background:url(../images/bubble_l.svg) no-repeat; background-size:cover; position:absolute; bottom:30px; left:0; animation:floating2 2.5s cubic-bezier(0.250,0.460,0.450,0.940) infinite; }
 
                 @keyframes floating1 {
                     from { transform: translate(0,  0px); }
@@ -146,7 +171,7 @@ ul, li { list-style:none; margin:0; padding:0; }
 
     /** Tablet main contents **/
     .projects { margin-bottom:0; }
-        .intro { padding:13.5% 0; margin:0 auto; background:url(../images/pj5_mockup.png) no-repeat 96% 30%; background-size:60%; }
+        .intro { padding:13.5% 0; margin:0 auto; background:url(../images/pj5_mockup.png) no-repeat 93% 30%; background-size:60%; }
             .intro > * { width:42%; }
                 .intro h2 { font-size:5.208vw; }
                 .intro p:first-of-type { font-size:2.5vw; }
@@ -160,16 +185,32 @@ ul, li { list-style:none; margin:0; padding:0; }
                 .contents > div > div:first-of-type h3 { font-size:1em; }
 
             /* goal, publishing */
-            .contents .goal ul { width:60%; }
-                .contents .goal ul li { font-size:1em; }
+            .contents .goal ul, .contents .publishing ul { width:60%; }
+                .contents .goal ul li, .contents .publishing ul li { font-size:1em; }
 
-            /* period */
-            .contents .period > p { margin:0; margin-left:5px; font-size:1em; }
+            /* period, role */
+            .contents .period > p, .contents .role > p { margin:0; font-size:1em; margin-left:5px; }
 
-            /* review */
-            .contents .review .txt { width:60%; }
-                .contents .review .txt p { margin-left:5px; font-size:1em; }
-                .contents .review .txt p:nth-of-type(2), .contents .review .txt p:nth-of-type(3) { margin-left:5px; }
+            /* concept */
+            .contents .concept > h4, .contents .concept > p { display:none; }
+            .contents .concept .hidden { display:block; width:60%; }
+                .contents .concept .hidden li { margin-bottom:25px; font-size:1em; line-height:1.4; }
+                    .contents .concept .hidden li:last-child { margin-bottom:0px; }
+                    .contents .concept .hidden li span { font-weight:500; }
+
+            /* style */
+            .contents .style .description { width:60%; text-align:left; }
+            .contents .style .description > p { font-size:1em; }
+
+                /* color */
+                .contents .style .description #color { justify-content:flex-start; }
+
+                /* font */
+                .contents .style .description > ul li { display:flex; align-items:flex-start; }
+                .contents .style .description > ul li p:first-of-type { text-transform:capitalize; display:block; width:30%; line-height:1.6; }
+                .contents .style .description > ul li p:last-of-type { font-size:1em; width:70%; }
+                .contents .style .description > ul li:first-child p { margin-top:0; }
+                    .contents .style .description > ul li:first-child p:first-of-type { margin-top:3px; }
 
     /** Tablet footer **/
     footer p:first-of-type { display:none; }
@@ -211,19 +252,32 @@ ul, li { list-style:none; margin:0; padding:0; }
                 .contents > div > div:first-of-type h3 { font-size:1.35em; font-weight:500; }
 
         /* goal, publishing */
-        .contents .goal ul li { font-size:1.15em; line-height:1.6; }
+        .contents .goal ul li, .contents .publishing ul li { font-size:1.15em; line-height:1.6; }
 
         /* period */
         .contents .period > p { font-size:1.2em; }
 
         /* role */
-        .contents .role ul li p { font-size:1.15em; }
+        .contents .role > p { font-size:1.15em; }
 
-        /* review */
-        .contents .review .txt p { font-size:1.15em; }
+        /* concept */
+        .contents .concept .hidden span { font-size:1.15em; }
+
+        /* style */
+        /* color */
+        .contents .style .description #color { margin:40px 0 80px; }
+            .contents .style .description #color .color { width:150px; height:150px; line-height:150px; }
+            .contents .style .description #color .color2, .contents .style .description #color .color3 { margin-left:30px; }
+
+        /* font */
+        .contents .style .description > p { font-size:1.15em; line-height:1.4; }
+        .contents .style .description > p span { display:inline; font-size:0.9em; }
+        .contents .style .description > ul { margin-top:40px; }
+            .contents .style .description > ul li:nth-child(4) p:first-of-type { font-size:1.4em; }
+            .contents .style .description > ul li:nth-child(4) p:last-of-type { font-size:1.4em; }
 
         /* fin */
-        .fin { margin-top:230px; }
+        .fin { margin-top:180px; }
             .fin .hidden { display:block; margin:0 0 15px 0; font-size:1.2em; }
                 .fin .hidden span { font-weight:400; }
             .fin a:first-of-type { margin-top:80px; }

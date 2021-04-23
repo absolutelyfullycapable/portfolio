@@ -172,20 +172,20 @@ ul, li { list-style:none; margin:0; padding:0; }
 
         /* odd number projects */
         .main > div:nth-child(2n+1) { margin-top:270px; }
-            .main> div:nth-child(2n+1) ul { float:right; width:85%; }
+            .main > div:nth-child(2n+1):not(.seventh) ul { float:right; width:85%; }
             .main .first ul { background:url(../images/line2.png) no-repeat 11% 50%; background-size:30%; }
             .main .third ul { background:url(../images/line2.png) no-repeat 15% 50%; background-size:42%; }
-            .main .fifth ul { background:url(../images/line2.png) no-repeat 35% 50%; background-size:60%; }
-
+            .main .fifth ul { background:url(../images/line2.png) no-repeat 19% 50%; background-size:50%; }
+            .main .seventh ul { float:right; width:95%; }
                 .main .first > a img, .main .third > a img, .main .fifth > a img { width:85%; }
-
                 .main .first > p { clear:both; }
 
         /* even number projects */
         .main > div:nth-child(2n+2) { padding-top:250px; }
             .main > div:nth-child(2n+2) ul, .main > div:nth-child(2n+2) > a img { width:85%; }
             .main .second ul { background:url(../images/line2.png) no-repeat 22% 50%; background-size:50%; }
-            .main .fourth ul { background:url(../images/line2.png) no-repeat 21% 50%; background-size:45%; }
+            .main .fourth ul { background:url(../images/line2.png) no-repeat 16% 50%; background-size:41%; }
+            .main .sixth ul { background:url(../images/line2.png) no-repeat 32% 50%; background-size:65%; }
 
 
     /** PC footer**/
