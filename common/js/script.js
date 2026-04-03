@@ -15,6 +15,14 @@ var mainScript = (function () {
 
       requestAnimationFrame(raf);
 
+      // skip navigation
+      $(".skip-nav").on("click", function () {
+        $("#wrapper").attr("tabindex", "-1").focus();
+        setTimeout(function () {
+          $("#wrapper").removeAttr("tabindex");
+        }, 300);
+      });
+
       // header, footer
       if (location.pathname.includes(".html")) {
         $("header")
