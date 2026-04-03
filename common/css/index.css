@@ -232,25 +232,25 @@ summary {
 
 @font-face {
   font-family: "CreatoDisplay";
-  src: url("../../../common/fonts/CreatoDisplay-Bold.woff2") format("woff2"), url("../../../common/fonts//CreatoDisplay-Bold.woff") format("woff");
+  src: url("../fonts/CreatoDisplay-Bold.woff2") format("woff2"), url("../fonts//CreatoDisplay-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "CreatoDisplay";
-  src: url("../../../common/fonts//CreatoDisplay-Medium.woff2") format("woff2"), url("../../../common/fonts//CreatoDisplay-Medium.woff") format("woff");
+  src: url("../fonts//CreatoDisplay-Medium.woff2") format("woff2"), url("../fonts//CreatoDisplay-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "CreatoDisplay";
-  src: url("../../../common/fonts//CreatoDisplay-Regular.woff2") format("woff2"), url("../../../common/fonts//CreatoDisplay-Regular.woff") format("woff");
+  src: url("../fonts//CreatoDisplay-Regular.woff2") format("woff2"), url("../fonts//CreatoDisplay-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Miama";
-  src: url("../../../common/fonts//Miama.woff2") format("woff2"), url("../../../common/fonts//Miama.woff") format("woff");
+  src: url("../fonts//Miama.woff2") format("woff2"), url("../fonts//Miama.woff") format("woff");
   font-style: normal;
 }
 .btn-wrap .btn-link {
