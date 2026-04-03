@@ -1,0 +1,36 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  mix-blend-mode: difference;
+
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30rem 0;
+
+    h1 {
+      a {
+        font-size: 40rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: $text-white;
+      }
+    }
+
+    .gnb {
+      @include flexCenter;
+      column-gap: 48rem;
+
+      li {
+        a {
+          font-size: 20rem;
+          color: $text-white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+// style
+@mixin bg($url) {
+  background: url($url) no-repeat center center / cover;
+}
+
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin grid($col: 2, $colgap: 35rem, $rowgap: 32rem) {
+  display: grid;
+  grid-template-columns: repeat($col, minmax(auto, 1fr));
+  column-gap: $colgap;
+  row-gap: $rowgap;
+}
+
+@mixin posCenter() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// Media Query
+@mixin mobile() {
+  @media all and (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media all and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin pc() {
+  @media all and (min-width: 1024px) {
+    @content;
+  }
+}

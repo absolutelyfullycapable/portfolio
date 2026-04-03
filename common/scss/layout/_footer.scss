@@ -1,0 +1,74 @@
+footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top: -30rem;
+  background-color: $gray-20;
+  text-align: center;
+  color: $text-white;
+
+  .inner {
+    padding: 150rem 0 120rem;
+
+    .email {
+      position: relative;
+      margin: 25rem auto 20rem;
+      padding: 0 20rem;
+      font-size: 80rem;
+      overflow: hidden;
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $gray-00;
+        mix-blend-mode: difference;
+        transition: 0.5s $custom-ease;
+      }
+
+      &:hover {
+        &::after {
+          top: 0;
+        }
+      }
+    }
+
+    .btn-link {
+      margin: 0 auto;
+
+      span {
+        font-size: 20rem;
+      }
+    }
+
+    .copy-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 60rem;
+      opacity: 0.5;
+
+      p {
+        display: flex;
+        align-items: center;
+        font-size: 14rem;
+
+        & + p {
+          &::before {
+            content: "";
+            display: block;
+            width: 1rem;
+            height: 12rem;
+            margin: 0 10rem;
+            background-color: $gray-00;
+          }
+        }
+      }
+    }
+  }
+}
