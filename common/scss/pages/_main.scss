@@ -2,6 +2,8 @@
   // cont
   .cont {
     .tit-wrap {
+      color: $text-black;
+
       .tit {
         font-size: 128rem;
         font-weight: $font-regular;
@@ -18,6 +20,7 @@
         margin-top: 20rem;
         font-size: 20rem;
         line-height: 150%;
+        color: $text-high;
       }
     }
 
@@ -90,6 +93,7 @@
                     margin-bottom: 15rem;
                     font-size: 18rem;
                     font-weight: $font-bold;
+                    color: $text-black;
                   }
 
                   .co-name {
@@ -121,8 +125,6 @@
 
     // work archive
     .w-archive {
-      border-radius: 0 0 30rem 30rem;
-
       .inner {
         display: flex;
         justify-content: space-between;
@@ -165,6 +167,8 @@
 
               .w-tit {
                 font-size: 18rem;
+                font-weight: $font-medium;
+                color: $text-black;
               }
 
               .tag-list {

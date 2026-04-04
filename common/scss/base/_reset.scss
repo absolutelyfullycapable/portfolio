@@ -6,7 +6,6 @@ html {
   width: 100%;
   height: 100%;
   font-size: 0.05208334vw;
-  // scroll-behavior: smooth;
 }
 body {
   position: relative;
@@ -15,7 +14,7 @@ body {
   font-family: "CreatoDisplay", sans-serif;
   font-weight: 300;
   font-size: 16rem;
-  color: #1a1a1a;
+  color: $text-high;
   letter-spacing: -0.01em;
   word-break: break-all;
   word-wrap: break-word;

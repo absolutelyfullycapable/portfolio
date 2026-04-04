@@ -8,11 +8,10 @@
 
 // cont
 .cont {
-  section {
-    position: relative;
-    z-index: 1;
-    background-color: $bg-color;
-  }
+  position: relative;
+  z-index: 1;
+  background-color: $bg-color;
+  border-radius: 0 0 30rem 30rem;
 }
 
 // dot txt

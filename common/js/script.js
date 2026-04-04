@@ -34,10 +34,10 @@ var mainScript = (function () {
           .empty()
           .load(BASE + "html/_header.html", function () {
             if ($("#cBody").hasClass("main")) {
-              $("header .gnb .notion").hide();
+              $("header .gnb li:has(.notion)").hide();
             } else {
               $("header .gnb li").hide();
-              $("header .gnb .notion").show();
+              $("header .gnb li:has(.notion)").show();
             }
           });
         $("footer")

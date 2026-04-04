@@ -9,7 +9,7 @@ footer {
   color: $text-white;
 
   .inner {
-    padding: 150rem 0 120rem;
+    padding: 130rem 0 100rem;
 
     .email {
       position: relative;
@@ -51,12 +51,12 @@ footer {
       justify-content: center;
       align-items: center;
       margin-top: 60rem;
-      opacity: 0.5;
 
       p {
         display: flex;
         align-items: center;
         font-size: 14rem;
+        color: $gray-10;
 
         & + p {
           &::before {
@@ -65,7 +65,7 @@ footer {
             width: 1px;
             height: 12rem;
             margin: 0 10rem;
-            background-color: $gray-00;
+            background-color: $gray-10;
           }
         }
       }

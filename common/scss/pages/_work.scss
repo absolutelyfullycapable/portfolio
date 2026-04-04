@@ -13,6 +13,7 @@
     .w-header-tit {
       font-size: 80rem;
       font-weight: $font-medium;
+      color: $text-black;
     }
 
     .w-header-desc {
@@ -50,6 +51,7 @@
         margin-bottom: 15rem;
         font-size: 18rem;
         font-weight: $font-bold;
+        color: $text-black;
       }
 
       .w-desc-box {
@@ -69,6 +71,12 @@
         }
       }
 
+      .notice {
+        margin-top: 40rem;
+        font-size: 18rem;
+        font-weight: $font-bold;
+      }
+
       &.overview {
         width: 864rem;
       }
@@ -82,11 +90,9 @@
 
 // work detail
 .w-detail {
-  padding-top: 120rem;
+  margin-top: 120rem;
 
   .screenshot-wrap {
-    margin-bottom: 120rem;
-
     img {
       width: 100%;
       max-width: 1454rem;
@@ -96,6 +102,7 @@
 
   .txt-wrap {
     @include grid($colgap: 32rem, $rowgap: 120rem);
+    margin-top: 120rem;
 
     .txt-area {
       .img-box {
@@ -118,11 +125,25 @@
         margin-bottom: 25rem;
         font-size: 24rem;
         font-weight: $font-bold;
+        color: $text-black;
       }
 
       .desc {
-        p + p {
+        p {
           margin-top: 15rem;
+
+          &:first-of-type {
+            margin-top: 0;
+          }
+        }
+
+        .btn-wrap {
+          margin-top: 15rem;
+
+          .btn-link {
+            font-size: 18rem;
+            font-weight: $font-bold;
+          }
         }
       }
     }
