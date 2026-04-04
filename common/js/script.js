@@ -34,8 +34,10 @@ var mainScript = (function () {
           .empty()
           .load(BASE + "html/_header.html", function () {
             if ($("#cBody").hasClass("main")) {
+              $("header .logo").prop("href", "./index.html");
               $("header .gnb li:has(.notion)").hide();
             } else {
+              $("header .logo").prop("href", "../../index.html");
               $("header .gnb li").hide();
               $("header .gnb li:has(.notion)").show();
             }
