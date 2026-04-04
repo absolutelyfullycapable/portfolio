@@ -24,10 +24,15 @@ var mainScript = (function () {
       });
 
       // header, footer
+      const BASE =
+        location.hostname === "localhost" || location.hostname === "127.0.0.1"
+          ? "/"
+          : "/portfolio/";
+
       if (location.pathname.includes(".html")) {
         $("header")
           .empty()
-          .load("/html/_header.html", function () {
+          .load(BASE + "html/_header.html", function () {
             if ($("#cBody").hasClass("main")) {
               $("header .gnb .notion").hide();
             } else {
@@ -35,7 +40,9 @@ var mainScript = (function () {
               $("header .gnb .notion").show();
             }
           });
-        $("footer").empty().load("/html/_footer.html");
+        $("footer")
+          .empty()
+          .load(BASE + "html/_footer.html");
       }
     },
   };
