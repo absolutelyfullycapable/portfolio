@@ -165,7 +165,7 @@
             display: block;
             width: 0;
             height: 50rem;
-            @include bg("/common/images/icon-arrow-line.svg");
+            @include bg("../../common/images/icon-arrow-line.svg");
             transform: rotate(180deg);
             transition: 0.5s $custom-ease;
             opacity: 0;
@@ -193,7 +193,7 @@
             display: block;
             width: 0;
             height: 50rem;
-            @include bg("/common/images/icon-arrow-line.svg");
+            @include bg("../../common/images/icon-arrow-line.svg");
             transition: 0.5s $custom-ease;
             opacity: 0;
           }

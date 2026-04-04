@@ -32,7 +32,7 @@
         display: block;
         width: 20rem;
         height: 20rem;
-        @include bg("/common/images/icon-arrow.svg");
+        @include bg("../../common/images/icon-arrow.svg");
       }
     }
 
@@ -43,7 +43,7 @@
 
       span {
         &::after {
-          @include bg("/common/images/icon-arrow-w.svg");
+          @include bg("../../common/images/icon-arrow-w.svg");
         }
       }
     }
