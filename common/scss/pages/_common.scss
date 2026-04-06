@@ -28,8 +28,18 @@ img {
   display: block;
 }
 
+::selection {
+  background-color: $point-color;
+  color: $text-high;
+}
+
 .miama {
   font-family: "Miama";
+}
+
+.scrl-motion {
+  transform: translateY(70rem);
+  opacity: 0;
 }
 
 // skip navigation

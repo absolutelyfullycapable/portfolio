@@ -24,7 +24,7 @@
       }
     }
 
-    // kv
+    // key visual
     .kv {
       height: 100vh;
 
@@ -42,11 +42,21 @@
             padding: 10rem 20rem;
             border-radius: 999rem;
             border: 1px solid $gray-10;
+            transform: translateY(70rem);
+            opacity: 0;
 
             span {
               font-size: 40rem;
               line-height: 120%;
               color: $text-medium;
+            }
+          }
+
+          .tit {
+            span {
+              display: inline-block;
+              transform: translateY(100rem);
+              opacity: 0;
             }
           }
         }
@@ -62,18 +72,62 @@
           margin-top: 250rem;
 
           .photo-area {
+            position: relative;
             width: 300rem;
             height: 325rem;
             margin-left: 896rem;
             background-color: #d9d9d9;
+            cursor: pointer;
+
+            .comment-box {
+              display: flex;
+              align-items: center;
+              position: absolute;
+              top: 0;
+              left: 280rem;
+              width: fit-content;
+              padding: 5rem 10rem;
+              background-color: $gray-00;
+              border-radius: 999rem;
+              transform: translateY(-50%);
+
+              p {
+                font-size: 18rem;
+                overflow: hidden;
+
+                &:last-of-type {
+                  width: 0;
+                  white-space: nowrap;
+                  transition: 0.5s $custom-ease;
+
+                  span {
+                    margin-left: 7rem;
+                  }
+                }
+              }
+            }
+
+            &:hover {
+              .comment-box {
+                p {
+                  &:last-of-type {
+                    width: 100rem;
+                  }
+                }
+              }
+            }
+          }
+
+          hr {
+            width: 0;
+            margin: 25rem 0;
+            border: none;
+            border-top: 1px solid $gray-30;
           }
 
           .txt-area {
             display: flex;
             justify-content: space-between;
-            margin-top: 25rem;
-            padding-top: 25rem;
-            border-top: 1px solid $gray-30;
 
             > div {
               width: calc((100% - 32rem) / 2);
@@ -151,7 +205,6 @@
               overflow: hidden;
 
               img {
-                // @include posCenter;
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
