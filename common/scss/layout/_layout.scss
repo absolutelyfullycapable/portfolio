@@ -4,6 +4,11 @@
   width: 100%;
   max-width: 1760rem;
   margin: 0 auto;
+
+  @include tablet {
+    max-width: initial;
+    padding: 0 24rem;
+  }
 }
 
 // cont

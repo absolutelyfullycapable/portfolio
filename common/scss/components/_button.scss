@@ -27,6 +27,8 @@
       display: flex;
       align-items: center;
       column-gap: 7rem;
+      font-size: 18rem;
+      font-weight: $font-bold;
       color: $text-black;
 
       &::after {
@@ -48,6 +50,30 @@
 
         &::after {
           @include bg("../../common/images/icon-arrow-w.svg");
+        }
+      }
+    }
+  }
+
+  @include tablet {
+    .btn-link {
+      span {
+        font-size: 18rem;
+
+        &::after {
+          width: 18rem;
+          height: 18rem;
+        }
+      }
+    }
+  }
+
+  @include mobile {
+    .btn-link {
+      span {
+        &::after {
+          width: 16rem;
+          height: 16rem;
         }
       }
     }

@@ -54,4 +54,42 @@ header {
       }
     }
   }
+
+  @include tablet {
+    .inner {
+      padding: 15rem 24rem;
+
+      h1 {
+        a {
+          font-size: 35rem;
+        }
+      }
+
+      .gnb {
+        column-gap: 36rem;
+
+        li {
+          a {
+            font-size: 16rem;
+          }
+        }
+      }
+    }
+  }
+
+  @include mobile {
+    .inner {
+      padding: 10rem 24rem;
+
+      h1 {
+        a {
+          font-size: 30rem;
+        }
+      }
+
+      .gnb {
+        column-gap: 24rem;
+      }
+    }
+  }
 }

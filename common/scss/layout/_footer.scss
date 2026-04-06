@@ -11,6 +11,10 @@ footer {
   .inner {
     padding: 130rem 0 100rem;
 
+    br {
+      display: none;
+    }
+
     .email {
       position: relative;
       margin: 25rem auto 20rem;
@@ -43,6 +47,7 @@ footer {
 
       span {
         font-size: 20rem;
+        font-weight: $font-medium;
       }
     }
 
@@ -67,6 +72,75 @@ footer {
             margin: 0 10rem;
             background-color: $gray-10;
           }
+        }
+      }
+    }
+  }
+
+  @include tablet {
+    .inner {
+      padding: 130rem 24rem 100rem;
+
+      > p:first-of-type {
+        font-size: 14rem;
+      }
+
+      .email {
+        margin: 20rem auto 10rem;
+        padding: 0 10rem;
+        font-size: 60rem;
+      }
+
+      .btn-link {
+        margin: 0 auto;
+
+        span {
+          font-size: 18rem;
+        }
+      }
+
+      .copy-wrap {
+        flex-direction: column;
+        row-gap: 5rem;
+        margin-top: 40rem;
+
+        p {
+          & + p {
+            &::before {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include mobile {
+    .inner {
+      padding: 100rem 24rem 70rem;
+
+      br {
+        display: block;
+      }
+
+      .email {
+        margin: 15rem 0 10rem;
+        font-size: 32rem;
+      }
+
+      .btn-link {
+        margin: 0 auto;
+
+        span {
+          font-size: 16rem;
+        }
+      }
+
+      .copy-wrap {
+        margin-top: 30rem;
+
+        p {
+          font-size: 12rem;
         }
       }
     }
