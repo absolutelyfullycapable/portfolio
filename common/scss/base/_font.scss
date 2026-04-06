@@ -1,34 +1,15 @@
-@font-face {
-  font-family: "CreatoDisplay";
-  src:
-    url("../fonts/CreatoDisplay-Bold.woff2") format("woff2"),
-    url("../fonts//CreatoDisplay-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
+@mixin fontFace($family, $file, $weight) {
+  @font-face {
+    font-family: $family;
+    src:
+      url(../fonts/#{$file}.woff2) format("woff2"),
+      url(../fonts/#{$file}.woff) format("woff");
+    font-weight: $weight;
+    font-style: normal;
+  }
 }
 
-@font-face {
-  font-family: "CreatoDisplay";
-  src:
-    url("../fonts//CreatoDisplay-Medium.woff2") format("woff2"),
-    url("../fonts//CreatoDisplay-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "CreatoDisplay";
-  src:
-    url("../fonts//CreatoDisplay-Regular.woff2") format("woff2"),
-    url("../fonts//CreatoDisplay-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Miama";
-  src:
-    url("../fonts//Miama.woff2") format("woff2"),
-    url("../fonts//Miama.woff") format("woff");
-  font-style: normal;
-}
+@include fontFace("CreatoDisplay", "CreatoDisplay-Bold", 700);
+@include fontFace("CreatoDisplay", "CreatoDisplay-Medium", 500);
+@include fontFace("CreatoDisplay", "CreatoDisplay-Regular", 400);
+@include fontFace("Miama", "Miama", 400);
