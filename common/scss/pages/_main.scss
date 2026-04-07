@@ -322,10 +322,6 @@
 
                   > div {
                     width: 100%;
-
-                    .tit {
-                      margin-bottom: 10rem;
-                    }
                   }
                 }
               }
@@ -430,6 +426,10 @@
 
               > div {
                 width: 100%;
+
+                &.left p + p {
+                  margin-top: 10rem;
+                }
               }
             }
           }

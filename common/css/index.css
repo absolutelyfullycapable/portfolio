@@ -855,9 +855,6 @@ img {
   .main .cont .about .inner .desc-wrap .txt-area > div.right > div {
     width: 100%;
   }
-  .main .cont .about .inner .desc-wrap .txt-area > div.right > div .tit {
-    margin-bottom: 10rem;
-  }
   .main .cont .w-archive .inner {
     flex-direction: column;
     row-gap: 100rem;
@@ -924,6 +921,9 @@ img {
   .main .cont .about .inner .desc-wrap .txt-area > div {
     width: 100%;
   }
+  .main .cont .about .inner .desc-wrap .txt-area > div.left p + p {
+    margin-top: 10rem;
+  }
   .main .cont .w-archive .inner .w-list {
     display: grid;
     grid-template-columns: repeat(1, minmax(auto, 1fr));
@@ -937,7 +937,7 @@ img {
 }
 
 .work .w-header {
-  margin-top: 170rem;
+  padding-top: 170rem;
 }
 .work .w-header .w-header-wrap {
   display: flex;
@@ -946,7 +946,6 @@ img {
        column-gap: 15rem;
 }
 .work .w-header .w-header-wrap .w-header-tit {
-  width: 100%;
   font-size: 80rem;
   font-weight: 500;
   color: #000;
@@ -1121,13 +1120,14 @@ img {
 }
 @media all and (max-width: 1024px) {
   .work .w-header {
-    margin-top: 150rem;
+    padding-top: 150rem;
   }
   .work .w-header .w-header-wrap {
     flex-direction: column;
     align-items: flex-start;
   }
   .work .w-header .w-header-wrap .w-header-tit {
+    width: 100%;
     font-size: 50rem;
   }
   .work .w-header .w-header-wrap .w-header-desc {
@@ -1147,7 +1147,19 @@ img {
     width: calc((100% - 24rem) / 2);
   }
   .work .w-header .w-desc-wrap .w-desc-area.overview {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+  }
+  .work .w-header .w-desc-wrap .w-desc-area.overview .w-desc-tit {
+    order: 2;
+  }
+  .work .w-header .w-desc-wrap .w-desc-area.overview .w-desc-box {
+    order: 3;
+  }
+  .work .w-header .w-desc-wrap .w-desc-area.overview .btn-wrap {
+    order: 1;
+    margin: 0 0 50rem;
   }
   .work .w-header .w-desc-wrap .w-desc-area.detail {
     width: 100%;
@@ -1209,7 +1221,7 @@ img {
 }
 @media all and (max-width: 600px) {
   .work .w-header {
-    margin-top: 100rem;
+    padding-top: 100rem;
   }
   .work .w-header .w-header-wrap {
     row-gap: 10rem;
@@ -1231,8 +1243,8 @@ img {
     flex-wrap: wrap;
     gap: 40rem 0;
   }
-  .work .w-header .w-desc-wrap .w-desc-area .btn-wrap {
-    margin-top: 30rem;
+  .work .w-header .w-desc-wrap .w-desc-area.overview .btn-wrap {
+    margin-bottom: 40rem;
   }
   .work .w-detail {
     margin-top: 80rem;
@@ -1251,7 +1263,6 @@ img {
     margin-bottom: 40rem;
   }
   .work .w-detail .txt-wrap .txt-area .tit {
-    margin-bottom: 10rem;
     font-size: 18rem;
   }
   .work .w-nav {

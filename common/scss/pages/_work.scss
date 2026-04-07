@@ -1,7 +1,7 @@
 .work {
   // work header
   .w-header {
-    margin-top: 170rem;
+    padding-top: 170rem;
 
     .w-header-wrap {
       display: flex;
@@ -9,7 +9,6 @@
       column-gap: 15rem;
 
       .w-header-tit {
-        width: 100%;
         font-size: 80rem;
         font-weight: $font-medium;
         color: $text-black;
@@ -240,13 +239,14 @@
   @include tablet {
     // work header
     .w-header {
-      margin-top: 150rem;
+      padding-top: 150rem;
 
       .w-header-wrap {
         flex-direction: column;
         align-items: flex-start;
 
         .w-header-tit {
+          width: 100%;
           font-size: 50rem;
         }
 
@@ -271,7 +271,22 @@
           width: calc((100% - 24rem) / 2);
 
           &.overview {
+            display: flex;
+            flex-direction: column;
             width: 100%;
+
+            .w-desc-tit {
+              order: 2;
+            }
+
+            .w-desc-box {
+              order: 3;
+            }
+
+            .btn-wrap {
+              order: 1;
+              margin: 0 0 50rem;
+            }
           }
 
           &.detail {
@@ -374,7 +389,7 @@
   @include mobile {
     // work header
     .w-header {
-      margin-top: 100rem;
+      padding-top: 100rem;
 
       .w-header-wrap {
         row-gap: 10rem;
@@ -402,8 +417,10 @@
         gap: 40rem 0;
 
         .w-desc-area {
-          .btn-wrap {
-            margin-top: 30rem;
+          &.overview {
+            .btn-wrap {
+              margin-bottom: 40rem;
+            }
           }
         }
       }
@@ -425,7 +442,6 @@
           }
 
           .tit {
-            margin-bottom: 10rem;
             font-size: 18rem;
           }
         }
