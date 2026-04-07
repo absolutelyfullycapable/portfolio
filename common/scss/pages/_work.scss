@@ -33,7 +33,7 @@
               width: 1px;
               height: 20rem;
               margin: 0 10rem;
-              background-color: $gray-10;
+              background-color: $gray-20;
             }
           }
         }
@@ -44,7 +44,7 @@
       width: 0;
       margin: 15rem 0 30rem;
       border: none;
-      border-top: 1px solid $gray-30;
+      border-top: 1px solid $gray-40;
     }
 
     .w-desc-wrap {
@@ -108,7 +108,7 @@
           height: 440rem;
           margin-bottom: 120rem;
           border-radius: 16rem;
-          box-shadow: 7rem 9rem 24rem 0 rgba($color: $gray-100, $alpha: 0.1);
+          box-shadow: 7rem 9rem 24rem 0 rgba($color: $gray-200, $alpha: 0.1);
           overflow: hidden;
 
           img {
@@ -142,7 +142,7 @@
       }
     }
 
-    .maint-notice {
+    .detail-notice {
       margin-bottom: 45rem;
       font-size: 20rem;
       font-weight: $font-bold;
@@ -213,7 +213,7 @@
             transform: translateY(-20rem);
 
             .thumb-area {
-              box-shadow: 7rem 9rem 24rem 0 rgba($color: $gray-100, $alpha: 0.1);
+              box-shadow: 7rem 9rem 24rem 0 rgba($color: $gray-200, $alpha: 0.1);
 
               img {
                 transform: scale(1.1);
@@ -223,6 +223,70 @@
             .tit {
               &::after {
                 transform: rotate(45deg);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .prop-wrap {
+      .prop-item {
+        padding: 30rem 0;
+        border-bottom: 1px solid $gray-10;
+
+        &:first-child {
+          padding-top: 0;
+        }
+
+        &:last-child {
+          padding-bottom: 0;
+          border-bottom: none;
+        }
+
+        .tit {
+          margin-bottom: 15rem;
+          font-size: 32rem;
+          font-weight: $font-medium;
+          color: $text-black;
+        }
+
+        .btn-wrap {
+          display: flex;
+          align-items: center;
+          column-gap: 10rem;
+
+          .prop-btn {
+            padding: 7rem 20rem;
+            border: 1px solid $gray-40;
+            border-radius: 999rem;
+            transition: 0.5s $custom-ease;
+
+            span {
+              @include flexCenter;
+              column-gap: 7rem;
+              font-size: 18rem;
+
+              &::after {
+                content: "";
+                display: block;
+                width: 14rem;
+                height: 14rem;
+                @include bg("../../common/images/icon-arrow-line.svg");
+                transition: 0.5s $custom-ease;
+              }
+            }
+
+            &:hover {
+              background-color: $gray-40;
+
+              span {
+                color: $text-white;
+
+                &::after {
+                  @include bg("../../common/images/icon-arrow-line-w.svg");
+                  transform: rotate(45deg);
+                }
               }
             }
           }
@@ -242,7 +306,7 @@
         width: 0;
         margin: 0;
         border: none;
-        border-top: 1px solid $gray-30;
+        border-top: 1px solid $gray-40;
       }
 
       .w-nav-wrap {
@@ -421,7 +485,7 @@
         }
       }
 
-      .maint-notice {
+      .detail-notice {
         margin-bottom: 30rem;
         font-size: 18rem;
       }
@@ -432,6 +496,32 @@
         .maint-item {
           .thumb-area {
             height: 150rem;
+          }
+        }
+      }
+
+      .prop-wrap {
+        .prop-item {
+          padding: 20rem 0;
+
+          .tit {
+            margin-bottom: 10rem;
+            font-size: 25rem;
+          }
+
+          .btn-wrap {
+            .prop-btn {
+              padding: 5rem 15rem;
+
+              span {
+                font-size: 16rem;
+
+                &::after {
+                  width: 12rem;
+                  height: 12rem;
+                }
+              }
+            }
           }
         }
       }
@@ -550,7 +640,7 @@
         }
       }
 
-      .maint-notice {
+      .detail-notice {
         margin-bottom: 20rem;
       }
 
@@ -570,6 +660,31 @@
           &:not(.disabled) {
             &:hover {
               transform: translateY(0);
+            }
+          }
+        }
+      }
+
+      .prop-wrap {
+        .prop-item {
+          padding: 17rem 0;
+
+          .tit {
+            font-size: 20rem;
+          }
+
+          .btn-wrap {
+            .prop-btn {
+              padding: 5rem 10rem;
+
+              span {
+                font-size: 14rem;
+
+                &::after {
+                  width: 10rem;
+                  height: 10rem;
+                }
+              }
             }
           }
         }

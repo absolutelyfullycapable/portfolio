@@ -232,18 +232,18 @@ const frontScript = (function () {
           });
         });
 
-        const workMaintTl = gsap.timeline({
+        const workMaintPropTl = gsap.timeline({
           scrollTrigger: {
-            trigger: ".w-detail .maint-notice",
+            trigger: ".w-detail .detail-notice",
             start: "top bottom",
             end: "bottom top",
-            markers: true,
           },
         });
 
-        workMaintTl
-          .to(".w-detail .maint-notice", { y: 0, opacity: 1, delay: 1 })
-          .to(".w-detail .maint-wrap", { y: 0, opacity: 1 }, "<+=0.2");
+        workMaintPropTl
+          .to(".w-detail .detail-notice", { y: 0, opacity: 1, delay: 1 })
+          .to(".w-detail .maint-wrap", { y: 0, opacity: 1 }, "<+=0.2")
+          .to(".w-detail .prop-wrap", { y: 0, opacity: 1 }, "<+=0.2");
 
         // work navigation
         const workNavTl = gsap.timeline({

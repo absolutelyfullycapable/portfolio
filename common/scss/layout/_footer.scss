@@ -4,7 +4,7 @@ footer {
   left: 0;
   width: 100%;
   margin-top: -30rem;
-  background-color: $gray-20;
+  background-color: $gray-30;
   text-align: center;
   color: $text-white;
 
@@ -52,16 +52,14 @@ footer {
     }
 
     .copy-wrap {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flexCenter;
       margin-top: 60rem;
 
       p {
         display: flex;
         align-items: center;
         font-size: 14rem;
-        color: $gray-10;
+        color: $gray-20;
 
         & + p {
           &::before {
@@ -70,7 +68,7 @@ footer {
             width: 1px;
             height: 12rem;
             margin: 0 10rem;
-            background-color: $gray-10;
+            background-color: $gray-20;
           }
         }
       }
