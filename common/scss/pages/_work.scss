@@ -108,7 +108,7 @@
           height: 440rem;
           margin-bottom: 120rem;
           border-radius: 16rem;
-          box-shadow: 7rem 9rem 24rem 0 rgba($color: $gray-200, $alpha: 0.1);
+          box-shadow: 7rem 9rem 24rem 0 rgba($color: $gray-100, $alpha: 0.1);
           overflow: hidden;
 
           img {
@@ -213,7 +213,7 @@
             transform: translateY(-20rem);
 
             .thumb-area {
-              box-shadow: 7rem 9rem 24rem 0 rgba($color: $gray-200, $alpha: 0.1);
+              box-shadow: 7rem 9rem 24rem 0 rgba($color: $gray-100, $alpha: 0.1);
 
               img {
                 transform: scale(1.1);
@@ -231,11 +231,14 @@
     }
 
     .prop-wrap {
+      @include grid($col: 2, $colgap: 0, $rowgap: 0);
+
       .prop-item {
         padding: 30rem 0;
         border-bottom: 1px solid $gray-10;
 
-        &:first-child {
+        &:first-child,
+        &:nth-child(2) {
           padding-top: 0;
         }
 
@@ -501,8 +504,14 @@
       }
 
       .prop-wrap {
+        @include grid($col: 1, $colgap: 0, $rowgap: 0);
+
         .prop-item {
           padding: 20rem 0;
+
+          &:nth-child(2) {
+            padding-top: 20rem;
+          }
 
           .tit {
             margin-bottom: 10rem;
@@ -668,6 +677,10 @@
       .prop-wrap {
         .prop-item {
           padding: 17rem 0;
+
+          &:nth-child(2) {
+            padding-top: 17rem;
+          }
 
           .tit {
             font-size: 20rem;
