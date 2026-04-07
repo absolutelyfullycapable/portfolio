@@ -1052,6 +1052,84 @@ img {
 .work .w-detail .txt-wrap .txt-area .desc .btn-wrap {
   margin-top: 15rem;
 }
+.work .w-detail .maint-notice {
+  margin-bottom: 45rem;
+  font-size: 20rem;
+  font-weight: 700;
+  color: #000;
+}
+.work .w-detail .maint-wrap {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(auto, 1fr));
+  -moz-column-gap: 32rem;
+       column-gap: 32rem;
+  row-gap: 100rem;
+}
+.work .w-detail .maint-wrap .maint-item {
+  width: 100%;
+  transition: 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.work .w-detail .maint-wrap .maint-item.disabled {
+  cursor: initial;
+  pointer-events: none;
+}
+.work .w-detail .maint-wrap .maint-item .thumb-area {
+  width: 100%;
+  height: 200rem;
+  background-color: #fff;
+  border-radius: 8rem;
+  overflow: hidden;
+  transition: 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.work .w-detail .maint-wrap .maint-item .thumb-area img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transition: 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.work .w-detail .maint-wrap .maint-item .tit {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 15rem auto 0;
+  font-size: 18rem;
+  font-weight: 500;
+  text-align: center;
+}
+.work .w-detail .maint-wrap .maint-item .desc {
+  margin-top: 5rem;
+  font-size: 14rem;
+  color: #555;
+  text-align: center;
+}
+.work .w-detail .maint-wrap .maint-item:not(.disabled) .tit {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 7rem;
+       column-gap: 7rem;
+}
+.work .w-detail .maint-wrap .maint-item:not(.disabled) .tit::after {
+  content: "";
+  display: block;
+  width: 16rem;
+  height: 16rem;
+  background: url("../../common/images/icon-arrow-line.svg") no-repeat center center/cover;
+  transition: 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.work .w-detail .maint-wrap .maint-item:not(.disabled):hover {
+  transform: translateY(-20rem);
+}
+.work .w-detail .maint-wrap .maint-item:not(.disabled):hover .thumb-area {
+  box-shadow: 7rem 9rem 24rem 0 rgba(0, 0, 0, 0.1);
+}
+.work .w-detail .maint-wrap .maint-item:not(.disabled):hover .thumb-area img {
+  transform: scale(1.1);
+}
+.work .w-detail .maint-wrap .maint-item:not(.disabled):hover .tit::after {
+  transform: rotate(45deg);
+}
 .work .w-nav {
   padding: 120rem 0;
   border-radius: 0 0 30rem 30rem;
@@ -1086,7 +1164,7 @@ img {
   display: block;
   width: 0;
   height: 50rem;
-  background: url("../../common/images/icon-arrow-line.svg") no-repeat center center/cover;
+  background: url("../../common/images/icon-arrow-nav.svg") no-repeat center center/cover;
   transform: rotate(180deg);
   transition: 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
   opacity: 0;
@@ -1110,7 +1188,7 @@ img {
   display: block;
   width: 0;
   height: 50rem;
-  background: url("../../common/images/icon-arrow-line.svg") no-repeat center center/cover;
+  background: url("../../common/images/icon-arrow-nav.svg") no-repeat center center/cover;
   transition: 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
   opacity: 0;
 }
@@ -1192,6 +1270,20 @@ img {
   .work .w-detail .txt-wrap .txt-area .desc .btn-wrap {
     margin-top: 10rem;
   }
+  .work .w-detail .maint-notice {
+    margin-bottom: 30rem;
+    font-size: 18rem;
+  }
+  .work .w-detail .maint-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
+    -moz-column-gap: 24rem;
+         column-gap: 24rem;
+    row-gap: 60rem;
+  }
+  .work .w-detail .maint-wrap .maint-item .thumb-area {
+    height: 150rem;
+  }
   .work .w-nav {
     padding: 100rem 0;
   }
@@ -1264,6 +1356,26 @@ img {
   }
   .work .w-detail .txt-wrap .txt-area .tit {
     font-size: 18rem;
+  }
+  .work .w-detail .maint-notice {
+    margin-bottom: 20rem;
+  }
+  .work .w-detail .maint-wrap {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(auto, 1fr));
+    -moz-column-gap: 0;
+         column-gap: 0;
+    row-gap: 30rem;
+  }
+  .work .w-detail .maint-wrap .maint-item .tit {
+    font-size: 16rem;
+  }
+  .work .w-detail .maint-wrap .maint-item .tit::after {
+    width: 14rem;
+    height: 14rem;
+  }
+  .work .w-detail .maint-wrap .maint-item:not(.disabled):hover {
+    transform: translateY(0);
   }
   .work .w-nav {
     padding: 80rem 0;
