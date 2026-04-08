@@ -42,7 +42,6 @@ img {
   opacity: 0;
 }
 
-// skip navigation
 .skip-nav {
   @include flexCenter;
   position: fixed;
@@ -56,5 +55,60 @@ img {
 
   &:focus {
     top: 0;
+  }
+}
+
+.dot-txt {
+  li {
+    position: relative;
+    padding-left: 25rem;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 10rem;
+      left: 10rem;
+      width: 4rem;
+      height: 4rem;
+      background-color: $text-high;
+      border-radius: 50%;
+    }
+
+    & + li {
+      margin-top: 5rem;
+    }
+
+    .dot-txt {
+      margin-top: 5rem;
+    }
+  }
+}
+
+#cBody {
+  position: relative;
+
+  // top button
+  > .btn-wrap:has(.top) {
+    position: absolute;
+    right: 20rem;
+    bottom: 20rem;
+    z-index: 1;
+    transition: 0.7s $custom-ease;
+
+    &.fixed {
+      position: fixed;
+    }
+
+    &.active {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .top {
+      width: 50rem;
+      height: 50rem;
+      @include bg("../../common/images/icon-arrow-top.svg");
+    }
   }
 }

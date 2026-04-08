@@ -18,31 +18,3 @@
   background-color: $bg-color;
   border-radius: 0 0 30rem 30rem;
 }
-
-// dot txt
-.dot-txt {
-  li {
-    position: relative;
-    padding-left: 25rem;
-
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 10rem;
-      left: 10rem;
-      width: 4rem;
-      height: 4rem;
-      background-color: $text-high;
-      border-radius: 50%;
-    }
-
-    & + li {
-      margin-top: 5rem;
-    }
-
-    .dot-txt {
-      margin-top: 5rem;
-    }
-  }
-}

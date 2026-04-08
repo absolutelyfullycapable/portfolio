@@ -41,6 +41,18 @@ const frontScript = (function () {
               $("header .logo").prop("href", "./index.html");
               $("header .gnb li:has(.notion)").hide();
 
+              $("header .about").on("click", function () {
+                lenis.scrollTo(document.querySelector(".main .about"), {
+                  duration: 2,
+                });
+              });
+
+              $("header .archive").on("click", function () {
+                lenis.scrollTo(document.querySelector(".main .w-archive"), {
+                  duration: 2,
+                });
+              });
+
               $("header .contact").on("click", function () {
                 lenis.scrollTo(document.body.scrollHeight, { duration: 2 });
               });
@@ -58,6 +70,33 @@ const frontScript = (function () {
             });
           });
       }
+
+      // top button
+      gsap.to("#cBody > .btn-wrap", {
+        scrollTrigger: {
+          start: "top bottom",
+          end: "bottom bottom",
+          endTrigger: "#cBody .cont",
+          onLeave: function () {
+            $("#cBody > .btn-wrap").removeClass("fixed");
+          },
+          onEnterBack: function () {
+            $("#cBody > .btn-wrap").addClass("fixed");
+          },
+        },
+      });
+
+      $("#cBody > .btn-wrap .top").on("click", function () {
+        lenis.scrollTo(0, { duration: 2 });
+      });
+
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop() > 0) {
+          $("#cBody > .btn-wrap").addClass("active");
+        } else {
+          $("#cBody > .btn-wrap").removeClass("active");
+        }
+      });
 
       // title scroll motion
       $(".main section:not(.kv) .tit-wrap").each(function (idx, el) {

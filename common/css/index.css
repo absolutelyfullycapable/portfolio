@@ -528,28 +528,6 @@ footer .inner .copy-wrap p + p::before {
   border-radius: 0 0 30rem 30rem;
 }
 
-.dot-txt li {
-  position: relative;
-  padding-left: 25rem;
-}
-.dot-txt li::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 10rem;
-  left: 10rem;
-  width: 4rem;
-  height: 4rem;
-  background-color: #1a1a1a;
-  border-radius: 50%;
-}
-.dot-txt li + li {
-  margin-top: 5rem;
-}
-.dot-txt li .dot-txt {
-  margin-top: 5rem;
-}
-
 @media all and (max-width: 1024px) {
   html {
     font-size: 0.13vw;
@@ -614,6 +592,51 @@ img {
   top: 0;
 }
 
+.dot-txt li {
+  position: relative;
+  padding-left: 25rem;
+}
+.dot-txt li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10rem;
+  left: 10rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: #1a1a1a;
+  border-radius: 50%;
+}
+.dot-txt li + li {
+  margin-top: 5rem;
+}
+.dot-txt li .dot-txt {
+  margin-top: 5rem;
+}
+
+#cBody {
+  position: relative;
+}
+#cBody > .btn-wrap:has(.top) {
+  position: absolute;
+  right: 20rem;
+  bottom: 20rem;
+  z-index: 1;
+  transition: 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+#cBody > .btn-wrap:has(.top).fixed {
+  position: fixed;
+}
+#cBody > .btn-wrap:has(.top).active {
+  transform: translateY(0);
+  opacity: 1;
+}
+#cBody > .btn-wrap:has(.top) .top {
+  width: 50rem;
+  height: 50rem;
+  background: url("../../common/images/icon-arrow-top.svg") no-repeat center center/cover;
+}
+
 .main .cont .tit-wrap {
   color: #000;
 }
@@ -667,7 +690,8 @@ img {
   opacity: 0;
 }
 .main .cont .about {
-  margin: 200rem 0;
+  margin: 100rem 0;
+  padding-top: 100rem;
 }
 .main .cont .about .inner .desc-wrap {
   margin-top: 250rem;
@@ -746,6 +770,9 @@ img {
 }
 .main .cont .about .inner .desc-wrap .txt-area > div.right > div .btn-wrap {
   margin-top: 50rem;
+}
+.main .cont .w-archive {
+  padding-top: 100rem;
 }
 .main .cont .w-archive .inner {
   display: flex;

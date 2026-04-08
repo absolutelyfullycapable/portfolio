@@ -67,7 +67,8 @@
 
     // about
     .about {
-      margin: 200rem 0;
+      margin: 100rem 0;
+      padding-top: 100rem;
 
       .inner {
         .desc-wrap {
@@ -174,6 +175,8 @@
 
     // work archive
     .w-archive {
+      padding-top: 100rem;
+
       .inner {
         display: flex;
         justify-content: space-between;
