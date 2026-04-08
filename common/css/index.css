@@ -1393,7 +1393,8 @@ img {
   .work .w-header .w-desc-wrap .w-desc-area.overview .w-desc-box {
     order: 3;
   }
-  .work .w-header .w-desc-wrap .w-desc-area.overview .btn-wrap {
+  .work .w-header .w-desc-wrap .w-desc-area.overview .btn-wrap,
+  .work .w-header .w-desc-wrap .w-desc-area.overview .notice {
     order: 1;
     margin: 0 0 50rem;
   }
@@ -1520,7 +1521,8 @@ img {
     flex-wrap: wrap;
     gap: 40rem 0;
   }
-  .work .w-header .w-desc-wrap .w-desc-area.overview .btn-wrap {
+  .work .w-header .w-desc-wrap .w-desc-area.overview .btn-wrap,
+  .work .w-header .w-desc-wrap .w-desc-area.overview .notice {
     margin-bottom: 40rem;
   }
   .work .w-detail {
