@@ -48,9 +48,20 @@
             opacity: 0;
 
             span {
+              display: flex;
+              align-items: center;
+              column-gap: 7rem;
               font-size: 40rem;
               line-height: 120%;
               color: $text-medium;
+
+              &::before {
+                content: "";
+                display: block;
+                width: 40rem;
+                height: 40rem;
+                @include bg("../../common/images/icon-folder.svg");
+              }
             }
           }
 
@@ -282,6 +293,11 @@
 
               span {
                 font-size: 30rem;
+
+                &::before {
+                  width: 33rem;
+                  height: 33rem;
+                }
               }
             }
           }
@@ -387,7 +403,13 @@
               padding: 7rem 15rem;
 
               span {
+                column-gap: 5rem;
                 font-size: 20rem;
+
+                &::before {
+                  width: 24rem;
+                  height: 24rem;
+                }
               }
             }
           }

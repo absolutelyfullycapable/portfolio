@@ -547,6 +547,7 @@ footer .inner .copy-wrap p + p::before {
   z-index: 1;
   background-color: #f1f0ec;
   border-radius: 0 0 30rem 30rem;
+  box-shadow: 0 0 100rem 10rem rgba(0, 0, 0, 0.9);
 }
 
 @media all and (max-width: 1024px) {
@@ -717,9 +718,20 @@ img {
   opacity: 0;
 }
 .main .cont .kv .inner .tit-wrap .badge span {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 7rem;
+       column-gap: 7rem;
   font-size: 40rem;
   line-height: 120%;
   color: #555;
+}
+.main .cont .kv .inner .tit-wrap .badge span::before {
+  content: "";
+  display: block;
+  width: 40rem;
+  height: 40rem;
+  background: url("../../common/images/icon-folder.svg") no-repeat center center/cover;
 }
 .main .cont .kv .inner .tit-wrap .tit span {
   display: inline-block;
@@ -896,6 +908,10 @@ img {
   .main .cont .kv .inner .tit-wrap .badge span {
     font-size: 30rem;
   }
+  .main .cont .kv .inner .tit-wrap .badge span::before {
+    width: 33rem;
+    height: 33rem;
+  }
   .main .cont .about .inner .desc-wrap {
     margin-top: 150rem;
   }
@@ -960,7 +976,13 @@ img {
     padding: 7rem 15rem;
   }
   .main .cont .kv .inner .tit-wrap .badge span {
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
     font-size: 20rem;
+  }
+  .main .cont .kv .inner .tit-wrap .badge span::before {
+    width: 24rem;
+    height: 24rem;
   }
   .main .cont .about .inner .desc-wrap {
     margin-top: 100rem;
