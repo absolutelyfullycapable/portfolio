@@ -186,6 +186,16 @@
           text-align: center;
         }
 
+        .badge {
+          width: fit-content;
+          margin: 7rem auto 0;
+          padding: 5rem 10rem;
+          background-color: $gray-20;
+          border-radius: 999rem;
+          font-size: 14rem;
+          color: $text-white;
+        }
+
         .desc {
           margin-top: 5rem;
           font-size: 14rem;
@@ -664,6 +674,10 @@
               width: 14rem;
               height: 14rem;
             }
+          }
+
+          .badge {
+            font-size: 12rem;
           }
 
           &:not(.disabled) {
