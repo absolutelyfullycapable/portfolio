@@ -330,6 +330,7 @@ header .inner {
   padding: 30rem 0;
 }
 header .inner h1 a {
+  padding: 0 20rem;
   font-size: 40rem;
   font-weight: 400;
   line-height: 1.5;
@@ -368,6 +369,7 @@ header .inner .gnb li a:hover::after {
     padding: 15rem 24rem;
   }
   header .inner h1 a {
+    padding: 0 12rem;
     font-size: 35rem;
   }
   header .inner .gnb {
@@ -383,6 +385,7 @@ header .inner .gnb li a:hover::after {
     padding: 10rem 24rem;
   }
   header .inner h1 a {
+    padding: 0 5rem;
     font-size: 30rem;
   }
   header .inner .gnb {
@@ -635,6 +638,22 @@ img {
   width: 50rem;
   height: 50rem;
   background: url("../../common/images/icon-arrow-top.svg") no-repeat center center/cover;
+}
+@media all and (max-width: 1024px) {
+  #cBody > .btn-wrap:has(.top) {
+    right: 24rem;
+    bottom: 24rem;
+  }
+  #cBody > .btn-wrap:has(.top) .top {
+    width: 40rem;
+    height: 40rem;
+  }
+}
+@media all and (max-width: 600px) {
+  #cBody > .btn-wrap:has(.top) .top {
+    width: 30rem;
+    height: 30rem;
+  }
 }
 
 .main .cont .tit-wrap {
