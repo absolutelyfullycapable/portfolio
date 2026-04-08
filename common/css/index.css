@@ -12,7 +12,7 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  font-family: "CreatoDisplay", sans-serif;
+  font-family: "CreatoDisplay", "Pretendard", sans-serif;
   font-weight: 300;
   font-size: 16rem;
   color: #1a1a1a;
@@ -94,7 +94,7 @@ caption {
 textarea,
 button {
   vertical-align: middle;
-  font-family: "CreatoDisplay", sans-serif;
+  font-family: "CreatoDisplay", "Pretendard", sans-serif;
 }
 
 textarea {
@@ -105,7 +105,7 @@ textarea {
 }
 
 select {
-  font-family: "CreatoDisplay", sans-serif;
+  font-family: "CreatoDisplay", "Pretendard", sans-serif;
   font-weight: 600;
   vertical-align: middle;
   letter-spacing: -0.75px;
@@ -123,7 +123,7 @@ select::-ms-expand {
 
 input,
 textarea {
-  font-family: "CreatoDisplay", sans-serif;
+  font-family: "CreatoDisplay", "Pretendard", sans-serif;
   vertical-align: middle;
   border: 0;
   background: transparent;
@@ -151,10 +151,10 @@ input[type=text]::-ms-clear {
   display: none;
 }
 input::-moz-placeholder {
-  font-family: "CreatoDisplay", sans-serif;
+  font-family: "CreatoDisplay", "Pretendard", sans-serif;
 }
 input::placeholder {
-  font-family: "CreatoDisplay", sans-serif;
+  font-family: "CreatoDisplay", "Pretendard", sans-serif;
 }
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -171,10 +171,10 @@ input:focus::placeholder {
   color: transparent;
 }
 textarea::-moz-placeholder {
-  font-family: "CreatoDisplay", sans-serif;
+  font-family: "CreatoDisplay", "Pretendard", sans-serif;
 }
 textarea::placeholder {
-  font-family: "CreatoDisplay", sans-serif;
+  font-family: "CreatoDisplay", "Pretendard", sans-serif;
 }
 textarea:focus::-moz-placeholder {
   color: transparent;
@@ -230,6 +230,24 @@ summary {
   position: relative;
 }
 
+@font-face {
+  font-family: "Pretendard";
+  src: url(../fonts/Pretendard-Bold.woff2) format("woff2"), url(../fonts/Pretendard-Bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url(../fonts/Pretendard-Medium.woff2) format("woff2"), url(../fonts/Pretendard-Medium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url(../fonts/Pretendard-Regular.woff2) format("woff2"), url(../fonts/Pretendard-Regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 @font-face {
   font-family: "CreatoDisplay";
   src: url(../fonts/CreatoDisplay-Bold.woff2) format("woff2"), url(../fonts/CreatoDisplay-Bold.woff) format("woff");

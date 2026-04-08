@@ -11,7 +11,7 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  font-family: "CreatoDisplay", sans-serif;
+  font-family: "CreatoDisplay", "Pretendard", sans-serif;
   font-weight: 300;
   font-size: 16rem;
   color: $text-high;
@@ -87,7 +87,7 @@ caption {
 textarea,
 button {
   vertical-align: middle;
-  font-family: "CreatoDisplay", sans-serif;
+  font-family: "CreatoDisplay", "Pretendard", sans-serif;
 }
 textarea {
   color: #222;
@@ -96,7 +96,7 @@ textarea {
   -ms-overflow-style: auto;
 }
 select {
-  font-family: "CreatoDisplay", sans-serif;
+  font-family: "CreatoDisplay", "Pretendard", sans-serif;
   font-weight: 600;
   vertical-align: middle;
   letter-spacing: -0.75px;
@@ -113,7 +113,7 @@ select::-ms-expand {
 }
 input,
 textarea {
-  font-family: "CreatoDisplay", sans-serif;
+  font-family: "CreatoDisplay", "Pretendard", sans-serif;
   vertical-align: middle;
   border: 0;
   background: transparent;
@@ -142,13 +142,13 @@ input[type="text"]::-ms-clear {
 }
 input {
   &::-webkit-input-placeholder {
-    font-family: "CreatoDisplay", sans-serif;
+    font-family: "CreatoDisplay", "Pretendard", sans-serif;
   }
   &::-ms-input-placeholder {
-    font-family: "CreatoDisplay", sans-serif;
+    font-family: "CreatoDisplay", "Pretendard", sans-serif;
   }
   &::placeholder {
-    font-family: "CreatoDisplay", sans-serif;
+    font-family: "CreatoDisplay", "Pretendard", sans-serif;
   }
   &[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
@@ -173,16 +173,16 @@ input {
 }
 textarea {
   &::-webkit-input-placeholder {
-    font-family: "CreatoDisplay", sans-serif;
+    font-family: "CreatoDisplay", "Pretendard", sans-serif;
   }
   &:-ms-input-placeholder {
-    font-family: "CreatoDisplay", sans-serif;
+    font-family: "CreatoDisplay", "Pretendard", sans-serif;
   }
   &::-ms-input-placeholder {
-    font-family: "CreatoDisplay", sans-serif;
+    font-family: "CreatoDisplay", "Pretendard", sans-serif;
   }
   &::placeholder {
-    font-family: "CreatoDisplay", sans-serif;
+    font-family: "CreatoDisplay", "Pretendard", sans-serif;
   }
   &:focus::-webkit-input-placeholder {
     color: transparent;

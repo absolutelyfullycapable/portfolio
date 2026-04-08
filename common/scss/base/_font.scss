@@ -9,6 +9,9 @@
   }
 }
 
+@include fontFace("Pretendard", "Pretendard-Bold", 700);
+@include fontFace("Pretendard", "Pretendard-Medium", 500);
+@include fontFace("Pretendard", "Pretendard-Regular", 400);
 @include fontFace("CreatoDisplay", "CreatoDisplay-Bold", 700);
 @include fontFace("CreatoDisplay", "CreatoDisplay-Medium", 500);
 @include fontFace("CreatoDisplay", "CreatoDisplay-Regular", 400);
