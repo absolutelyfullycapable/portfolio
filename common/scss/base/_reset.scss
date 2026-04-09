@@ -200,9 +200,9 @@ textarea {
 a {
   text-decoration: none;
   color: inherit;
-  &a:hover,
-  &a:focus,
-  &a:active {
+  &:hover,
+  &:focus,
+  &:active {
     text-decoration: none;
   }
 }
