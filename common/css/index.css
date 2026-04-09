@@ -817,6 +817,11 @@ img {
   display: inline-block;
   width: 120rem;
 }
+.main .cont .about .inner .desc-wrap .txt-area > div.right > div .notice {
+  margin-top: 10rem;
+  font-size: 14rem;
+  color: #555;
+}
 .main .cont .about .inner .desc-wrap .txt-area > div.right > div .btn-wrap {
   margin-top: 50rem;
 }
