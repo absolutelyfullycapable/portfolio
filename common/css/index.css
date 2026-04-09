@@ -5,7 +5,7 @@
 html {
   width: 100%;
   height: 100%;
-  font-size: 0.05208334vw;
+  font-size: 0.052083334vw;
 }
 
 body {
@@ -552,12 +552,12 @@ footer .inner .copy-wrap p + p::before {
 
 @media all and (max-width: 1024px) {
   html {
-    font-size: 0.13vw;
+    font-size: 0.09765625vw;
   }
 }
 @media all and (max-width: 600px) {
   html {
-    font-size: 0.256vw;
+    font-size: 0.1666667vw;
   }
 }
 html,
