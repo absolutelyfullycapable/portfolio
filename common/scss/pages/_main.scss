@@ -102,6 +102,7 @@
               width: fit-content;
               padding: 5rem 10rem;
               background-color: $gray-00;
+              box-shadow: 7rem 5rem 24rem 0 rgba($color: $gray-100, $alpha: 0.1);
               border-radius: 999rem;
               transform: translateY(-50%);
 
@@ -119,6 +120,13 @@
                   }
                 }
               }
+            }
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center;
             }
 
             &:hover {

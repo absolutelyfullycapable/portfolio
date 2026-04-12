@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0,target-densitydpi=medium-dpi" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>삼성화재 다이렉트 착 | LEEJIHYE PORTFOLIO</title>
+    <title>별들에게 물어봐! | LEEJIHYE PORTFOLIO</title>
 
     <meta name="description" content="웹 퍼블리셔 이지혜의 포트폴리오입니다. 웹 퍼블리싱을 기반으로 웹사이트 구축부터 운영까지 경험하며, 사용자 경험을 고려한 UI 구현을 지향합니다." />
     <meta name="keywords" content="이지혜, 웹 퍼블리셔, 경력 웹 퍼블리셔 포트폴리오, 웹 퍼블리셔 포트폴리오, 포트폴리오, LEEJIHYE, Portfolio, Web Publisher, Web Publisher Portfolio" />
@@ -54,10 +54,10 @@
           <section class="w-header">
             <div class="inner">
               <div class="w-header-wrap scrl-motion">
-                <h2 class="w-header-tit">삼성화재 다이렉트 착</h2>
+                <h2 class="w-header-tit">별들에게 물어봐!</h2>
                 <div class="w-header-desc">
-                  <p class="co-name">삼성화재</p>
-                  <p class="period">2025</p>
+                  <p class="co-name">개인 프로젝트</p>
+                  <p class="period">2026</p>
                 </div>
               </div>
 
@@ -67,12 +67,13 @@
                 <div class="w-desc-area overview scrl-motion">
                   <p class="w-desc-tit">Overview</p>
                   <div class="w-desc-box">
-                    <p>삼성화재 다이렉트 착은 고객이 다양한 보험 상품을 온라인에서 직접 비교하고 가입할 수 있는 삼성화재의 다이렉트 보험 플랫폼입니다.</p>
-                    <p>기존 소스를 유지한 상태에서 UI 개선과 기능 확장이 요구되는 프로젝트였기 때문에 신규 작업은 별도 파일로 분리해 우선 적용하여 리스크를 최소화했습니다.</p>
-                    <p>이를 통해 안정성을 유지하는 동시에 더 나은 사용자 경험을 제공할 수 있었습니다.</p>
+                    <p>'별들에게 물어봐!'는 AI 기반 별자리 운세 안내 웹 서비스입니다. <br>평소 아침마다 별자리 운세를 확인하는 습관에서 아이디어를 얻어, React와 Claude API 연동 학습을 겸해 시작하게 된 개인 프로젝트입니다.</p>
+                    <p>사용자가 이름과 생년월일을 입력하면 함수로 별자리를 판별하고, 해당 별자리 정보를 Claude API에 전달해 오늘의 운세와 행운 아이템을 응답받아 화면에 출력합니다. 결과 화면은 이미지로 저장해 여러 사람과 공유할 수 있도록 했습니다.</p>
+                    <p>기획부터 배포까지 프로젝트 전 과정을 간단하지만 직접 경험해 보며 프로젝트 진행 워크플로우를 한 층 더 잘 이해할 수 있게 되었습니다.</p>
                   </div>
                   <div class="btn-wrap">
-                    <a href="https://direct.samsungfire.com" target="_blank" class="btn-link" title="새 창 이동"><span>사이트 바로 가기</span></a>
+                    <a href="https://askstars.vercel.app/" target="_blank" class="btn-link" title="새 창 이동"><span>사이트 바로 가기</span></a>
+                    <a href="https://github.com/absolutelyfullycapable/AI-horoscope" target="_blank" class="btn-link" title="새 창 이동"><span>Github 확인하기</span></a>
                   </div>
                 </div>
 
@@ -80,31 +81,41 @@
                   <p class="w-desc-tit">Work Detail</p>
                   <ul class="dot-txt">
                     <li>
-                      <strong>적응형</strong> PC 전체 페이지 퍼블리싱
+                      React + Vite 기반 프론트엔드 개발
                       <ul class="dot-txt">
-                        <li>기존 소스 기반의 스타일 및 구조 개선</li>
+                        <li>메인, 정보 입력, 로딩, 에러, 결과 페이지 작업 (반응형)</li>
+                        <li>CSS Modules를 활용한 페이지별 스타일 모듈화</li>
                       </ul>
                     </li>
+                    <li>생년월일을 기반으로 함수 통해 별자리 판별</li>
+                    <li>판별된 별자리를 Claude API에 전달하여 당일 운세 및 행운 아이템 생성</li>
                     <li>
-                      PC / Mobile 공통 UI 가이드 정립
+                      응답 결과를 화면에 출력
                       <ul class="dot-txt">
-                        <li>PC: Accordion, Button, Color, Input, Table, Tooltip, Typography</li>
-                        <li>Mobile: Accordion, Button, Color, Input, Table, Typography</li>
+                        <li>html2canvas 활용해 결과 화면을 이미지로 저장할 수 있는 기능 구현</li>
                       </ul>
                     </li>
-                    <li>PC / Mobile 이슈 개선 및 QA 대응</li>
-                    <li><strong>웹 접근성 인증마크 획득</strong></li>
-                    <li>고객사 및 디자이너, 개발자와 직접 커뮤니케이션</li>
+                    <li>API 키 노출 없는 안전한 Express 백엔드 서버 구축</li>
+                    <li>
+                      서버 / 클라이언트 분리 환경 구성 및 배포
+                      <ul class="dot-txt">
+                        <li>서버: Render 배포</li>
+                        <li>클라이언트: Vercel 배포</li>
+                      </ul>
+                    </li>
                   </ul>
                 </div>
 
                 <div class="w-desc-area stack scrl-motion">
                   <p class="w-desc-tit">Tech Stack</p>
                   <ul class="dot-txt">
-                    <li>HTML</li>
-                    <li>SCSS</li>
+                    <li>React</li>
+                    <li>Vite</li>
+                    <li>CSS Modules</li>
                     <li>JavaScript</li>
-                    <li>jQuery / Swiper</li>
+                    <li>Express</li>
+                    <li>Claude API</li>
+                    <li>html2canvas</li>
                   </ul>
                 </div>
 
@@ -112,9 +123,9 @@
                   <p class="w-desc-tit">Tool</p>
                   <ul class="dot-txt">
                     <li>Visual Studio Code</li>
-                    <li>Git</li>
-                    <li>Figma</li>
-                    <li>Confluence</li>
+                    <li>Git, Github</li>
+                    <li>Figma, Photoshop</li>
+                    <li>Vercel, Render</li>
                   </ul>
                 </div>
               </div>
@@ -125,40 +136,44 @@
           <section class="w-detail">
             <div class="inner">
               <div class="screenshot-wrap scrl-motion">
-                <img src="../../common/images/img-work-screenshot-ss.png" alt="삼성화재 다이렉트 착 스크린샷">
+                <img src="../../common/images/img-work-screenshot-ask.png" alt="별들에게 물어봐! 스크린샷">
               </div>
               <div class="txt-wrap">
                 <div class="txt-area scrl-motion">
-                  <p class="tit">기존 소스 기반의 스타일 및 구조 개선</p>
+                  <p class="tit">기획부터 배포까지</p>
                   <div class="desc">
-                    <p>기존 소스를 유지하며 개편을 진행해야 하는 상황에서 신규 작업을 별도의 파일로 구성하고 우선 적용되도록 작업했습니다. <br>이를 통해 소스가 복잡하게 얽히지 않으면서도 안정적으로 기능을 확장할 수 있었습니다.</p>
+                    <p>본 프로젝트는 아이디어 구상부터 디자인, 개발, 배포까지 전 과정을 단독으로 진행했습니다.</p>
+                    <p>Figma로 화면을 설계하고 Photoshop으로 디자인 요소를 제작했으며, React + Vite로 구현하고 Express 백엔드 서버를 구축해 Claude API 키를 안전하게 관리했습니다.</p>
+                    <p>서버는 Render, 클라이언트는 Vercel에 각각 배포하며 서비스 환경을 경험했고, 기획부터 배포까지 하나의 웹 서비스를 완성하는 전체 흐름을 경험할 수 있었습니다.</p>
                   </div>
                 </div>
                 <div class="txt-area scrl-motion">
-                  <p class="tit">프로젝트 안정화 관리</p>
+                  <p class="tit">CSS Modules를 활용한 스타일 모듈화</p>
                   <div class="desc">
-                    <p>PC와 Mobile의 이슈 개선 및 QA 대응 작업을 담당했습니다. <br>Confluence에 등록된 수정 요청을 작업하고 관리하며 구조를 재점검하고 서비스의 일관성과 유지보수성을 개선했습니다.</p>
-                  </div>
-                </div>
-                <div class="txt-area scrl-motion">
-                  <div class="img-box">
-                    <img src="../../common/images/img-work-ss-detail1.jpg" alt="">
-                  </div>
-                  <p class="tit">적응형 웹 퍼블리싱</p>
-                  <div class="desc">
-                    <p>본 프로젝트는 적응형 웹사이트로, PC와 Mobile 작업자가 분리되어 진행되었습니다.</p>
-                    <p>동일 콘텐츠 기준으로 공통화가 가능한 부분을 Mobile 담당자와 협업하며 조율하며 작업했습니다. 중복 작업을 최소화하며 일관성을 확보할 수 있었고, 이를 통해 향후 유지보수를 효율적이고 원활하게 수행할 수 있도록 했습니다.</p>
+                    <p>
+                      CSS Modules를 활용해 페이지 단위로 스타일을 모듈화했습니다. 빌드 시 클래스명이 자동으로 고유한 값으로 변환되어 페이지 간 스타일 충돌을 방지할 수 있었습니다.
+                    </p>
                   </div>
                 </div>
                 <div class="txt-area scrl-motion">
                   <div class="img-box">
-                    <img src="../../common/images/img-work-ss-detail2.jpg" alt="">
+                    <img src="../../common/images/img-work-ask-detail1.jpg" alt="">
                   </div>
-                  <p class="tit">커뮤니케이션 역량 강화</p>
+                  <p class="tit">Claude API 연동</p>
                   <div class="desc">
-                    <p>본 프로젝트는 파견 형태로 진행되어, 기존 기획자를 통해 이루어지던 간접 소통과 달리 고객사와 면대면 및 유선으로 직접 커뮤니케이션하는 경우가 많았습니다.</p>
-                    <p>개발 단계에서 문제가 발생하지 않도록 구현 가능 여부를 사전에 판단하고 작업 시 각 파트 담당자와 조율하는 데 집중했습니다. 구현이 어려운 사항에 대해서는 기술적 제약과 대안을 명확히 설명하는 등 비개발 직군도 쉽게 이해하실 수 있도록 소통했습니다.</p>
-                    <p>그 과정에서 상황에 적합한 전달 방식을 고민하며 소통 역량을 강화할 수 있었습니다.</p>
+                    <p>사용자 이름과 생년월일을 기반으로 오늘의 별자리 운세와 행운 아이템 정보를 제공하기 위해 평소 사용하는 Claude의 API를 연동해 활용했습니다.</p>
+                    <p>작업 초반에는 단순한 프롬프트 작성으로 원하는 결과를 얻지 못했지만, 출력 형식·말투·항목 등을 구체적으로 명시하는 방향으로 계속 수정하며 원하는 결과값을 얻을 수 있었습니다.</p>
+                    <p>이 과정에서 프롬프트의 구체성은 응답 정확도와 직결되기 때문에 정확하고 자세한 프롬프트 작성이 중요하다는 것을 깨달았습니다.</p>
+                  </div>
+                </div>
+                <div class="txt-area scrl-motion">
+                  <div class="img-box">
+                    <img src="../../common/images/img-work-ask-detail2.jpg" alt="">
+                  </div>
+                  <p class="tit">html2canvas 활용</p>
+                  <div class="desc">
+                    <p>작업이 어느 정도 완성되었을 때 주변분들에게 테스트를 부탁드렸습니다. 그중 '결과 화면을 이미지로 저장하고 공유할 수 있었으면 좋겠다'는 피드백에 html2canvas를 활용하여 해당 기능을 구현했습니다.</p>
+                    <p>브라우저의 기본 기능만으로는 HTML을 이미지로 저장할 수 없기 때문에 html2canvas를 활용해 결과 화면을 canvas로 변환한 뒤 PNG 파일로 다운로드할 수 있도록 했습니다.</p>
                   </div>
                 </div>
               </div>
@@ -170,13 +185,9 @@
             <div class="inner">
               <hr>
               <div class="w-nav-wrap scrl-motion">
-                <div class="w-nav-prev">
-                  <p class="w-nav-label">이전 프로젝트</p>
-                  <a href="../work/askstars.html" class="w-nav-btn"><span>별들에게 물어봐!</span></a>
-                </div>
                 <div class="w-nav-next">
                   <p class="w-nav-label">다음 프로젝트</p>
-                  <a href="../work/ehyundai.html" class="w-nav-btn"><span>현대백화점그룹 채용</span></a>
+                  <a href="../work/samsungfire.html" class="w-nav-btn"><span>삼성화재 다이렉트 착</span></a>
                 </div>
               </div>
             </div>
