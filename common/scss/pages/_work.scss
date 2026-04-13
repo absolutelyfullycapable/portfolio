@@ -49,6 +49,7 @@
 
     .w-desc-wrap {
       display: flex;
+      justify-content: space-between;
       column-gap: 32rem;
 
       .w-desc-area {
@@ -85,6 +86,14 @@
         &.detail {
           width: 416rem;
         }
+
+        &.fit {
+          width: fit-content !important;
+        }
+      }
+
+      &.flex-start {
+        justify-content: flex-start;
       }
     }
   }
@@ -441,7 +450,7 @@
           &.overview {
             display: flex;
             flex-direction: column;
-            width: 100%;
+            width: 100% !important;
 
             .w-desc-tit {
               order: 2;
