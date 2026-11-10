@@ -172,13 +172,17 @@
                     color: $text-black;
                   }
 
+                  .exp-item + .exp-item {
+                    margin-top: 10rem;
+                  }
+
                   .co-name {
                     margin-bottom: 5rem;
                   }
 
                   .period {
                     display: inline-block;
-                    width: 120rem;
+                    width: 135rem;
                   }
 
                   .notice {

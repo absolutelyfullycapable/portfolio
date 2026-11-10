@@ -819,12 +819,15 @@ img {
   font-weight: 700;
   color: #000;
 }
+.main .cont .about .inner .desc-wrap .txt-area > div.right > div .exp-item + .exp-item {
+  margin-top: 10rem;
+}
 .main .cont .about .inner .desc-wrap .txt-area > div.right > div .co-name {
   margin-bottom: 5rem;
 }
 .main .cont .about .inner .desc-wrap .txt-area > div.right > div .period {
   display: inline-block;
-  width: 120rem;
+  width: 135rem;
 }
 .main .cont .about .inner .desc-wrap .txt-area > div.right > div .notice {
   margin-top: 10rem;
