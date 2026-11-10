@@ -1152,6 +1152,9 @@ img {
   -o-object-position: center;
      object-position: center;
 }
+.work .w-detail .txt-wrap .txt-area.only-img .img-box {
+  margin-bottom: 0;
+}
 .work .w-detail .txt-wrap .txt-area .tit {
   margin-bottom: 25rem;
   font-size: 24rem;
